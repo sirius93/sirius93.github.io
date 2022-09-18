@@ -27,17 +27,6 @@
     <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
     <script async="" src="https://cdn.ampproject.org/v0.js"></script>
     <style amp-custom="">
-        @media only screen and (min-width : 768px) {
-            #d, #e, #f, #g, #h, #i, #j {
-                display: none;
-            }
-            #c, .ib {
-                height: 100vh !important;
-            }
-            #c .kb, .ib .kb {
-                margin-top: 15vh;
-            }
-        }
         .a {
             animation-duration: 1s;
             animation-fill-mode: both
@@ -1272,6 +1261,17 @@
         :root:not(#a):not(#a):not(#a):not(#a) amp-img>img {
             object-fit: inherit;
             object-position: inherit
+        }
+        @media only screen and (min-width : 768px) {
+            #d, #e, #f, #g, #h, #i, #j {
+                display: none;
+            }
+            #c, .ib {
+                height: 100vh;
+            }
+            #c .kb, .ib .kb {
+                margin-top: 15vh;
+            }
         }
 
         :root:not(#a):not(#a):not(#a):not(#a) .hd,
