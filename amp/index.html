@@ -1362,6 +1362,8 @@
             }
         ]
     </script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZLTZWK8F2"></script>
     <link rel="canonical" href="http://nandankumar.info/">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
@@ -1435,6 +1437,18 @@
 </head>
 
 <body>
+    <amp-analytics type="gtag" data-credentials="include">
+        <script type="application/json">
+        {
+          "vars" : {
+            "gtag_id": "G-4ZLTZWK8F2",
+            "config" : {
+              "G-4ZLTZWK8F2": { "groups": "default" }
+            }
+          }
+        }
+        </script>
+    </amp-analytics>
     <div class="hd oc"></div>
     <div id="b">
         <header id="c" class="ib pc" role="banner" data-stellar-background-ratio="0.5">
