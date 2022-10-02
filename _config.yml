@@ -8,8 +8,6 @@ gist:
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
-plugins:
-- jekyll-remote-theme 
 remote_theme: tuur29/pages-themes-cayman
 darkmode: true
 colors:
