@@ -1,3 +1,3 @@
-# courses
+# Courses
 
-[System Design](https://nandankumar.info/courses/system-design)
+[System Design](https://nandankumar.info/pages/courses/system-design)
