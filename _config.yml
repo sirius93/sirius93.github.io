@@ -1,0 +1,15 @@
+lsi: false
+safe: true
+incremental: false
+highlighter: rouge
+use_math: true
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+- jekyll-remote-theme 
+title: Nandan Kumar - Software Engineer | Techie who 'hacked' an Airline to retrieve his lost luggage | Public Speaker | Cyber Security Enthusiast | Photographer
+description: Nandan Kumar - Software Engineer | Techie who 'hacked' an Airline to retrieve his lost luggage | Public Speaker | Cyber Security Enthusiast | Photographer
