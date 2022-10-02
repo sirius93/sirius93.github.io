@@ -13,6 +13,9 @@ color:
     gradient_right: "#FF9000"
     section_title: "#155799"
 buttons:
-  zip_url: https://nandankumar.info
-  zip_title: Home
-  github_hide: true
+    zip_url: https://nandankumar.info
+    zip_title: Home
+    github_hide: true
+google_analytics: G-4ZLTZWK8F2
+google_analytics_anonymize: false
+favicon: https://nandankumar.info/images/favicon.ico
