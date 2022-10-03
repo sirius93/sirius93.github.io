@@ -3,7 +3,6 @@ name: Generate sitemap
 on:
   push:
     branches: [ main ]
-    paths: [ '**.html' , '**.pdf' , '**.md', '**.yml'   ]
 
 jobs:
   sitemap:
@@ -20,6 +19,7 @@ jobs:
       uses: cicirello/generate-sitemap@v1
       with:
         base-url-path: https://nandankumar.info/
+        additional-extensions: md
     
     - name: Output stats
       run: |
