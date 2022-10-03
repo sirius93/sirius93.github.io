@@ -7,7 +7,7 @@
 * Flights by Olga Tokarczuk - [Paperback](https://amzn.to/3CqmZxv) | [Hardcover](https://amzn.to/3y4WlrF)
 * The Weirdest People In The World by Joseph Henrich - [Paperback](https://amzn.to/3EbUcyi) | [Hardcover](https://amzn.to/3dZBzmp)
 * Those Days  by Sunil Gangopadhyay - [Paperback](https://amzn.to/3fBLQFS) | [Kindle](https://amzn.to/3fyRHf1)
-* Milk Teeth by Amrita Mhale - [Paperback](https://amzn.to/3y85GPe) 
+* Milk Teeth by Amrita Mhale - [Paperback](https://amzn.to/3y85GPe) | [Hardcover](https://amzn.to/3rs0LVP)
 * Half The Night Is Gone by Amitabh Baghchi - [Paperback](https://amzn.to/3e73LUi) | [Kindle](https://amzn.to/3Ebbw6g)
 * Latitudes of Longing by Shubhangi Swarup - [Paperback](https://amzn.to/3rpzEdP) | [Kindle](https://amzn.to/3USLDhE) | [Hardcover](https://amzn.to/3BUTfaA)
 * Ghachar Ghochar by Vivek Shanbhag - [Paperback](https://amzn.to/3rn8fZZ) | [Kindle](https://amzn.to/3M777DC) | [Hardcover](https://amzn.to/3M1aLi3)
