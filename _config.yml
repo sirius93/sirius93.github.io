@@ -1,6 +1,7 @@
 title: Nandan Kumar - Software Engineer | Techie who 'hacked' an Airline to retrieve his lost luggage | Public Speaker | Cyber Security Enthusiast | Photographer
 description: Nandan Kumar - Software Engineer | Techie who 'hacked' an Airline to retrieve his lost luggage | Public Speaker | Cyber Security Enthusiast | Photographer
 show_downloads: true
+show_navigation: true
 remote_theme: sirius93/cayman-theme-custom
 color:
   header: "#fff"
@@ -22,7 +23,7 @@ use_math: true
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
-url: "https://nandankumar.info/pages"
+url: "https://nandankumar.info"
 plugins:
- - jekyll-sitemap
+  - jekyll-sitemap
 
