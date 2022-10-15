@@ -1349,8 +1349,8 @@ input[type="text"] {
   .navbar .navbar-header .navbar-toggler {
     display: block;
     position: fixed;
-    right: 10px;
-    top: 13px;
+    left: 15px;
+    top: 15px;
     background: inherit;
     border: 2px solid white;
     padding: 5px;
