@@ -24,6 +24,7 @@ kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
 url: "https://nandankumar.info"
+logo_url: https://nandankumar.info/images/logo.webp
 plugins:
   - jekyll-sitemap
 
