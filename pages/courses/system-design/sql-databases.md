@@ -1,3 +1,11 @@
+---
+title: 'SQL databases'
+date: '2022-10-19'
+draft: false
+summary: 'In this tutorial, we will discuss SQL databases'
+images:
+authors: ['default']
+---
 #SQL databases
 
 A SQL (or relational) database is a collection of data items with pre-defined relationships between them. These items are organized as a set of tables with columns and rows. Tables are used to hold information about the objects to be represented in the database. Each column in a table holds a certain kind of data and a field stores the actual value of an attribute. The rows in the table represent a collection of related values of one object or entity.
