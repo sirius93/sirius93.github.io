@@ -985,8 +985,8 @@ Data in a table is recorded in rows. There can be thousands or millions of rows 
 
 Below are different types of databases:
 
-- **[SQL](https://nandankumar.info/courses/system-design/sql-databases)**
-- **[NoSQL](https://nandankumar.info/courses/system-design/nosql-databases)**
+- **[SQL](https://nandankumar.info/pages/courses/system-design/sql-databases)**
+- **[NoSQL](https://nandankumar.info/pages/courses/system-design/nosql-databases)**
   - Document
   - Key-value
   - Graph
@@ -994,7 +994,7 @@ Below are different types of databases:
   - Wide column
   - Multi-model
 
-SQL and NoSQL databases are broad topics and will be discussed separately in [SQL databases](https://nandankumar.info/courses/system-design/sql-databases) and [NoSQL databases](https://nandankumar.info/courses/system-design/nosql-databases). Learn how they compare to each other in [SQL vs NoSQL databases](https://nandankumar.info/courses/system-design/system-design/sql-vs-nosql-databases).
+SQL and NoSQL databases are broad topics and will be discussed separately in [SQL databases](https://nandankumar.info/pages/courses/system-design/sql-databases) and [NoSQL databases](https://nandankumar.info/pages/courses/system-design/nosql-databases). Learn how they compare to each other in [SQL vs NoSQL databases](https://nandankumar.info/pages/courses/system-design/system-design/sql-vs-nosql-databases).
 
 ## Challenges
 
@@ -1011,7 +1011,7 @@ Some common challenges faced while running databases at scale:
 
 A SQL (or relational) database is a collection of data items with pre-defined relationships between them. These items are organized as a set of tables with columns and rows. Tables are used to hold information about the objects to be represented in the database. Each column in a table holds a certain kind of data and a field stores the actual value of an attribute. The rows in the table represent a collection of related values of one object or entity.
 
-Each row in a table could be marked with a unique identifier called a primary key, and rows among multiple tables can be made related using foreign keys. This data can be accessed in many different ways without re-organizing the database tables themselves. SQL databases usually follow the [ACID consistency model](https://nandankumar.info/courses/system-design/acid-and-base-consistency-models#acid).
+Each row in a table could be marked with a unique identifier called a primary key, and rows among multiple tables can be made related using foreign keys. This data can be accessed in many different ways without re-organizing the database tables themselves. SQL databases usually follow the [ACID consistency model](https://nandankumar.info/pages/courses/system-design/acid-and-base-consistency-models#acid).
 
 ## Materialized views
 
@@ -1054,7 +1054,7 @@ Here are some commonly used relational databases:
 
 # NoSQL databases
 
-NoSQL is a broad category that includes any database that doesn't use SQL as its primary data access language. These types of databases are also sometimes referred to as non-relational databases. Unlike in relational databases, data in a NoSQL database doesn't have to conform to a pre-defined schema. NoSQL databases follow [BASE consistency model](https://nandankumar.info/courses/system-design/acid-and-base-consistency-models#base).
+NoSQL is a broad category that includes any database that doesn't use SQL as its primary data access language. These types of databases are also sometimes referred to as non-relational databases. Unlike in relational databases, data in a NoSQL database doesn't have to conform to a pre-defined schema. NoSQL databases follow [BASE consistency model](https://nandankumar.info/pages/courses/system-design/acid-and-base-consistency-models#base).
 
 Below are different types of NoSQL databases:
 
