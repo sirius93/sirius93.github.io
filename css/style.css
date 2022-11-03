@@ -1380,6 +1380,7 @@ nav#navbar {
   right: 0;
   background-color: #ff9000;
   z-index: 9999;
+  border-radius: 0;
 }
 .navbar .navbar-menu {
   display: flex;
