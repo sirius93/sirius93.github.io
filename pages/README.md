@@ -1,6 +1,6 @@
 # Pages
 
-#### [:books: Recent Blog Posts](https://blog.nandankumar.info)
+#### [📚 Recent Blog Posts](https://blog.nandankumar.info)
 <!-- BLOGPOSTS:START -->
  - 🚀 [System Design: Domain Name System &lpar;DNS&rpar;, Load Balancing &amp; Clustering.](https://blog.nandankumar.info/system-design-domain-name-system-dns-load-balancing-clustering)
  - 🚀 [What is System Design? Types of IP Addresses, OSI models, and TCP/UDP Protocols.](https://blog.nandankumar.info/what-is-system-design-ip-osi-models-and-tcp-udp-protocols)
@@ -24,4 +24,4 @@
 
 - [Amazon](affliates/amazon)
 
-#### [:books: List of Books](books)
+#### [📚 List of Books](books)
