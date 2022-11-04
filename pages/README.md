@@ -1,6 +1,6 @@
 # Pages
 
-#### :books: Recent Blog Posts
+#### [:books: Recent Blog Posts](https://blog.nandankumar.info)
 <!-- BLOGPOSTS:START -->
  - 🚀 [System Design: Domain Name System &lpar;DNS&rpar;, Load Balancing &amp; Clustering.](https://blog.nandankumar.info/system-design-domain-name-system-dns-load-balancing-clustering)
  - 🚀 [What is System Design? Types of IP Addresses, OSI models, and TCP/UDP Protocols.](https://blog.nandankumar.info/what-is-system-design-ip-osi-models-and-tcp-udp-protocols)
@@ -13,15 +13,15 @@
  - 🚀 [Understanding version control and mastering git - Branches and more...!!](https://blog.nandankumar.info/understanding-version-control-and-mastering-git-branches-and-more)
  - 💫 [Understanding version control and mastering git - The Basics...!!](https://blog.nandankumar.info/understanding-version-control-and-mastering-git-the-basics)<!-- BLOGPOSTS:END -->
 
-#### :rocket:  [Courses](courses)
+#### [🚀 Courses](courses)
 
 - [System Design](courses/system-design)
     - [SQL Database](courses/system-design/sql-databases)  
     - [Acid and Base Consistency Models](courses/system-design/acid-and-base-consistency-models)
 
 
-#### :rocket: [Affliates](affliates)
+#### [🚀 Affliates](affliates)
 
 - [Amazon](affliates/amazon)
 
-#### :books: [List of Books](books)
+#### [:books: List of Books](books)
