@@ -18,3 +18,5 @@ jobs:
           template: "$newline - $randomEmoji(💯,🔥,💫,🚀,🌮) [$title]($url)"
           commit_message: "recent posts section updated"
           gh_token: ${{ secrets.GITHUB_TOKEN }}
+          readme_path: ./pages/README.md
+          max_post_count: 10
