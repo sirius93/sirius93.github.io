@@ -25,3 +25,5 @@
 - [Amazon](affliates/amazon)
 
 #### [📚 List of Books](books)
+
+- [Book Reviews](books/book-reviews/)
