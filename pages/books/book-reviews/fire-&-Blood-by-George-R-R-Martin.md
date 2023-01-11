@@ -1,4 +1,4 @@
- # Fire & Blood by George R.R. Martin
+# Fire & Blood by George R.R. Martin
  
 #### Book Review By [Mrinal Chandra](https://www.linkedin.com/in/mrinalchandra2902/)
 
