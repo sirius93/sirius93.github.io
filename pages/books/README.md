@@ -1,6 +1,6 @@
 # Book Club (India Edition)
 
-
+#### Read latest book reviews [here](book-reviews)
 #### List of a few books to read, Sourced from people & conversations during clubhouse sessions.
 
 | Book        |    |       |  |
