@@ -1,6 +1,7 @@
  # Fire & Blood by George R.R. Martin
  
 #### Book Review By [Mrinal Chandra](https://www.linkedin.com/in/mrinalchandra2902/)
+
 I have always loved stories and therefore, the majority of my time as a reader has been spent reading fiction.
 Hence, it is fitting that the first bit of reading that I share here on this page with you is a glorious piece of fiction.
 
@@ -25,7 +26,9 @@ The narrator (Archmaester Gyldayn), a historian within the world of A Song of Ic
 
 At last, it is soothing and joyful to be made aware of the gaps in the accounts provided by the various sources quoted in the book - which also lets us have an insight into the challenges of being a historian in a medieval era.
 
+Buy here - [HardCover](https://amzn.to/3VXd0GE) / [PaperBack](https://amzn.to/3ZEGZq2) / [Kindle](https://amzn.to/3w1ywiN)
+
 Originally posted on [A Tale Of Few Books](https://www.instagram.com/ataleoffewbooks/).
 
-Follow Mrinal on : [LinkedIn](https://www.linkedin.com/in/mrinalchandra2902/) | [Instagram](https://www.instagram.com/mrinalchandrax29)
+Follow Mrinal on : [LinkedIn](https://www.linkedin.com/in/mrinalchandra2902/) / [Instagram](https://www.instagram.com/mrinalchandrax29)
  
