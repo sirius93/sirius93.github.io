@@ -1,2 +1,2 @@
 # Affliates
-- [Amazon Affliates](https://nandankumar.info/pages/affliates/amazon)
+- [Amazon Affliates](https://nandan.dev/pages/affliates/amazon)

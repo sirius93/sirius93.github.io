@@ -2,7 +2,7 @@
 
 Hey, welcome to the course. I hope this course provides a great learning experience.
 
-_This course is also available on my [website](https://nandankumar.info/system-design). Please leave a ⭐ as motivation if this was helpful!_
+_This course is also available on my [website](https://nandan.dev/system-design). Please leave a ⭐ as motivation if this was helpful!_
 
 # Table of contents
 
@@ -175,7 +175,7 @@ While this model is not directly implemented in the TCP/IP networks that are mos
 
 The seven abstraction layers of the OSI model can be defined as follows, from top to bottom:
 
-![osi-model](https://nandankumar.info/system-design/images/osi-model.png) 
+![osi-model](https://nandan.dev/system-design/images/osi-model.png) 
 
 ### Application
 
@@ -211,7 +211,7 @@ This layer includes the physical equipment involved in the data transfer, such a
 
 Transmission Control Protocol (TCP) is connection-oriented, meaning once a connection has been established, data can be transmitted in both directions. TCP has built-in systems to check for errors and to guarantee data will be delivered in the order it was sent, making it the perfect protocol for transferring information like still images, data files, and web pages.
 
-![tcp](https://nandankumar.info/system-design/images/tcp.png)
+![tcp](https://nandan.dev/system-design/images/tcp.png)
 
 But while TCP is instinctively reliable, its feedback mechanisms also result in a larger overhead, translating to greater use of the available bandwidth on the network.
 
@@ -219,7 +219,7 @@ But while TCP is instinctively reliable, its feedback mechanisms also result in 
 
 User Datagram Protocol (UDP) is a simpler, connectionless internet protocol in which error-checking and recovery services are not required. With UDP, there is no overhead for opening a connection, maintaining a connection, or terminating a connection. Data is continuously sent to the recipient, whether or not they receive it.
 
-![udp](https://nandankumar.info/system-design/images/udp.png)
+![udp](https://nandan.dev/system-design/images/udp.png)
 
 It is largely preferred for real-time communications like broadcast or multicast network transmission. We should use UDP over TCP when we need the lowest latency and late data is worse than the loss of data.
 
@@ -246,7 +246,7 @@ This brings us to Domain Name System (DNS) which is a hierarchical and decentral
 
 ## How DNS works
 
-![how-dns-works](https://nandankumar.info/system-design/images/how-dns-works.png)
+![how-dns-works](https://nandan.dev/system-design/images/how-dns-works.png)
 
 DNS lookup involves the following eight steps:
 
@@ -361,11 +361,11 @@ These are some widely used managed DNS solutions:
 
 Load balancing lets us distribute incoming network traffic across multiple resources ensuring high availability and reliability by sending requests only to resources that are online. This provides the flexibility to add or subtract resources as demand dictates.
 
-![load-balancing](https://nandankumar.info/system-design/images/load-balancer.png)
+![load-balancing](https://nandan.dev/system-design/images/load-balancer.png)
 
 For additional scalability and redundancy, we can try to load balance at each layer of our system:
 
-![load-balancing-layers](https://nandankumar.info/system-design/images/load-balancer-layers.png)
+![load-balancing-layers](https://nandan.dev/system-design/images/load-balancer-layers.png)
 
 ## But why?
 
@@ -441,7 +441,7 @@ As you must've already guessed, the load balancer itself can be a single point o
 
 And, if there's a failure detection and the _active_ load balancer fails, another _passive_ load balancer can take over which will make our system more fault-tolerant.
 
-![redundant-load-balancing](https://nandankumar.info/system-design/images/redundant-load-balancer.png)
+![redundant-load-balancing](https://nandan.dev/system-design/images/redundant-load-balancer.png)
 
 ## Features
 
@@ -477,7 +477,7 @@ At a high level, a computer cluster is a group of two or more computers, or node
 
 To build a computer cluster, the individual nodes should be connected to a network to enable internode communication. The software can then be used to join the nodes together and form a cluster. It may have a shared storage device and/or local storage on each node.
 
-![cluster](https://nandankumar.info/system-design/images/cluster.png)
+![cluster](https://nandan.dev/system-design/images/cluster.png)
 
 Typically, at least one node is designated as the leader node and acts as the entry point to the cluster. The leader node may be responsible for delegating incoming work to the other nodes and, if necessary, aggregating the results and returning a response to the user.
 
@@ -497,13 +497,13 @@ The two most commonly used high availability (HA) clustering configurations are 
 
 ### Active-Active
 
-![active-active](https://nandankumar.info/system-design/images/active-active.png)
+![active-active](https://nandan.dev/system-design/images/active-active.png)
 
 An active-active cluster is typically made up of at least two nodes, both actively running the same kind of service simultaneously. The main purpose of an active-active cluster is to achieve load balancing. A load balancer distributes workloads across all nodes to prevent any single node from getting overloaded. Because there are more nodes available to serve, there will also be an improvement in throughput and response times.
 
 ### Active-Passive
 
-![active-passive](https://nandankumar.info/system-design/images/active-passive.png)
+![active-passive](https://nandan.dev/system-design/images/active-passive.png)
 
 Like the active-active cluster configuration, an active-passive cluster also consists of at least two nodes. However, as the name _active-passive_ implies, not all nodes are going to be active. For example, in the case of two nodes, if the first node is already active, then the second node must be passive or on standby.
 
@@ -542,7 +542,7 @@ Clustering is commonly used in the industry, and often many technologies offer s
 
 _"There are only two hard things in Computer Science: cache invalidation and naming things." - Phil Karlton_
 
-![caching](https://nandankumar.info/system-design/images/caching.png)
+![caching](https://nandan.dev/system-design/images/caching.png)
 
 A cache's primary purpose is to increase data retrieval performance by reducing the need to access the underlying slower storage layer. Trading off capacity for speed, a cache typically stores a subset of data transiently, in contrast to databases whose data is usually complete and durable.
 
@@ -582,7 +582,7 @@ Cache invalidation is a process where the computer system declares the cache ent
 
 ### Write-through cache
 
-![write-through-cache](https://nandankumar.info/system-design/images/write-through-cache.png)
+![write-through-cache](https://nandan.dev/system-design/images/write-through-cache.png)
 
 Data is written into the cache and the corresponding database simultaneously.
 
@@ -592,7 +592,7 @@ Data is written into the cache and the corresponding database simultaneously.
 
 ### Write-around cache
 
-![write-around-cache](https://nandankumar.info/system-design/images/write-around-cache.png)
+![write-around-cache](https://nandan.dev/system-design/images/write-around-cache.png)
 
 Where write directly goes to the database or permanent storage, bypassing the cache.
 
@@ -602,7 +602,7 @@ Where write directly goes to the database or permanent storage, bypassing the ca
 
 ### Write-back cache
 
-![write-back-cache](https://nandankumar.info/system-design/images/write-back-cache.png)
+![write-back-cache](https://nandan.dev/system-design/images/write-back-cache.png)
 
 Where the write is only done to the caching layer and the write is confirmed as soon as the write to the cache completes. The cache then asynchronously syncs this write to the database.
 
@@ -623,13 +623,13 @@ Following are some of the most common cache eviction policies:
 
 ## Distributed Cache
 
-![distributed-cache](https://nandankumar.info/system-design/images/distributed-cache.png)
+![distributed-cache](https://nandan.dev/system-design/images/distributed-cache.png)
 
 A distributed cache is a system that pools together the random-access memory (RAM) of multiple networked computers into a single in-memory data store used as a data cache to provide fast access to data. While most caches are traditionally in one physical server or hardware component, a distributed cache can grow beyond the memory limits of a single computer by linking together multiple computers.
 
 ## Global Cache
 
-![global-cache](https://nandankumar.info/system-design/images/global-cache.png)
+![global-cache](https://nandan.dev/system-design/images/global-cache.png)
 
 As the name suggests, we will have a single shared cache that all the application nodes will use. When the requested data is not found in the global cache, it's the responsibility of the cache to find out the missing piece of data from the underlying data store.
 
@@ -675,7 +675,7 @@ Here are some commonly used technologies for caching:
 
 A content delivery network (CDN) is a geographically distributed group of servers that work together to provide fast delivery of internet content. Generally, static files such as HTML/CSS/JS, photos, and videos are served from CDN.
 
-![cdn-map](https://nandankumar.info/system-design/images/cdn-map.png)
+![cdn-map](https://nandan.dev/system-design/images/cdn-map.png)
 
 ## Why use a CDN?
 
@@ -683,7 +683,7 @@ Content Delivery Network (CDN) increases content availability and redundancy whi
 
 ## How does a CDN work?
 
-![cdn](https://nandankumar.info/system-design/images/cdn.png)
+![cdn](https://nandan.dev/system-design/images/cdn.png)
 
 In a CDN, the origin server contains the original versions of the content while the edge servers are numerous and distributed across various locations around the world.
 
@@ -738,7 +738,7 @@ There are two types of proxies:
 
 A forward proxy, often called a proxy, proxy server, or web proxy is a server that sits in front of a group of client machines. When those computers make requests to sites and services on the internet, the proxy server intercepts those requests and then communicates with web servers on behalf of those clients, like a middleman.
 
-![forward-proxy](https://nandankumar.info/system-design/images/forward-proxy.png)
+![forward-proxy](https://nandan.dev/system-design/images/forward-proxy.png)
 
 **Advantages**
 
@@ -757,7 +757,7 @@ A reverse proxy is a server that sits in front of one or more web servers, inter
 
 The difference between a forward and reverse proxy is subtle but important. A simplified way to sum it up would be to say that a forward proxy sits in front of a client and ensures that no origin server ever communicates directly with that specific client. On the other hand, a reverse proxy sits in front of an origin server and ensures that no client ever communicates directly with that origin server.
 
-![reverse-proxy](https://nandankumar.info/system-design/images/reverse-proxy.png)
+![reverse-proxy](https://nandan.dev/system-design/images/reverse-proxy.png)
 
 Introducing reverse proxy results in increased complexity. A single reverse proxy is a single point of failure, configuring multiple reverse proxies (i.e. a failover) further increases complexity.
 
@@ -848,7 +848,7 @@ A fault-tolerant system has no service interruption but a significantly higher c
 
 Scalability is the measure of how well a system responds to changes by adding or removing resources to meet demands.
 
-![scalability](https://nandankumar.info/system-design/images/scalability.png)
+![scalability](https://nandan.dev/system-design/images/scalability.png)
 
 Let's discuss different types of scaling:
 
@@ -981,12 +981,12 @@ Data in a table is recorded in rows. There can be thousands or millions of rows 
 
 ## Types
 
-![database-types](https://nandankumar.info/system-design/images/database-types.png)
+![database-types](https://nandan.dev/system-design/images/database-types.png)
 
 Below are different types of databases:
 
-- **[SQL](https://nandankumar.info/pages/courses/system-design/sql-databases)**
-- **[NoSQL](https://nandankumar.info/pages/courses/system-design/nosql-databases)**
+- **[SQL](https://nandan.dev/pages/courses/system-design/sql-databases)**
+- **[NoSQL](https://nandan.dev/pages/courses/system-design/nosql-databases)**
   - Document
   - Key-value
   - Graph
@@ -994,7 +994,7 @@ Below are different types of databases:
   - Wide column
   - Multi-model
 
-SQL and NoSQL databases are broad topics and will be discussed separately in [SQL databases](https://nandankumar.info/pages/courses/system-design/sql-databases) and [NoSQL databases](https://nandankumar.info/pages/courses/system-design/nosql-databases). Learn how they compare to each other in [SQL vs NoSQL databases](https://nandankumar.info/pages/courses/system-design/system-design/sql-vs-nosql-databases).
+SQL and NoSQL databases are broad topics and will be discussed separately in [SQL databases](https://nandan.dev/pages/courses/system-design/sql-databases) and [NoSQL databases](https://nandan.dev/pages/courses/system-design/nosql-databases). Learn how they compare to each other in [SQL vs NoSQL databases](https://nandan.dev/pages/courses/system-design/system-design/sql-vs-nosql-databases).
 
 ## Challenges
 
@@ -1011,7 +1011,7 @@ Some common challenges faced while running databases at scale:
 
 A SQL (or relational) database is a collection of data items with pre-defined relationships between them. These items are organized as a set of tables with columns and rows. Tables are used to hold information about the objects to be represented in the database. Each column in a table holds a certain kind of data and a field stores the actual value of an attribute. The rows in the table represent a collection of related values of one object or entity.
 
-Each row in a table could be marked with a unique identifier called a primary key, and rows among multiple tables can be made related using foreign keys. This data can be accessed in many different ways without re-organizing the database tables themselves. SQL databases usually follow the [ACID consistency model](https://nandankumar.info/pages/courses/system-design/acid-and-base-consistency-models#acid).
+Each row in a table could be marked with a unique identifier called a primary key, and rows among multiple tables can be made related using foreign keys. This data can be accessed in many different ways without re-organizing the database tables themselves. SQL databases usually follow the [ACID consistency model](https://nandan.dev/pages/courses/system-design/acid-and-base-consistency-models#acid).
 
 ## Materialized views
 
@@ -1054,7 +1054,7 @@ Here are some commonly used relational databases:
 
 # NoSQL databases
 
-NoSQL is a broad category that includes any database that doesn't use SQL as its primary data access language. These types of databases are also sometimes referred to as non-relational databases. Unlike in relational databases, data in a NoSQL database doesn't have to conform to a pre-defined schema. NoSQL databases follow [BASE consistency model](https://nandankumar.info/pages/courses/system-design/acid-and-base-consistency-models#base).
+NoSQL is a broad category that includes any database that doesn't use SQL as its primary data access language. These types of databases are also sometimes referred to as non-relational databases. Unlike in relational databases, data in a NoSQL database doesn't have to conform to a pre-defined schema. NoSQL databases follow [BASE consistency model](https://nandan.dev/pages/courses/system-design/acid-and-base-consistency-models#base).
 
 Below are different types of NoSQL databases:
 
@@ -1268,7 +1268,7 @@ Replication is a process that involves sharing information to ensure consistency
 
 The master serves reads and writes, replicating writes to one or more slaves, which serve only reads. Slaves can also replicate additional slaves in a tree-like fashion. If the master goes offline, the system can continue to operate in read-only mode until a slave is promoted to a master or a new master is provisioned.
 
-![master-slave-replication](https://nandankumar.info/system-design/images/master-slave-replication.png)
+![master-slave-replication](https://nandan.dev/system-design/images/master-slave-replication.png)
 
 ### Advantages
 
@@ -1287,7 +1287,7 @@ The master serves reads and writes, replicating writes to one or more slaves, wh
 
 Both masters serve reads/writes and coordinate with each other. If either master goes down, the system can continue to operate with both reads and writes.
 
-![master-master-replication](https://nandankumar.info/system-design/images/master-master-replication.png)
+![master-master-replication](https://nandan.dev/system-design/images/master-master-replication.png)
 
 ### Advantages
 
@@ -1311,7 +1311,7 @@ In contrast, asynchronous replication copies the data to the replica after the d
 
 Indexes are well known when it comes to databases, they are used to improve the speed of data retrieval operations on the data store. An index makes the trade-offs of increased storage overhead, and slower writes (since we not only have to write the data but also have to update the index) for the benefit of faster reads. Indexes are used to quickly locate data without having to examine every row in a database table. Indexes can be created using one or more columns of a database table, providing the basis for both rapid random lookups and efficient access to ordered records.
 
-![indexes](https://nandankumar.info/system-design/images/indexes.png)
+![indexes](https://nandan.dev/system-design/images/indexes.png)
 
 An index is a data structure that can be perceived as a table of contents that points us to the location where actual data lives. So when we create an index on a column of a table, we store that column and a pointer to the whole row in the index. Indexes are also used to create different views of the same data. For large data sets, this is an excellent way to specify different filters or sorting schemes without resorting to creating multiple additional copies of the data.
 
@@ -1321,7 +1321,7 @@ One quality that database indexes can have is that they can be **dense** or **sp
 
 In a dense index, an index record is created for every row of the table. Records can be located directly as each record of the index holds the search key value and the pointer to the actual record.
 
-![dense-index](https://nandankumar.info/system-design/images/dense-index.png)
+![dense-index](https://nandan.dev/system-design/images/dense-index.png)
 
 Dense indexes require more maintenance than sparse indexes at write-time. Since every row must have an entry, the database must maintain the index on inserts, updates, and deletes. Having an entry for every row also means that dense indexes will require more memory. The benefit of a dense index is that values can be quickly found with just a binary search. Dense indexes also do not impose any ordering requirements on the data.
 
@@ -1329,7 +1329,7 @@ Dense indexes require more maintenance than sparse indexes at write-time. Since 
 
 In a sparse index, records are created only for some of the records.
 
-![sparse-index](https://nandankumar.info/system-design/images/sparse-index.png)
+![sparse-index](https://nandan.dev/system-design/images/sparse-index.png)
 
 Sparse indexes require less maintenance than dense indexes at write-time since they only contain a subset of the values. This lighter maintenance burden means that inserts, updates, and deletes will be faster. Having fewer entries also means that the index will use less memory. Finding data is slower since a scan across the page typically follows the binary search. Sparse indexes are also optional when working with ordered data.
 
@@ -1545,7 +1545,7 @@ On the other hand, planning around BASE limitations can sometimes be a major dis
 
 CAP theorem states that a distributed system can deliver only two of the three desired characteristics Consistency, Availability, and Partition tolerance (CAP).
 
-![cap-theorem](https://nandankumar.info/system-design/images/cap-theorem.png)
+![cap-theorem](https://nandan.dev/system-design/images/cap-theorem.png)
 
 Let's take a detailed look at the three distributed system characteristics to which the CAP theorem refers.
 
@@ -1591,7 +1591,7 @@ PACELC extends the CAP theorem by introducing latency (L) as an additional attri
 
 _The PACELC theorem was first described by [Daniel J. Abadi](https://scholar.google.com/citations?user=zxeEF2gAAAAJ)._
 
-![pacelc-theorem](https://nandankumar.info/system-design/images/pacelc-theorem.png)
+![pacelc-theorem](https://nandan.dev/system-design/images/pacelc-theorem.png)
 
 PACELC theorem was developed to address a key limitation of the CAP theorem as it makes no provision for performance or latency.
 
@@ -1607,7 +1607,7 @@ _Usually, relational databases support ACID transactions, and non-relational dat
 
 A transaction in a database can be in one of the following states:
 
-![transaction-states](https://nandankumar.info/system-design/images/transaction-states.png)
+![transaction-states](https://nandan.dev/system-design/images/transaction-states.png)
 
 ### Active
 
@@ -1652,7 +1652,7 @@ Now, let's look at some popular solutions for distributed transactions:
 
 ## Two-Phase commit
 
-![two-phase-commit](https://nandankumar.info/system-design/images/two-phase-commit.png)
+![two-phase-commit](https://nandan.dev/system-design/images/two-phase-commit.png)
 
 The two-phase commit (2PC) protocol is a distributed algorithm that coordinates all the processes that participate in a distributed transaction on whether to commit or abort (roll back) the transaction.
 
@@ -1682,7 +1682,7 @@ Following problems may arise in the two-phase commit protocol:
 
 ## Three-phase commit
 
-![three-phase-commit](https://nandankumar.info/system-design/images/three-phase-commit.png)
+![three-phase-commit](https://nandan.dev/system-design/images/three-phase-commit.png)
 
 Three-phase commit (3PC) is an extension of the two-phase commit where the commit phase is split into two phases. This helps with the blocking problem that occurs in the two-phase commit protocol.
 
@@ -1711,7 +1711,7 @@ The pre-commit phase accomplishes the following:
 
 ## Sagas
 
-![sagas](https://nandankumar.info/system-design/images/sagas.png)
+![sagas](https://nandan.dev/system-design/images/sagas.png)
 
 A saga is a sequence of local transactions. Each local transaction updates the database and publishes a message or event to trigger the next local transaction in the saga. If a local transaction fails because it violates a business rule then the saga executes a series of compensating transactions that undo the changes that were made by the preceding local transactions.
 
@@ -1755,7 +1755,7 @@ In this tutorial, we will specifically focus on sharding.
 
 Sharding is a database architecture pattern related to _horizontal partitioning_, which is the practice of separating one table's rows into multiple different tables, known as _partitions_ or _shards_. Each partition has the same schema and columns, but also a subset of the shared data. Likewise, the data held in each is unique and independent of the data held in other partitions.
 
-![sharding](https://nandankumar.info/system-design/images/sharding.png)
+![sharding](https://nandan.dev/system-design/images/sharding.png)
 
 The justification for data sharding is that, after a certain point, it is cheaper and more feasible to scale horizontally by adding more machines than to scale it vertically by adding powerful servers. Sharding can be implemented at both application or the database level.
 
@@ -1817,7 +1817,7 @@ Let's first understand the problem we're trying to solve.
 
 In traditional hashing-based distribution methods, we use a hash function to hash our partition keys (i.e. request ID or IP). Then if we use the modulo against the total number of nodes (server or databases). This will give us the node where we want to route our request.
 
-![simple-hashing](https://nandankumar.info/system-design/images/simple-hashing.png)
+![simple-hashing](https://nandan.dev/system-design/images/simple-hashing.png)
 
 $$
 \begin{align*}
@@ -1851,7 +1851,7 @@ Now that we understand the problem, let's discuss consistent hashing in detail.
 
 Consistent Hashing is a distributed hashing scheme that operates independently of the number of nodes in a distributed hash table by assigning them a position on an abstract circle, or hash ring. This allows servers and objects to scale without affecting the overall system.
 
-![consistent-hashing](https://nandankumar.info/system-design/images/consistent-hashing.png)
+![consistent-hashing](https://nandan.dev/system-design/images/consistent-hashing.png)
 
 Using consistent hashing, only `K/N` data would require re-distributing.
 
@@ -1899,7 +1899,7 @@ In order to ensure a more evenly distributed load, we can introduce the idea of 
 
 Instead of assigning a single position to a node, the hash range is divided into multiple smaller ranges, and each physical node is assigned several of these smaller ranges. Each of these subranges is considered a VNode. Hence, virtual nodes are basically existing physical nodes mapped multiple times across the hash ring to minimize changes to a node's assigned range.
 
-![virtual-nodes](https://nandankumar.info/system-design/images/virtual-nodes.png)
+![virtual-nodes](https://nandan.dev/system-design/images/virtual-nodes.png)
 
 For this, we can use `k` number of hash functions.
 
@@ -1962,7 +1962,7 @@ Federation (or functional partitioning) splits up databases by function. The fed
 
 All of the components in a federation are tied together by one or more federal schemas that express the commonality of data throughout the federation. These federated schemas are used to specify the information that can be shared by the federation components and to provide a common basis for communication among them.
 
-![database-federation](https://nandankumar.info/system-design/images/database-federation.png)
+![database-federation](https://nandan.dev/system-design/images/database-federation.png)
 
 Federation also provides a cohesive, unified view of data derived from multiple sources. The data sources for federated systems can include databases and various other forms of structured and unstructured data.
 
@@ -1998,7 +1998,7 @@ Below are some disadvantages of federated databases:
 
 N-tier architecture divides an application into logical layers and physical tiers. Layers are a way to separate responsibilities and manage dependencies. Each layer has a specific responsibility. A higher layer can use services in a lower layer, but not the other way around.
 
-![n-tier-architecture](https://nandankumar.info/system-design/images/n-tier-architecture.png)
+![n-tier-architecture](https://nandan.dev/system-design/images/n-tier-architecture.png)
 
 Tiers are physically separated, running on separate machines. A tier can call to another tier directly, or use asynchronous messaging. Although each layer might be hosted in its own tier, that's not required. Several layers might be hosted on the same tier. Physically separating the tiers improves scalability and resiliency and adds latency from the additional network communication.
 
@@ -2051,7 +2051,7 @@ Below are some disadvantages of N-tier architecture:
 
 A message broker is a software that enables applications, systems, and services to communicate with each other and exchange information. The message broker does this by translating messages between formal messaging protocols. This allows interdependent services to _"talk"_ with one another directly, even if they were written in different languages or implemented on different platforms.
 
-![message-broker](https://nandankumar.info/system-design/images/message-broker.png)
+![message-broker](https://nandan.dev/system-design/images/message-broker.png)
 
 Message brokers can validate, store, route, and deliver messages to the appropriate destinations. They serve as intermediaries between other applications, allowing senders to issue messages without knowing where the receivers are, whether or not they are active, or how many of them there are. This facilitates the decoupling of processes and services within systems.
 
@@ -2059,8 +2059,8 @@ Message brokers can validate, store, route, and deliver messages to the appropri
 
 Message brokers offer two basic message distribution patterns or messaging styles:
 
-- **[Point-to-Point messaging](https://nandankumar.info/courses/system-design/message-queues)**: This is the distribution pattern utilized in message queues with a one-to-one relationship between the message's sender and receiver.
-- **[Publish-subscribe messaging](https://nandankumar.info/courses/system-design/publish-subscribe)**: In this message distribution pattern, often referred to as _"pub/sub"_, the producer of each message publishes it to a topic, and multiple message consumers subscribe to topics from which they want to receive messages.
+- **[Point-to-Point messaging](https://nandan.dev/courses/system-design/message-queues)**: This is the distribution pattern utilized in message queues with a one-to-one relationship between the message's sender and receiver.
+- **[Publish-subscribe messaging](https://nandan.dev/courses/system-design/publish-subscribe)**: In this message distribution pattern, often referred to as _"pub/sub"_, the producer of each message publishes it to a topic, and multiple message consumers subscribe to topics from which they want to receive messages.
 
 _We will discuss these messaging patterns in detail in the later tutorials._
 
@@ -2072,9 +2072,9 @@ Event streaming platforms offer more scalability than message brokers but fewer 
 
 ## Message brokers vs Enterprise Service Bus (ESB)
 
-[Enterprise Service Bus (ESB)](https://nandankumar.info/courses/system-design/enterprise-service-bus) infrastructure is complex and can be challenging to integrate and expensive to maintain. It's difficult to troubleshoot them when problems occur in production environments, they're not easy to scale, and updating is tedious.
+[Enterprise Service Bus (ESB)](https://nandan.dev/courses/system-design/enterprise-service-bus) infrastructure is complex and can be challenging to integrate and expensive to maintain. It's difficult to troubleshoot them when problems occur in production environments, they're not easy to scale, and updating is tedious.
 
-Whereas message brokers are a _"lightweight"_ alternative to ESBs that provide similar functionality, a mechanism for inter-service communication, at a lower cost. They're well-suited for use in the [microservices architectures](https://nandankumar.info/courses/system-design/monoliths-microservices#microservices) that have become more prevalent as ESBs have fallen out of favor.
+Whereas message brokers are a _"lightweight"_ alternative to ESBs that provide similar functionality, a mechanism for inter-service communication, at a lower cost. They're well-suited for use in the [microservices architectures](https://nandan.dev/courses/system-design/monoliths-microservices#microservices) that have become more prevalent as ESBs have fallen out of favor.
 
 ## Examples
 
@@ -2091,7 +2091,7 @@ A message queue is a form of service-to-service communication that facilitates a
 
 Queues are used to effectively manage requests in large-scale distributed systems. In small systems with minimal processing loads and small databases, writes can be predictably fast. However, in more complex and large systems writes can take an almost non-deterministic amount of time.
 
-![message-queue](https://nandankumar.info/system-design/images/message-queue.png)
+![message-queue](https://nandan.dev/system-design/images/message-queue.png)
 
 ## Working
 
@@ -2170,7 +2170,7 @@ Following are some widely used message queues:
 
 Similar to a message queue, publish-subscribe is also a form of service-to-service communication that facilitates asynchronous communication. In a pub/sub model, any message published to a topic is pushed immediately to all the subscribers of the topic.
 
-![publish-subscribe](https://nandankumar.info/system-design/images/publish-subscribe.png)
+![publish-subscribe](https://nandan.dev/system-design/images/publish-subscribe.png)
 
 The subscribers to the message topic often perform different functions, and can each do something different with the message in parallel. The publisher doesn't need to know who is using the information that it is broadcasting, and the subscribers don't need to know where the message comes from. This style of messaging is a bit different than message queues, where the component that sends the message often knows the destination it is sending to.
 
@@ -2230,7 +2230,7 @@ Here are some technologies commonly used for publish-subscribe:
 
 An Enterprise Service Bus (ESB) is an architectural pattern whereby a centralized software component performs integrations between applications. It performs transformations of data models, handles connectivity, performs message routing, converts communication protocols, and potentially manages the composition of multiple requests. The ESB can make these integrations and transformations available as a service interface for reuse by new applications.
 
-![enterprise-service-bus](https://nandankumar.info/system-design/images/enterprise-service-bus.png)
+![enterprise-service-bus](https://nandan.dev/system-design/images/enterprise-service-bus.png)
 
 ## Advantages
 
@@ -2265,7 +2265,7 @@ Below are some widely used Enterprise Service Bus (ESB) technologies:
 
 A monolith is a self-contained and independent application. It is built as a single unit and is responsible for not just a particular task, but can perform every step needed to satisfy a business need.
 
-![monolith](https://nandankumar.info/system-design/images/monolith.png)
+![monolith](https://nandan.dev/system-design/images/monolith.png)
 
 ### Advantages
 
@@ -2297,7 +2297,7 @@ This approach reduces the dependencies of a module in such as way that we can en
 
 A microservices architecture consists of a collection of small, autonomous services where each service is self-contained and should implement a single business capability within a bounded context. A bounded context is a natural division of business logic that provides an explicit boundary within which a domain model exists.
 
-![microservices](https://nandankumar.info/system-design/images/microservices.png)
+![microservices](https://nandan.dev/system-design/images/microservices.png)
 
 Each service has a separate codebase, which can be managed by a small development team. Services can be deployed independently and a team can update an existing service without rebuilding and redeploying the entire application.
 
@@ -2346,7 +2346,7 @@ Let's discuss some microservices best practices:
 - Data storage should be private to the service that owns the data
 - Avoid coupling between services. Causes of coupling include shared database schemas and rigid communication protocols.
 - Decentralize everything. Individual teams are responsible for designing and building services. Avoid sharing code or data schemas.
-- Fail fast by using a [circuit breaker](https://nandankumar.info/courses/system-design/circuit-breaker) to achieve fault tolerance.
+- Fail fast by using a [circuit breaker](https://nandan.dev/courses/system-design/circuit-breaker) to achieve fault tolerance.
 - Ensure that the API changes are backward compatible.
 
 ### Pitfalls
@@ -2359,7 +2359,7 @@ Below are some common pitfalls of microservices architecture:
 - Lack of Business Alignment.
 - Lack of clear ownership.
 - Lack of idempotency.
-- Trying to do everything [ACID instead of BASE](https://nandankumar.info/courses/system-design/acid-and-base-consistency-models).
+- Trying to do everything [ACID instead of BASE](https://nandan.dev/courses/system-design/acid-and-base-consistency-models).
 - Lack of design for fault tolerance may result in cascading failures.
 
 ## Beware of the distributed monolith
@@ -2384,7 +2384,7 @@ Service-oriented architecture (SOA) defines a way to make software components re
 
 ## Why you don't need microservices
 
-![architecture-range](https://nandankumar.info/system-design/images/architecture-range.png)
+![architecture-range](https://nandan.dev/system-design/images/architecture-range.png)
 
 So, you might be wondering, monoliths seem like a bad idea to begin with, why would anyone use that?
 
@@ -2420,7 +2420,7 @@ Event-driven architectures have three key components:
 - **Event routers**: Filters and pushes the events to consumers.
 - **Event consumers**: Uses events to reflect changes in the system.
 
-![event-driven-architecture](https://nandankumar.info/system-design/images/event-driven-architecture.png)
+![event-driven-architecture](https://nandan.dev/system-design/images/event-driven-architecture.png)
 
 _Note: Dots in the diagram represents different events in the system._
 
@@ -2428,10 +2428,10 @@ _Note: Dots in the diagram represents different events in the system._
 
 There are several ways to implement the event-driven architecture, and which method we use depends on the use case but here are some common examples:
 
-- [Sagas](https://nandankumar.info/courses/system-design/distributed-transactions#sagas)
-- [Publish-Subscribe](https://nandankumar.info/courses/system-design/publish-subscribe)
-- [Event Sourcing](https://nandankumar.info/courses/system-design/event-sourcing)
-- [Command and Query Responsibility Segregation (CQRS)](https://nandankumar.info/courses/system-design/command-and-query-responsibility-segregation)
+- [Sagas](https://nandan.dev/courses/system-design/distributed-transactions#sagas)
+- [Publish-Subscribe](https://nandan.dev/courses/system-design/publish-subscribe)
+- [Event Sourcing](https://nandan.dev/courses/system-design/event-sourcing)
+- [Command and Query Responsibility Segregation (CQRS)](https://nandan.dev/courses/system-design/command-and-query-responsibility-segregation)
 
 _Note: Each of these methods is discussed separately._
 
@@ -2476,13 +2476,13 @@ Here are some widely used technologies for implementing event-driven architectur
 
 Instead of storing just the current state of the data in a domain, use an append-only store to record the full series of actions taken on that data. The store acts as the system of record and can be used to materialize the domain objects.
 
-![event-sourcing](https://nandankumar.info/system-design/images/event-sourcing.png)
+![event-sourcing](https://nandan.dev/system-design/images/event-sourcing.png)
 
 This can simplify tasks in complex domains, by avoiding the need to synchronize the data model and the business domain, while improving performance, scalability, and responsiveness. It can also provide consistency for transactional data, and maintain full audit trails and history that can enable compensating actions.
 
 ## Event sourcing vs Event-Driven Architecture (EDA)
 
-Event sourcing is seemingly constantly being confused with [Event-driven Architecture (EDA)](https://nandankumar.info/courses/system-design/event-driven-architecture). Event-driven architecture is about using events to communicate between service boundaries. Generally, leveraging a message broker to publish and consume events asynchronously within other boundaries.
+Event sourcing is seemingly constantly being confused with [Event-driven Architecture (EDA)](https://nandan.dev/courses/system-design/event-driven-architecture). Event-driven architecture is about using events to communicate between service boundaries. Generally, leveraging a message broker to publish and consume events asynchronously within other boundaries.
 
 Whereas, event sourcing is about using events as a state, which is a different approach to storing data. Rather than storing the current state, we're instead going to be storing events. Also, event sourcing is one of the several patterns to implement an event-driven architecture.
 
@@ -2509,7 +2509,7 @@ Command Query Responsibility Segregation (CQRS) is an architectural pattern that
 
 In CQRS, a _command_ is an instruction, a directive to perform a specific task. It is an intention to change something and doesn't return a value, only an indication of success or failure. And, a _query_ is a request for information that doesn't change the system's state or cause any side effects.
 
-![command-and-query-responsibility-segregation](https://nandankumar.info/system-design/images/command-and-query-responsibility-segregation.png)
+![command-and-query-responsibility-segregation](https://nandan.dev/system-design/images/command-and-query-responsibility-segregation.png)
 
 The core principle of CQRS is the separation of commands and queries. They perform fundamentally different roles within a system, and separating them means that each can be optimized as needed, which distributed systems can really benefit from.
 
@@ -2551,7 +2551,7 @@ Here are some scenarios where CQRS will be helpful:
 
 The API Gateway is an API management tool that sits between a client and a collection of backend services. It is a single entry point into a system that encapsulates the internal system architecture and provides an API that is tailored to each client. It also has other responsibilities such as authentication, monitoring, load balancing, caching, throttling, logging, etc.
 
-![api-gateway](https://nandankumar.info/system-design/images/api-gateway.png)
+![api-gateway](https://nandan.dev/system-design/images/api-gateway.png)
 
 ## Why do we need an API Gateway?
 
@@ -2562,15 +2562,15 @@ The granularity of APIs provided by microservices is often different than what a
 Below are some desired features of an API Gateway:
 
 - Authentication and Authorization
-- [Service discovery](https://nandankumar.info/courses/system-design/service-discovery)
-- [Reverse Proxy](https://nandankumar.info/courses/system-design/proxy#reverse-proxy)
-- [Caching](https://nandankumar.info/courses/system-design/caching)
+- [Service discovery](https://nandan.dev/courses/system-design/service-discovery)
+- [Reverse Proxy](https://nandan.dev/courses/system-design/proxy#reverse-proxy)
+- [Caching](https://nandan.dev/courses/system-design/caching)
 - Security
-- Retry and [Circuit breaking](https://nandankumar.info/courses/system-design/circuit-breaker)
-- [Load balancing](https://nandankumar.info/courses/system-design/load-balancing)
+- Retry and [Circuit breaking](https://nandan.dev/courses/system-design/circuit-breaker)
+- [Load balancing](https://nandan.dev/courses/system-design/load-balancing)
 - Logging, Tracing
 - API composition
-- [Rate limiting](https://nandankumar.info/courses/system-design/rate-limiting) and throttling
+- [Rate limiting](https://nandan.dev/courses/system-design/rate-limiting) and throttling
 - Versioning
 - Routing
 - IP whitelisting or blacklisting
@@ -2599,11 +2599,11 @@ In the Backend For Frontend (BFF) pattern, we create separate backend services t
 
 Also, sometimes the output of data returned by the microservices to the front end is not in the exact format or filtered as needed by the front end. To solve this issue, the frontend should have some logic to reformat the data, and therefore, we can use BFF to shift some of this logic to the intermediate layer.
 
-![backend-for-frontend](https://nandankumar.info/system-design/images/api-gateway/backend-for-frontend.png)
+![backend-for-frontend](https://nandan.dev/system-design/images/api-gateway/backend-for-frontend.png)
 
 The primary function of the backend for the frontend pattern is to get the required data from the appropriate service, format the data, and sent it to the frontend.
 
-_[GraphQL](https://nandankumar.info/courses/system-design/rest-graphql-grpc#graphql) performs really well as a backend for frontend (BFF)._
+_[GraphQL](https://nandan.dev/courses/system-design/rest-graphql-grpc#graphql) performs really well as a backend for frontend (BFF)._
 
 ### When to use this pattern?
 
@@ -2903,7 +2903,7 @@ HTTP Long polling is a technique used to push information to a client as soon as
 
 In Long polling, the server does not close the connection once it receives a request from the client. Instead, the server responds only if any new message is available or a timeout threshold is reached.
 
-![long-polling](https://nandankumar.info/system-design/images/long-polling.png)
+![long-polling](https://nandan.dev/system-design/images/long-polling.png)
 
 Once the client receives a response, it immediately sends a new request to the server to have a new pending connection to send data to the client, and the operation is repeated. With this approach, the server emulates a real-time server push feature.
 
@@ -2937,7 +2937,7 @@ WebSocket provides full-duplex communication channels over a single TCP connecti
 
 The client establishes a WebSocket connection through a process known as the WebSocket handshake. If the process succeeds, then the server and client can exchange data in both directions at any time. The WebSocket protocol enables the communication between a client and a server with lower overheads, facilitating real-time data transfer from and to the server.
 
-![websockets](https://nandankumar.info/system-design/images/websockets.png)
+![websockets](https://nandan.dev/system-design/images/websockets.png)
 
 This is made possible by providing a standardized way for the server to send content to the client without being asked and allowing for messages to be passed back and forth while keeping the connection open.
 
@@ -2971,7 +2971,7 @@ Let's discuss some disadvantages of WebSockets:
 
 Server-Sent Events (SSE) is a way of establishing long-term communication between client and server that enables the server to proactively push data to the client.
 
-![server-sent-events](https://nandankumar.info/system-design/images/server-sent-events.png)
+![server-sent-events](https://nandan.dev/system-design/images/server-sent-events.png)
 
 It is unidirectional, meaning once the client sends the request it can only receive the responses without the ability to send new requests over the same connection.
 
@@ -3007,7 +3007,7 @@ For example, San Francisco with coordinates `37.7564, -122.4016` can be represen
 
 Geohash is a hierarchical spatial index that uses Base-32 alphabet encoding, the first character in a geohash identifies the initial location as one of the 32 cells. This cell will also contain 32 cells. This means that to represent a point, the world is recursively divided into smaller and smaller cells with each additional bit until the desired precision is attained. The precision factor also determines the size of the cell.
 
-![geohashing](https://nandankumar.info/system-design/images/geohashing.png)
+![geohashing](https://nandan.dev/system-design/images/geohashing.png)
 
 Geohashing guarantees that points are spatially closer if their Geohashes share a longer prefix which means the more characters in the string, the more precise the location. For example, geohashes `9q8yy9mf` and `9q8yy9vx` are spatially closer as they share the prefix `9q8yy9`.
 
@@ -3051,7 +3051,7 @@ Geohashing is widely used and it is supported by popular databases.
 
 A quadtree is a tree data structure in which each internal node has exactly four children. They are often used to partition a two-dimensional space by recursively subdividing it into four quadrants or regions. Each child or leaf node stores spatial information. Quadtrees are the two-dimensional analog of [Octrees](https://en.wikipedia.org/wiki/Octree) which are used to partition three-dimensional space.
 
-![quadtree](https://nandankumar.info/system-design/images/quadtree.png)
+![quadtree](https://nandan.dev/system-design/images/quadtree.png)
 
 ### Types of Quadtrees
 
@@ -3067,7 +3067,7 @@ Quadtrees may be classified according to the type of data they represent, includ
 
 Aren't latitudes and longitudes enough? Why do we need quadtrees? While in theory using latitude and longitude we can determine things such as how close points are to each other using [euclidean distance](https://en.wikipedia.org/wiki/Euclidean_distance), for practical use cases it is simply not scalable because of its CPU-intensive nature with large data sets.
 
-![quadtree-subdivision](https://nandankumar.info/system-design/images/quadtree-subdivision.png)
+![quadtree-subdivision](https://nandan.dev/system-design/images/quadtree-subdivision.png)
 
 Quadtrees enable us to search points within a two-dimensional range efficiently, where those points are defined as latitude/longitude coordinates or as cartesian (x, y) coordinates. Additionally, we can save further computation by only subdividing a node after a certain threshold. And with the application of mapping algorithms such as the [Hilbert curve](https://en.wikipedia.org/wiki/Hilbert_curve), we can easily improve range query performance.
 
@@ -3085,7 +3085,7 @@ Below are some common uses of quadtrees:
 
 The circuit breaker is a design pattern used to detect failures and encapsulates the logic of preventing a failure from constantly recurring during maintenance, temporary external system failure, or unexpected system difficulties.
 
-![circuit-breaker](https://nandankumar.info/system-design/images/circuit-breaker.png)
+![circuit-breaker](https://nandan.dev/system-design/images/circuit-breaker.png)
 
 The basic idea behind the circuit breaker is very simple. We wrap a protected function call in a circuit breaker object, which monitors for failures. Once the failures reach a certain threshold, the circuit breaker trips, and all further calls to the circuit breaker return with an error, without the protected call being made at all. Usually, we'll also want some kind of monitor alert if the circuit breaker trips.
 
@@ -3113,7 +3113,7 @@ In this state, the circuit breaker allows a limited number of requests from the 
 
 Rate limiting refers to preventing the frequency of an operation from exceeding a defined limit. In large-scale systems, rate limiting is commonly used to protect underlying services and resources. Rate limiting is generally used as a defensive mechanism in distributed systems, so that shared resources can maintain availability. It also protects our APIs from unintended or malicious overuse by limiting the number of requests that can reach our API in a given period of time.
 
-![rate-limiting](https://nandankumar.info/system-design/images/rate-limiting.png)
+![rate-limiting](https://nandan.dev/system-design/images/rate-limiting.png)
 
 ## Why do we need Rate Limiting?
 
@@ -3178,13 +3178,13 @@ There are two main service discovery patterns:
 
 ### Client-side discovery
 
-![client-side-service-discovery](https://nandankumar.info/system-design/images/client-side-service-discovery.png)
+![client-side-service-discovery](https://nandan.dev/system-design/images/client-side-service-discovery.png)
 
 In this approach, the client obtains the location of another service by querying a service registry which is responsible for managing and storing the network locations of all the services.
 
 ### Server-side discovery
 
-![server-side-service-discovery](https://nandankumar.info/system-design/images/server-side-service-discovery.png)
+![server-side-service-discovery](https://nandan.dev/system-design/images/server-side-service-discovery.png)
 
 In this approach, we use an intermediate component such as a load balancer. The client makes a request to the service via a load balancer which then forwards the request to an available service instance.
 
@@ -3260,7 +3260,7 @@ Disaster recovery can have the following benefits:
 
 Let's discuss some important terms relevantly for disaster recovery:
 
-![disaster-recovery](https://nandankumar.info/system-design/images/disaster-recovery.png)
+![disaster-recovery](https://nandan.dev/system-design/images/disaster-recovery.png)
 
 ### RTO
 
@@ -3336,7 +3336,7 @@ Containers are lightweight and allow us to use just the computing resources we n
 
 ## Virtualization vs Containerization
 
-![virtualization-vs-containerization](https://nandankumar.info/system-design/images/virtualization-vs-containerization.png)
+![virtualization-vs-containerization](https://nandan.dev/system-design/images/virtualization-vs-containerization.png)
 
 In traditional virtualization, a hypervisor virtualizes physical hardware. The result is that each virtual machine contains a guest OS, a virtual copy of the hardware that the OS requires to run, and an application and its associated libraries and dependencies.
 
@@ -3363,7 +3363,7 @@ The OAuth 2.0 protocol defines the following entities:
 
 Let's learn how OAuth 2.0 works:
 
-![oauth2](https://nandankumar.info/system-design/images/oauth2.png)
+![oauth2](https://nandan.dev/system-design/images/oauth2.png)
 
 1. The client requests authorization from the Authorization Server, supplying the client id and secret as identification. It also provides the scopes and an endpoint URI to send the Access Token or the Authorization Code.
 2. The Authorization Server authenticates the client and verifies that the requested scopes are permitted.
@@ -3432,7 +3432,7 @@ SAML specifically enables identity federation, making it possible for identity p
 
 Now, let's discuss how Single Sign-On works:
 
-![sso](https://nandankumar.info/system-design/images/sso.png)
+![sso](https://nandan.dev/system-design/images/sso.png)
 
 1. The user requests a resource from their desired application.
 2. The application redirects the user to the Identity Provider (IdP) for authentication.
@@ -3628,7 +3628,7 @@ A URL shortener service creates an alias or a short URL for a long URL. Users ar
 
 For example, the following long URL can be changed to a shorter URL.
 
-**Long URL**: [https://nandankumar.info/courses/system-design/url-shortener](https://nandankumar.info/courses/system-design/url-shortener)
+**Long URL**: [https://nandan.dev/courses/system-design/url-shortener](https://nandan.dev/courses/system-design/url-shortener)
 
 **Short URL**: [https://bit.ly/3I71d3o](https://bit.ly/3I71d3o)
 
@@ -3755,7 +3755,7 @@ Here is our high-level estimate:
 
 Next, we will focus on the data model design. Here is our database schema:
 
-![url-shortener-datamodel](https://nandankumar.info/system-design/images/url-shortener-datamodel.png)
+![url-shortener-datamodel](https://nandan.dev/system-design/images/url-shortener-datamodel.png)
 
 Initially, we can get started with just two tables:
 
@@ -3765,13 +3765,13 @@ Stores user's details such as `name`, `email`, `createdAt`, etc.
 
 **urls**
 
-Contains the new short URL's properties such as `expiration`, `hash`, `originalURL`, and `userID` of the user who created the short URL. We can also use the `hash` column as an [index](https://nandankumar.info/courses/system-design/indexes) to improve the query performance.
+Contains the new short URL's properties such as `expiration`, `hash`, `originalURL`, and `userID` of the user who created the short URL. We can also use the `hash` column as an [index](https://nandan.dev/courses/system-design/indexes) to improve the query performance.
 
 ### What kind of database should we use?
 
 Since the data is not strongly relational, NoSQL databases such as [Amazon DynamoDB](https://aws.amazon.com/dynamodb), [Apache Cassandra](https://cassandra.apache.org/_/index.html), or [MongoDB](https://www.mongodb.com) will be a better choice here, if we do decide to use an SQL database then we can use something like [Azure SQL Database](https://azure.microsoft.com/en-in/products/azure-sql/database) or [Amazon RDS](https://aws.amazon.com/rds).
 
-_For more details, refer to [SQL vs NoSQL](https://nandankumar.info/courses/system-design/sql-vs-nosql-databases)._
+_For more details, refer to [SQL vs NoSQL](https://nandan.dev/courses/system-design/sql-vs-nosql-databases)._
 
 ## API design
 
@@ -3924,15 +3924,15 @@ While 390 GB seems like a lot for this simple use case, it is important to remem
 
 ### Caching
 
-Now, let's talk about [caching](https://nandankumar.info/courses/system-design/caching). As per our estimations, we will require around ~35 GB of memory per day to cache 20% of the incoming requests to our services. For this use case, we can use [Redis](https://redis.io) or [Memcached](https://memcached.org) servers alongside our API server.
+Now, let's talk about [caching](https://nandan.dev/courses/system-design/caching). As per our estimations, we will require around ~35 GB of memory per day to cache 20% of the incoming requests to our services. For this use case, we can use [Redis](https://redis.io) or [Memcached](https://memcached.org) servers alongside our API server.
 
-_For more details, refer to [caching](https://nandankumar.info/courses/system-design/caching)._
+_For more details, refer to [caching](https://nandan.dev/courses/system-design/caching)._
 
 ### Design
 
 Now that we have identified some core components, let's do the first draft of our system design.
 
-![url-shortener-basic-design](https://nandankumar.info/system-design/images/url-shortener-basic-design.png)
+![url-shortener-basic-design](https://nandan.dev/system-design/images/url-shortener-basic-design.png)
 
 Here's how it works:
 
@@ -3955,16 +3955,16 @@ It's time to discuss the finer details of our design.
 
 ### Data Partitioning
 
-To scale out our databases we will need to partition our data. Horizontal partitioning (aka [Sharding](https://nandankumar.info/courses/system-design/sharding)) can be a good first step. We can use partitions schemes such as:
+To scale out our databases we will need to partition our data. Horizontal partitioning (aka [Sharding](https://nandan.dev/courses/system-design/sharding)) can be a good first step. We can use partitions schemes such as:
 
 - Hash-Based Partitioning
 - List-Based Partitioning
 - Range Based Partitioning
 - Composite Partitioning
 
-The above approaches can still cause uneven data and load distribution, we can solve this using [Consistent hashing](https://nandankumar.info/courses/system-design/consistent-hashing).
+The above approaches can still cause uneven data and load distribution, we can solve this using [Consistent hashing](https://nandan.dev/courses/system-design/consistent-hashing).
 
-_For more details, refer to [Sharding](https://nandankumar.info/courses/system-design/sharding) and [Consistent Hashing](https://nandankumar.info/courses/system-design/consistent-hashing)._
+_For more details, refer to [Sharding](https://nandan.dev/courses/system-design/sharding) and [Consistent Hashing](https://nandan.dev/courses/system-design/consistent-hashing)._
 
 ### Database cleanup
 
@@ -3980,7 +3980,7 @@ For passive cleanup, we can remove the entry when a user tries to access an expi
 
 ### Cache
 
-Now let us talk about [caching](https://nandankumar.info/courses/system-design/caching).
+Now let us talk about [caching](https://nandan.dev/courses/system-design/caching).
 
 **Which cache eviction policy to use?**
 
@@ -4000,11 +4000,11 @@ Recording analytics and metrics is one of our extended requirements. We can stor
 
 For security, we can introduce private URLs and authorization. A separate table can be used to store user ids that have permission to access a specific URL. If a user does not have proper permissions, we can return an HTTP 401 (Unauthorized) error.
 
-We can also use an [API Gateway](https://nandankumar.info/courses/system-design/api-gateway) as they can support capabilities like authorization, rate limiting, and load balancing out of the box.
+We can also use an [API Gateway](https://nandan.dev/courses/system-design/api-gateway) as they can support capabilities like authorization, rate limiting, and load balancing out of the box.
 
 ## Identify and resolve bottlenecks
 
-![url-shortener-advanced-design](https://nandankumar.info/system-design/images/url-shortener-advanced-design.png)
+![url-shortener-advanced-design](https://nandan.dev/system-design/images/url-shortener-advanced-design.png)
 
 Let us identify and resolve bottlenecks such as single points of failure in our design:
 
@@ -4017,7 +4017,7 @@ Let us identify and resolve bottlenecks such as single points of failure in our 
 To make our system more resilient we can do the following:
 
 - Running multiple instances of our Servers and Key Generation Service.
-- Introducing [load balancers](https://nandankumar.info/courses/system-design/load-balancing) between clients, servers, databases, and cache servers.
+- Introducing [load balancers](https://nandan.dev/courses/system-design/load-balancing) between clients, servers, databases, and cache servers.
 - Using multiple read replicas for our database as it's a read-heavy system.
 - Standby replica for our key database in case it fails.
 - Multiple instances and replicas for our distributed cache.
@@ -4123,7 +4123,7 @@ Here is our high-level estimate:
 
 This is the general data model which reflects our requirements.
 
-![whatsapp-datamodel](https://nandankumar.info/system-design/images/whatsapp-datamodel.png)
+![whatsapp-datamodel](https://nandan.dev/system-design/images/whatsapp-datamodel.png)
 
 We have the following tables:
 
@@ -4240,7 +4240,7 @@ Now let us do a high-level design of our system.
 
 ### Architecture
 
-We will be using [microservices architecture](https://nandankumar.info/courses/system-design/monoliths-microservices#microservices) since it will make it easier to horizontally scale and decouple our services. Each service will have ownership of its own data model. Let's try to divide our system into some core services.
+We will be using [microservices architecture](https://nandan.dev/courses/system-design/monoliths-microservices#microservices) since it will make it easier to horizontally scale and decouple our services. Each service will have ownership of its own data model. Let's try to divide our system into some core services.
 
 **User Service**
 
@@ -4264,11 +4264,11 @@ This service will handle the media (images, videos, files, etc.) uploads. It wil
 
 **What about inter-service communication and service discovery?**
 
-Since our architecture is microservices-based, services will be communicating with each other as well. Generally, REST or HTTP performs well but we can further improve the performance using [gRPC](https://nandankumar.info/courses/system-design/rest-graphql-grpc#grpc) which is more lightweight and efficient.
+Since our architecture is microservices-based, services will be communicating with each other as well. Generally, REST or HTTP performs well but we can further improve the performance using [gRPC](https://nandan.dev/courses/system-design/rest-graphql-grpc#grpc) which is more lightweight and efficient.
 
-[Service discovery](https://nandankumar.info/courses/system-design/service-discovery) is another thing we will have to take into account. We can also use a service mesh that enables managed, observable, and secure communication between individual services.
+[Service discovery](https://nandan.dev/courses/system-design/service-discovery) is another thing we will have to take into account. We can also use a service mesh that enables managed, observable, and secure communication between individual services.
 
-_Note: Learn more about [REST, GraphQL, gRPC](https://nandankumar.info/courses/system-design/rest-graphql-grpc) and how they compare with each other._
+_Note: Learn more about [REST, GraphQL, gRPC](https://nandan.dev/courses/system-design/rest-graphql-grpc) and how they compare with each other._
 
 ### Real-time messaging
 
@@ -4276,15 +4276,15 @@ How do we efficiently send and receive messages? We have two different options:
 
 **Pull model**
 
-The client can periodically send an HTTP request to servers to check if there are any new messages. This can be achieved via something like [Long polling](https://nandankumar.info/courses/system-design/long-polling-websockets-server-sent-events#long-polling).
+The client can periodically send an HTTP request to servers to check if there are any new messages. This can be achieved via something like [Long polling](https://nandan.dev/courses/system-design/long-polling-websockets-server-sent-events#long-polling).
 
 **Push model**
 
-The client opens a long-lived connection with the server and once new data is available it will be pushed to the client. We can use [WebSockets](https://nandankumar.info/courses/system-design/long-polling-websockets-server-sent-events#websockets) or [Server-Sent Events (SSE)](https://nandankumar.info/courses/system-design/long-polling-websockets-server-sent-events#server-sent-events-sse) for this.
+The client opens a long-lived connection with the server and once new data is available it will be pushed to the client. We can use [WebSockets](https://nandan.dev/courses/system-design/long-polling-websockets-server-sent-events#websockets) or [Server-Sent Events (SSE)](https://nandan.dev/courses/system-design/long-polling-websockets-server-sent-events#server-sent-events-sse) for this.
 
-The pull model approach is not scalable as it will create unnecessary request overhead on our servers and most of the time the response will be empty, thus wasting our resources. To minimize latency, using the push model with [WebSockets](https://nandankumar.info/courses/system-design/long-polling-websockets-server-sent-events#websockets) is a better choice because then we can push data to the client once it's available without any delay, given the connection is open with the client. Also, WebSockets provide full-duplex communication, unlike [Server-Sent Events (SSE)](https://nandankumar.info/courses/system-design/long-polling-websockets-server-sent-events#server-sent-events-sse) which are only unidirectional.
+The pull model approach is not scalable as it will create unnecessary request overhead on our servers and most of the time the response will be empty, thus wasting our resources. To minimize latency, using the push model with [WebSockets](https://nandan.dev/courses/system-design/long-polling-websockets-server-sent-events#websockets) is a better choice because then we can push data to the client once it's available without any delay, given the connection is open with the client. Also, WebSockets provide full-duplex communication, unlike [Server-Sent Events (SSE)](https://nandan.dev/courses/system-design/long-polling-websockets-server-sent-events#server-sent-events-sse) which are only unidirectional.
 
-_Note: Learn more about [Long polling, WebSockets, Server-Sent Events (SSE)](https://nandankumar.info/courses/system-design/long-polling-websockets-server-sent-events)._
+_Note: Learn more about [Long polling, WebSockets, Server-Sent Events (SSE)](https://nandan.dev/courses/system-design/long-polling-websockets-server-sent-events)._
 
 ### Last seen
 
@@ -4304,7 +4304,7 @@ Another way to implement this is to track the latest action of the user, once th
 
 Once a message is sent in a chat or a group, we will first check if the recipient is active or not, we can get this information by taking the user's active connection and last seen into consideration.
 
-If the recipient is not active, the chat service will add an event to a [message queue](https://nandankumar.info/courses/system-design/message-queues) with additional metadata such as the client's device platform which will be used to route the notification to the correct platform later on.
+If the recipient is not active, the chat service will add an event to a [message queue](https://nandan.dev/courses/system-design/message-queues) with additional metadata such as the client's device platform which will be used to route the notification to the correct platform later on.
 
 The notification service will then consume the event from the message queue and forward the request to [Firebase Cloud Messaging (FCM)](https://firebase.google.com/docs/cloud-messaging) or [Apple Push Notification Service (APNS)](https://developer.apple.com/documentation/usernotifications) based on the client's device platform (Android, iOS, web, etc). We can also add support for email and SMS.
 
@@ -4312,7 +4312,7 @@ The notification service will then consume the event from the message queue and 
 
 Since most message queues provide best-effort ordering which ensures that messages are generally delivered in the same order as they're sent and that a message is delivered at least once which is an important part of our service functionality.
 
-While this seems like a classic [publish-subscribe](https://nandankumar.info/courses/system-design/publish-subscribe) use case, it is actually not as mobile devices and browsers each have their own way of handling push notifications. Usually, notifications are handled externally via Firebase Cloud Messaging (FCM) or Apple Push Notification Service (APNS) unlike message fan-out which we commonly see in backend services. We can use something like [Amazon SQS](https://aws.amazon.com/sqs) or [RabbitMQ](https://www.rabbitmq.com) to support this functionality.
+While this seems like a classic [publish-subscribe](https://nandan.dev/courses/system-design/publish-subscribe) use case, it is actually not as mobile devices and browsers each have their own way of handling push notifications. Usually, notifications are handled externally via Firebase Cloud Messaging (FCM) or Apple Push Notification Service (APNS) unlike message fan-out which we commonly see in backend services. We can use something like [Amazon SQS](https://aws.amazon.com/sqs) or [RabbitMQ](https://www.rabbitmq.com) to support this functionality.
 
 ### Read receipts
 
@@ -4322,7 +4322,7 @@ Handling read receipts can be tricky, for this use case we can wait for some sor
 
 Now that we have identified some core components, let's do the first draft of our system design.
 
-![whatsapp-basic-design](https://nandankumar.info/system-design/images/whatsapp-basic-design.png)
+![whatsapp-basic-design](https://nandan.dev/system-design/images/whatsapp-basic-design.png)
 
 ## Detailed design
 
@@ -4330,16 +4330,16 @@ It's time to discuss our design decisions in detail.
 
 ### Data Partitioning
 
-To scale out our databases we will need to partition our data. Horizontal partitioning (aka [Sharding](https://nandankumar.info/courses/system-design/sharding)) can be a good first step. We can use partitions schemes such as:
+To scale out our databases we will need to partition our data. Horizontal partitioning (aka [Sharding](https://nandan.dev/courses/system-design/sharding)) can be a good first step. We can use partitions schemes such as:
 
 - Hash-Based Partitioning
 - List-Based Partitioning
 - Range Based Partitioning
 - Composite Partitioning
 
-The above approaches can still cause uneven data and load distribution, we can solve this using [Consistent hashing](https://nandankumar.info/courses/system-design/consistent-hashing).
+The above approaches can still cause uneven data and load distribution, we can solve this using [Consistent hashing](https://nandan.dev/courses/system-design/consistent-hashing).
 
-_For more details, refer to [Sharding](https://nandankumar.info/courses/system-design/sharding) and [Consistent Hashing](https://nandankumar.info/courses/system-design/consistent-hashing)._
+_For more details, refer to [Sharding](https://nandan.dev/courses/system-design/sharding) and [Consistent Hashing](https://nandan.dev/courses/system-design/consistent-hashing)._
 
 ### Caching
 
@@ -4357,13 +4357,13 @@ We can use solutions like [Redis](https://redis.io) or [Memcached](https://memca
 
 Whenever there is a cache miss, our servers can hit the database directly and update the cache with the new entries.
 
-_For more details, refer to [Caching](https://nandankumar.info/courses/system-design/caching)._
+_For more details, refer to [Caching](https://nandan.dev/courses/system-design/caching)._
 
 ### Media access and storage
 
 As we know, most of our storage space will be used for storing media files such as images, videos, or other files. Our media service will be handling both access and storage of the user media files.
 
-But where can we store files at scale? Well, [object storage](https://nandankumar.info/courses/system-design/storage#object-storage) is what we're looking for. Object stores break data files up into pieces called objects. It then stores those objects in a single repository, which can be spread out across multiple networked systems. We can also use distributed file storage such as [HDFS](https://nandankumar.info/courses/system-design/storage#hdfs) or [GlusterFS](https://www.gluster.org).
+But where can we store files at scale? Well, [object storage](https://nandan.dev/courses/system-design/storage#object-storage) is what we're looking for. Object stores break data files up into pieces called objects. It then stores those objects in a single repository, which can be spread out across multiple networked systems. We can also use distributed file storage such as [HDFS](https://nandan.dev/courses/system-design/storage#hdfs) or [GlusterFS](https://www.gluster.org).
 
 _Fun fact: WhatsApp deletes media on its servers once it has been downloaded by the user._
 
@@ -4371,11 +4371,11 @@ We can use object stores like [Amazon S3](https://aws.amazon.com/s3), [Azure Blo
 
 ### Content Delivery Network (CDN)
 
-[Content Delivery Network (CDN)](https://nandankumar.info/courses/system-design/content-delivery-network) increases content availability and redundancy while reducing bandwidth costs. Generally, static files such as images, and videos are served from CDN. We can use services like [Amazon CloudFront](https://aws.amazon.com/cloudfront) or [Cloudflare CDN](https://www.cloudflare.com/cdn) for this use case.
+[Content Delivery Network (CDN)](https://nandan.dev/courses/system-design/content-delivery-network) increases content availability and redundancy while reducing bandwidth costs. Generally, static files such as images, and videos are served from CDN. We can use services like [Amazon CloudFront](https://aws.amazon.com/cloudfront) or [Cloudflare CDN](https://www.cloudflare.com/cdn) for this use case.
 
 ### API gateway
 
-Since we will be using multiple protocols like HTTP, WebSocket, TCP/IP, deploying multiple L4 (transport layer) or L7 (application layer) type load balancers separately for each protocol will be expensive. Instead, we can use an [API Gateway](https://nandankumar.info/courses/system-design/api-gateway) that supports multiple protocols without any issues.
+Since we will be using multiple protocols like HTTP, WebSocket, TCP/IP, deploying multiple L4 (transport layer) or L7 (application layer) type load balancers separately for each protocol will be expensive. Instead, we can use an [API Gateway](https://nandan.dev/courses/system-design/api-gateway) that supports multiple protocols without any issues.
 
 API Gateway can also offer other features such as authentication, authorization, rate limiting, throttling, and API versioning which will improve the quality of our services.
 
@@ -4383,7 +4383,7 @@ We can use services like [Amazon API Gateway](https://aws.amazon.com/api-gateway
 
 ## Identify and resolve bottlenecks
 
-![whatsapp-advanced-design](https://nandankumar.info/system-design/images/whatsapp-advanced-design.png)
+![whatsapp-advanced-design](https://nandan.dev/system-design/images/whatsapp-advanced-design.png)
 
 Let us identify and resolve bottlenecks such as single points of failure in our design:
 
@@ -4399,11 +4399,11 @@ Let us identify and resolve bottlenecks such as single points of failure in our 
 To make our system more resilient we can do the following:
 
 - Running multiple instances of each of our services.
-- Introducing [load balancers](https://nandankumar.info/courses/system-design/load-balancing) between clients, servers, databases, and cache servers.
+- Introducing [load balancers](https://nandan.dev/courses/system-design/load-balancing) between clients, servers, databases, and cache servers.
 - Using multiple read replicas for our databases.
 - Multiple instances and replicas for our distributed cache.
 - We can have a standby replica of our API Gateway.
-- Exactly once delivery and message ordering is challenging in a distributed system, we can use a dedicated [message broker](https://nandankumar.info/courses/system-design/message-brokers) such as [Apache Kafka](https://kafka.apache.org) or [NATS](https://nats.io) to make our notification system more robust.
+- Exactly once delivery and message ordering is challenging in a distributed system, we can use a dedicated [message broker](https://nandan.dev/courses/system-design/message-brokers) such as [Apache Kafka](https://kafka.apache.org) or [NATS](https://nats.io) to make our notification system more robust.
 - We can add media processing and compression capabilities to the media service to compress large files similar to WhatsApp which will save a lot of storage space and reduce cost.
 - We can create a group service separate from the chat service to further decouple our services.
 
@@ -4509,7 +4509,7 @@ Here is our high-level estimate:
 
 This is the general data model which reflects our requirements.
 
-![twitter-datamodel](https://nandankumar.info/system-design/images/twitter-datamodel.png)
+![twitter-datamodel](https://nandan.dev/system-design/images/twitter-datamodel.png)
 
 We have the following tables:
 
@@ -4610,7 +4610,7 @@ Now let us do a high-level design of our system.
 
 ### Architecture
 
-We will be using [microservices architecture](https://nandankumar.info/courses/system-design/monoliths-microservices#microservices) since it will make it easier to horizontally scale and decouple our services. Each service will have ownership of its own data model. Let's try to divide our system into some core services.
+We will be using [microservices architecture](https://nandan.dev/courses/system-design/monoliths-microservices#microservices) since it will make it easier to horizontally scale and decouple our services. Each service will have ownership of its own data model. Let's try to divide our system into some core services.
 
 **User Service**
 
@@ -4642,11 +4642,11 @@ This service will be used for metrics and analytics use cases.
 
 **What about inter-service communication and service discovery?**
 
-Since our architecture is microservices-based, services will be communicating with each other as well. Generally, REST or HTTP performs well but we can further improve the performance using [gRPC](https://nandankumar.info/courses/system-design/rest-graphql-grpc#grpc) which is more lightweight and efficient.
+Since our architecture is microservices-based, services will be communicating with each other as well. Generally, REST or HTTP performs well but we can further improve the performance using [gRPC](https://nandan.dev/courses/system-design/rest-graphql-grpc#grpc) which is more lightweight and efficient.
 
-[Service discovery](https://nandankumar.info/courses/system-design/service-discovery) is another thing we will have to take into account. We can also use a service mesh that enables managed, observable, and secure communication between individual services.
+[Service discovery](https://nandan.dev/courses/system-design/service-discovery) is another thing we will have to take into account. We can also use a service mesh that enables managed, observable, and secure communication between individual services.
 
-_Note: Learn more about [REST, GraphQL, gRPC](https://nandankumar.info/courses/system-design/rest-graphql-grpc) and how they compare with each other._
+_Note: Learn more about [REST, GraphQL, gRPC](https://nandan.dev/courses/system-design/rest-graphql-grpc) and how they compare with each other._
 
 ### Newsfeed
 
@@ -4669,7 +4669,7 @@ Publishing is the step where the feed data is pushed according to each specific 
 
 - Pull Model (or Fan-out on load)
 
-![newsfeed-pull-model](https://nandankumar.info/system-design/images/newsfeed-pull-model.png)
+![newsfeed-pull-model](https://nandan.dev/system-design/images/newsfeed-pull-model.png)
 
 When a user creates a tweet, and a follower reloads their newsfeed, the feed is created and stored in memory. The most recent feed is only loaded when the user requests it. This approach reduces the number of write operations on our database.
 
@@ -4677,7 +4677,7 @@ The downside of this approach is that the users will not be able to view recent 
 
 - Push Model (or Fan-out on write)
 
-![newsfeed-push-model](https://nandankumar.info/system-design/images/newsfeed-push-model.png)
+![newsfeed-push-model](https://nandan.dev/system-design/images/newsfeed-push-model.png)
 
 In this model, once a user creates a tweet, it is "pushed" to all the follower's feeds immediately. This prevents the system from having to go through a user's entire followers list to check for updates.
 
@@ -4736,7 +4736,7 @@ Trending functionality will be based on top of the search functionality. We can 
 
 Push notifications are an integral part of any social media platform. We can use a message queue or a message broker such as [Apache Kafka](https://kafka.apache.org) with the notification service to dispatch requests to [Firebase Cloud Messaging (FCM)](https://firebase.google.com/docs/cloud-messaging) or [Apple Push Notification Service (APNS)](https://developer.apple.com/documentation/usernotifications) which will handle the delivery of the push notifications to user devices.
 
-_For more details, refer to the [WhatsApp](https://nandankumar.info/courses/system-design/whatsapp#notifications) system design where we discuss push notifications in detail._
+_For more details, refer to the [WhatsApp](https://nandan.dev/courses/system-design/whatsapp#notifications) system design where we discuss push notifications in detail._
 
 ## Detailed design
 
@@ -4744,16 +4744,16 @@ It's time to discuss our design decisions in detail.
 
 ### Data Partitioning
 
-To scale out our databases we will need to partition our data. Horizontal partitioning (aka [Sharding](https://nandankumar.info/courses/system-design/sharding)) can be a good first step. We can use partitions schemes such as:
+To scale out our databases we will need to partition our data. Horizontal partitioning (aka [Sharding](https://nandan.dev/courses/system-design/sharding)) can be a good first step. We can use partitions schemes such as:
 
 - Hash-Based Partitioning
 - List-Based Partitioning
 - Range Based Partitioning
 - Composite Partitioning
 
-The above approaches can still cause uneven data and load distribution, we can solve this using [Consistent hashing](https://nandankumar.info/courses/system-design/consistent-hashing).
+The above approaches can still cause uneven data and load distribution, we can solve this using [Consistent hashing](https://nandan.dev/courses/system-design/consistent-hashing).
 
-_For more details, refer to [Sharding](https://nandankumar.info/courses/system-design/sharding) and [Consistent Hashing](https://nandankumar.info/courses/system-design/consistent-hashing)._
+_For more details, refer to [Sharding](https://nandan.dev/courses/system-design/sharding) and [Consistent Hashing](https://nandan.dev/courses/system-design/consistent-hashing)._
 
 ### Mutual friends
 
@@ -4781,21 +4781,21 @@ We can use solutions like [Redis](https://redis.io) or [Memcached](https://memca
 
 Whenever there is a cache miss, our servers can hit the database directly and update the cache with the new entries.
 
-_For more details, refer to [Caching](https://nandankumar.info/courses/system-design/caching)._
+_For more details, refer to [Caching](https://nandan.dev/courses/system-design/caching)._
 
 ### Media access and storage
 
 As we know, most of our storage space will be used for storing media files such as images, videos, or other files. Our media service will be handling both access and storage of the user media files.
 
-But where can we store files at scale? Well, [object storage](https://nandankumar.info/courses/system-design/storage#object-storage) is what we're looking for. Object stores break data files up into pieces called objects. It then stores those objects in a single repository, which can be spread out across multiple networked systems. We can also use distributed file storage such as [HDFS](https://nandankumar.info/courses/system-design/storage#hdfs) or [GlusterFS](https://www.gluster.org).
+But where can we store files at scale? Well, [object storage](https://nandan.dev/courses/system-design/storage#object-storage) is what we're looking for. Object stores break data files up into pieces called objects. It then stores those objects in a single repository, which can be spread out across multiple networked systems. We can also use distributed file storage such as [HDFS](https://nandan.dev/courses/system-design/storage#hdfs) or [GlusterFS](https://www.gluster.org).
 
 ### Content Delivery Network (CDN)
 
-[Content Delivery Network (CDN)](https://nandankumar.info/courses/system-design/content-delivery-network) increases content availability and redundancy while reducing bandwidth costs. Generally, static files such as images, and videos are served from CDN. We can use services like [Amazon CloudFront](https://aws.amazon.com/cloudfront) or [Cloudflare CDN](https://www.cloudflare.com/cdn) for this use case.
+[Content Delivery Network (CDN)](https://nandan.dev/courses/system-design/content-delivery-network) increases content availability and redundancy while reducing bandwidth costs. Generally, static files such as images, and videos are served from CDN. We can use services like [Amazon CloudFront](https://aws.amazon.com/cloudfront) or [Cloudflare CDN](https://www.cloudflare.com/cdn) for this use case.
 
 ## Identify and resolve bottlenecks
 
-![twitter-advanced-design](https://nandankumar.info/system-design/images/twitter-advanced-design.png)
+![twitter-advanced-design](https://nandan.dev/system-design/images/twitter-advanced-design.png)
 
 Let us identify and resolve bottlenecks such as single points of failure in our design:
 
@@ -4809,10 +4809,10 @@ Let us identify and resolve bottlenecks such as single points of failure in our 
 To make our system more resilient we can do the following:
 
 - Running multiple instances of each of our services.
-- Introducing [load balancers](https://nandankumar.info/courses/system-design/load-balancing) between clients, servers, databases, and cache servers.
+- Introducing [load balancers](https://nandan.dev/courses/system-design/load-balancing) between clients, servers, databases, and cache servers.
 - Using multiple read replicas for our databases.
 - Multiple instances and replicas for our distributed cache.
-- Exactly once delivery and message ordering is challenging in a distributed system, we can use a dedicated [message broker](https://nandankumar.info/courses/system-design/message-brokers) such as [Apache Kafka](https://kafka.apache.org) or [NATS](https://nats.io) to make our notification system more robust.
+- Exactly once delivery and message ordering is challenging in a distributed system, we can use a dedicated [message broker](https://nandan.dev/courses/system-design/message-brokers) such as [Apache Kafka](https://kafka.apache.org) or [NATS](https://nats.io) to make our notification system more robust.
 - We can add media processing and compression capabilities to the media service to compress large files which will save a lot of storage space and reduce cost.
 
 # Netflix
@@ -4912,7 +4912,7 @@ Here is our high-level estimate:
 
 This is the general data model which reflects our requirements.
 
-![netflix-datamodel](https://nandankumar.info/system-design/images/netflix-datamodel.png)
+![netflix-datamodel](https://nandan.dev/system-design/images/netflix-datamodel.png)
 
 We have the following tables:
 
@@ -5032,7 +5032,7 @@ Now let us do a high-level design of our system.
 
 ### Architecture
 
-We will be using [microservices architecture](https://nandankumar.info/courses/system-design/monoliths-microservices#microservices) since it will make it easier to horizontally scale and decouple our services. Each service will have ownership of its own data model. Let's try to divide our system into some core services.
+We will be using [microservices architecture](https://nandan.dev/courses/system-design/monoliths-microservices#microservices) since it will make it easier to horizontally scale and decouple our services. Each service will have ownership of its own data model. Let's try to divide our system into some core services.
 
 **User Service**
 
@@ -5056,25 +5056,25 @@ This service will be used for metrics and analytics use cases.
 
 **What about inter-service communication and service discovery?**
 
-Since our architecture is microservices-based, services will be communicating with each other as well. Generally, REST or HTTP performs well but we can further improve the performance using [gRPC](https://nandankumar.info/courses/system-design/rest-graphql-grpc#grpc) which is more lightweight and efficient.
+Since our architecture is microservices-based, services will be communicating with each other as well. Generally, REST or HTTP performs well but we can further improve the performance using [gRPC](https://nandan.dev/courses/system-design/rest-graphql-grpc#grpc) which is more lightweight and efficient.
 
-[Service discovery](https://nandankumar.info/courses/system-design/service-discovery) is another thing we will have to take into account. We can also use a service mesh that enables managed, observable, and secure communication between individual services.
+[Service discovery](https://nandan.dev/courses/system-design/service-discovery) is another thing we will have to take into account. We can also use a service mesh that enables managed, observable, and secure communication between individual services.
 
-_Note: Learn more about [REST, GraphQL, gRPC](https://nandankumar.info/courses/system-design/rest-graphql-grpc) and how they compare with each other._
+_Note: Learn more about [REST, GraphQL, gRPC](https://nandan.dev/courses/system-design/rest-graphql-grpc) and how they compare with each other._
 
 ### Video processing
 
-![video-processing-pipeline](https://nandankumar.info/system-design/images/video-processing-pipeline.png)
+![video-processing-pipeline](https://nandan.dev/system-design/images/video-processing-pipeline.png)
 
 There are so many variables in play when it comes to processing a video. For example, an average data size of two-hour raw 8K footage from a high-end camera can easily be up to 4 TB, thus we need to have some kind of processing to reduce both storage and delivery costs.
 
-Here's how we can process videos once they're uploaded by the content team (or users in YouTube's case) and are queued for processing in our [message queue](https://nandankumar.info/courses/system-design/message-queues).
+Here's how we can process videos once they're uploaded by the content team (or users in YouTube's case) and are queued for processing in our [message queue](https://nandan.dev/courses/system-design/message-queues).
 
 Let's discuss how this works:
 
 - **File Chunker**
 
-![file-chunking](https://nandankumar.info/system-design/images/file-chunking.png)
+![file-chunking](https://nandan.dev/system-design/images/file-chunking.png)
 
 This is the first step of our processing pipeline. File chunking is the process of splitting a file into smaller pieces called chunks. It can help us eliminate duplicate copies of repeating data on storage, and reduces the amount of data sent over the network by only selecting changed chunks.
 
@@ -5084,7 +5084,7 @@ Usually, a video file can be split into equal size chunks based on timestamps bu
 
 This step checks if the video adheres to the content policy of the platform. This can be pre-approved as in the case of Netflix according to [content rating](https://en.wikipedia.org/wiki/Motion_picture_content_rating_system) of the media or can be strictly enforced like by YouTube.
 
-This entire process is done by a machine learning model which performs copyright, piracy, and NSFW checks. If issues are found, we can push the task to a [dead-letter queue (DLQ)](https://nandankumar.info/courses/system-design/message-queues#dead-letter-queues) and someone from the moderation team can do further inspection.
+This entire process is done by a machine learning model which performs copyright, piracy, and NSFW checks. If issues are found, we can push the task to a [dead-letter queue (DLQ)](https://nandan.dev/courses/system-design/message-queues#dead-letter-queues) and someone from the moderation team can do further inspection.
 
 - **Transcoder**
 
@@ -5096,23 +5096,23 @@ This results in a smaller size file and a much more optimized format for the tar
 
 This is the last step of the processing pipeline and as the name suggests, this step handles the conversion of the transcoded media from the previous step into different resolutions such as 4K, 1440p, 1080p, 720p, etc.
 
-It allows us to fetch the desired quality of the video as per the user's request, and once the media file finishes processing, it gets uploaded to a distributed file storage such as [HDFS](https://nandankumar.info/courses/system-design/storage#hdfs), [GlusterFS](https://www.gluster.org), or an [object storage](https://nandankumar.info/courses/system-design/storage#object-storage) such as [Amazon S3](https://aws.amazon.com/s3) for later retrieval during streaming.
+It allows us to fetch the desired quality of the video as per the user's request, and once the media file finishes processing, it gets uploaded to a distributed file storage such as [HDFS](https://nandan.dev/courses/system-design/storage#hdfs), [GlusterFS](https://www.gluster.org), or an [object storage](https://nandan.dev/courses/system-design/storage#object-storage) such as [Amazon S3](https://aws.amazon.com/s3) for later retrieval during streaming.
 
 _Note: We can add additional steps such as subtitles and thumbnails generation as part of our pipeline._
 
 **Why are we using a message queue?**
 
-Processing videos as a long-running task and using a [message queue](https://nandankumar.info/courses/system-design/message-queues) makes much more sense. It also decouples our video processing pipeline from the upload functionality. We can use something like [Amazon SQS](https://aws.amazon.com/sqs) or [RabbitMQ](https://www.rabbitmq.com) to support this.
+Processing videos as a long-running task and using a [message queue](https://nandan.dev/courses/system-design/message-queues) makes much more sense. It also decouples our video processing pipeline from the upload functionality. We can use something like [Amazon SQS](https://aws.amazon.com/sqs) or [RabbitMQ](https://www.rabbitmq.com) to support this.
 
 ### Video streaming
 
-Video streaming is a challenging task from both the client and server perspectives. Moreover, internet connection speeds vary quite a lot between different users. To make sure users don't re-fetch the same content, we can use a [Content Delivery Network (CDN)](https://nandankumar.info/courses/system-design/content-delivery-network).
+Video streaming is a challenging task from both the client and server perspectives. Moreover, internet connection speeds vary quite a lot between different users. To make sure users don't re-fetch the same content, we can use a [Content Delivery Network (CDN)](https://nandan.dev/courses/system-design/content-delivery-network).
 
 Netflix takes this a step further with its [Open Connect](https://openconnect.netflix.com) program. In this approach, they partner with thousands of Internet Service Providers (ISPs) to localize their traffic and deliver their content more efficiently.
 
 **What is the difference between Netflix's Open Connect and a traditional Content Delivery Network (CDN)?**
 
-Netflix Open Connect is a purpose-built [Content Delivery Network (CDN)](https://nandankumar.info/courses/system-design/content-delivery-network) responsible for serving Netflix's video traffic. Around 95% of the traffic globally is delivered via direct connections between Open Connect and the ISPs their customers use to access the internet.
+Netflix Open Connect is a purpose-built [Content Delivery Network (CDN)](https://nandan.dev/courses/system-design/content-delivery-network) responsible for serving Netflix's video traffic. Around 95% of the traffic globally is delivered via direct connections between Open Connect and the ISPs their customers use to access the internet.
 
 Currently, they have Open Connect Appliances (OCAs) in over 1000 separate locations around the world. In case of issues, Open Connect Appliances (OCAs) can failover, and the traffic can be re-routed to Netflix servers.
 
@@ -5134,7 +5134,7 @@ Trending functionality will be based on top of the search functionality. We can 
 
 Sharing content is an important part of any platform, for this, we can have some sort of URL shortener service in place that can generate short URLs for the users to share.
 
-_For more details, refer to the [URL Shortener](https://nandankumar.info/courses/system-design/url-shortener) system design._
+_For more details, refer to the [URL Shortener](https://nandan.dev/courses/system-design/url-shortener) system design._
 
 ## Detailed design
 
@@ -5142,22 +5142,22 @@ It's time to discuss our design decisions in detail.
 
 ### Data Partitioning
 
-To scale out our databases we will need to partition our data. Horizontal partitioning (aka [Sharding](https://nandankumar.info/courses/system-design/sharding)) can be a good first step. We can use partitions schemes such as:
+To scale out our databases we will need to partition our data. Horizontal partitioning (aka [Sharding](https://nandan.dev/courses/system-design/sharding)) can be a good first step. We can use partitions schemes such as:
 
 - Hash-Based Partitioning
 - List-Based Partitioning
 - Range Based Partitioning
 - Composite Partitioning
 
-The above approaches can still cause uneven data and load distribution, we can solve this using [Consistent hashing](https://nandankumar.info/courses/system-design/consistent-hashing).
+The above approaches can still cause uneven data and load distribution, we can solve this using [Consistent hashing](https://nandan.dev/courses/system-design/consistent-hashing).
 
-_For more details, refer to [Sharding](https://nandankumar.info/courses/system-design/sharding) and [Consistent Hashing](https://nandankumar.info/courses/system-design/consistent-hashing)._
+_For more details, refer to [Sharding](https://nandan.dev/courses/system-design/sharding) and [Consistent Hashing](https://nandan.dev/courses/system-design/consistent-hashing)._
 
 ### Geo-blocking
 
 Platforms like Netflix and YouTube use [Geo-blocking](https://en.wikipedia.org/wiki/Geo-blocking) to restrict content in certain geographical areas or countries. This is primarily done due to legal distribution laws that Netflix has to adhere to when they make a deal with the production and distribution companies. In the case of YouTube, this will be controlled by the user during the publishing of the content.
 
-We can determine the user's location either using their [IP](https://nandankumar.info/courses/system-design/ip) or region settings in their profile then use services like [Amazon CloudFront](https://aws.amazon.com/cloudfront) which supports a geographic restrictions feature or a [geolocation routing policy](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-geo.html) with [Amazon Route53](https://aws.amazon.com/route53) to restrict the content and re-route the user to an error page if the content is not available in that particular region or country.
+We can determine the user's location either using their [IP](https://nandan.dev/courses/system-design/ip) or region settings in their profile then use services like [Amazon CloudFront](https://aws.amazon.com/cloudfront) which supports a geographic restrictions feature or a [geolocation routing policy](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-geo.html) with [Amazon Route53](https://aws.amazon.com/route53) to restrict the content and re-route the user to an error page if the content is not available in that particular region or country.
 
 ### Recommendations
 
@@ -5189,21 +5189,21 @@ In a streaming platform, caching is important. We have to be able to cache as mu
 
 Whenever there is a cache miss, our servers can hit the database directly and update the cache with the new entries.
 
-_For more details, refer to [Caching](https://nandankumar.info/courses/system-design/caching)._
+_For more details, refer to [Caching](https://nandan.dev/courses/system-design/caching)._
 
 ### Media streaming and storage
 
 As most of our storage space will be used for storing media files such as thumbnails and videos. Per our discussion earlier, the media service will be handling both the upload and processing of media files.
 
-We will use distributed file storage such as [HDFS](https://nandankumar.info/courses/system-design/storage#hdfs), [GlusterFS](https://www.gluster.org), or an [object storage](https://nandankumar.info/courses/system-design/storage#object-storage) such as [Amazon S3](https://aws.amazon.com/s3) for storage and streaming of the content.
+We will use distributed file storage such as [HDFS](https://nandan.dev/courses/system-design/storage#hdfs), [GlusterFS](https://www.gluster.org), or an [object storage](https://nandan.dev/courses/system-design/storage#object-storage) such as [Amazon S3](https://aws.amazon.com/s3) for storage and streaming of the content.
 
 ### Content Delivery Network (CDN)
 
-[Content Delivery Network (CDN)](https://nandankumar.info/courses/system-design/content-delivery-network) increases content availability and redundancy while reducing bandwidth costs. Generally, static files such as images, and videos are served from CDN. We can use services like [Amazon CloudFront](https://aws.amazon.com/cloudfront) or [Cloudflare CDN](https://www.cloudflare.com/cdn) for this use case.
+[Content Delivery Network (CDN)](https://nandan.dev/courses/system-design/content-delivery-network) increases content availability and redundancy while reducing bandwidth costs. Generally, static files such as images, and videos are served from CDN. We can use services like [Amazon CloudFront](https://aws.amazon.com/cloudfront) or [Cloudflare CDN](https://www.cloudflare.com/cdn) for this use case.
 
 ## Identify and resolve bottlenecks
 
-![netflix-advanced-design](https://nandankumar.info/system-design/images/netflix-advanced-design.png)
+![netflix-advanced-design](https://nandan.dev/system-design/images/netflix-advanced-design.png)
 
 Let us identify and resolve bottlenecks such as single points of failure in our design:
 
@@ -5215,7 +5215,7 @@ Let us identify and resolve bottlenecks such as single points of failure in our 
 To make our system more resilient we can do the following:
 
 - Running multiple instances of each of our services.
-- Introducing [load balancers](https://nandankumar.info/courses/system-design/load-balancing) between clients, servers, databases, and cache servers.
+- Introducing [load balancers](https://nandan.dev/courses/system-design/load-balancing) between clients, servers, databases, and cache servers.
 - Using multiple read replicas for our databases.
 - Multiple instances and replicas for our distributed cache.
 
@@ -5321,7 +5321,7 @@ Here is our high-level estimate:
 
 This is the general data model which reflects our requirements.
 
-![uber-datamodel](https://nandankumar.info/system-design/images/uber-datamodel.png)
+![uber-datamodel](https://nandan.dev/system-design/images/uber-datamodel.png)
 
 We have the following tables:
 
@@ -5463,7 +5463,7 @@ Now let us do a high-level design of our system.
 
 ### Architecture
 
-We will be using [microservices architecture](https://nandankumar.info/courses/system-design/monoliths-microservices#microservices) since it will make it easier to horizontally scale and decouple our services. Each service will have ownership of its own data model. Let's try to divide our system into some core services.
+We will be using [microservices architecture](https://nandan.dev/courses/system-design/monoliths-microservices#microservices) since it will make it easier to horizontally scale and decouple our services. Each service will have ownership of its own data model. Let's try to divide our system into some core services.
 
 **Customer Service**
 
@@ -5495,17 +5495,17 @@ This service will be used for metrics and analytics use cases.
 
 **What about inter-service communication and service discovery?**
 
-Since our architecture is microservices-based, services will be communicating with each other as well. Generally, REST or HTTP performs well but we can further improve the performance using [gRPC](https://nandankumar.info/courses/system-design/rest-graphql-grpc#grpc) which is more lightweight and efficient.
+Since our architecture is microservices-based, services will be communicating with each other as well. Generally, REST or HTTP performs well but we can further improve the performance using [gRPC](https://nandan.dev/courses/system-design/rest-graphql-grpc#grpc) which is more lightweight and efficient.
 
-[Service discovery](https://nandankumar.info/courses/system-design/service-discovery) is another thing we will have to take into account. We can also use a service mesh that enables managed, observable, and secure communication between individual services.
+[Service discovery](https://nandan.dev/courses/system-design/service-discovery) is another thing we will have to take into account. We can also use a service mesh that enables managed, observable, and secure communication between individual services.
 
-_Note: Learn more about [REST, GraphQL, gRPC](https://nandankumar.info/courses/system-design/rest-graphql-grpc) and how they compare with each other._
+_Note: Learn more about [REST, GraphQL, gRPC](https://nandan.dev/courses/system-design/rest-graphql-grpc) and how they compare with each other._
 
 ### How is the service expected to work?
 
 Here's how our service is expected to work:
 
-![uber-working](https://nandankumar.info/system-design/images/uber-working.png)
+![uber-working](https://nandan.dev/system-design/images/uber-working.png)
 
 1. Customer requests a ride by specifying the source, destination, cab type, payment method, etc.
 2. Ride service registers this request, finds nearby drivers, and calculates the estimated time of arrival (ETA).
@@ -5521,17 +5521,17 @@ How do we efficiently send and receive live location data from the client (custo
 
 **Pull model**
 
-The client can periodically send an HTTP request to servers to report its current location and receive ETA and pricing information. This can be achieved via something like [Long polling](https://nandankumar.info/courses/system-design/long-polling-websockets-server-sent-events#long-polling).
+The client can periodically send an HTTP request to servers to report its current location and receive ETA and pricing information. This can be achieved via something like [Long polling](https://nandan.dev/courses/system-design/long-polling-websockets-server-sent-events#long-polling).
 
 **Push model**
 
-The client opens a long-lived connection with the server and once new data is available it will be pushed to the client. We can use [WebSockets](https://nandankumar.info/courses/system-design/long-polling-websockets-server-sent-events#websockets) or [Server-Sent Events (SSE)](https://nandankumar.info/courses/system-design/long-polling-websockets-server-sent-events#server-sent-events-sse) for this.
+The client opens a long-lived connection with the server and once new data is available it will be pushed to the client. We can use [WebSockets](https://nandan.dev/courses/system-design/long-polling-websockets-server-sent-events#websockets) or [Server-Sent Events (SSE)](https://nandan.dev/courses/system-design/long-polling-websockets-server-sent-events#server-sent-events-sse) for this.
 
-The pull model approach is not scalable as it will create unnecessary request overhead on our servers and most of the time the response will be empty, thus wasting our resources. To minimize latency, using the push model with [WebSockets](https://nandankumar.info/courses/system-design/long-polling-websockets-server-sent-events#websockets) is a better choice because then we can push data to the client once it's available without any delay, given the connection is open with the client. Also, WebSockets provide full-duplex communication, unlike [Server-Sent Events (SSE)](https://nandankumar.info/courses/system-design/long-polling-websockets-server-sent-events#server-sent-events-sse) which are only unidirectional.
+The pull model approach is not scalable as it will create unnecessary request overhead on our servers and most of the time the response will be empty, thus wasting our resources. To minimize latency, using the push model with [WebSockets](https://nandan.dev/courses/system-design/long-polling-websockets-server-sent-events#websockets) is a better choice because then we can push data to the client once it's available without any delay, given the connection is open with the client. Also, WebSockets provide full-duplex communication, unlike [Server-Sent Events (SSE)](https://nandan.dev/courses/system-design/long-polling-websockets-server-sent-events#server-sent-events-sse) which are only unidirectional.
 
 Additionally, the client application should have some sort of background job mechanism to ping GPS location while the application is in the background.
 
-_Note: Learn more about [Long polling, WebSockets, Server-Sent Events (SSE)](https://nandankumar.info/courses/system-design/long-polling-websockets-server-sent-events)._
+_Note: Learn more about [Long polling, WebSockets, Server-Sent Events (SSE)](https://nandan.dev/courses/system-design/long-polling-websockets-server-sent-events)._
 
 ### Ride Matching
 
@@ -5553,7 +5553,7 @@ However, this is not scalable, and performing this query on large datasets will 
 
 Geohash is a hierarchical spatial index that uses Base-32 alphabet encoding, the first character in a geohash identifies the initial location as one of the 32 cells. This cell will also contain 32 cells. This means that to represent a point, the world is recursively divided into smaller and smaller cells with each additional bit until the desired precision is attained. The precision factor also determines the size of the cell.
 
-![geohashing](https://nandankumar.info/system-design/images/geohashing.png)
+![geohashing](https://nandan.dev/system-design/images/geohashing.png)
 
 For example, San Francisco with coordinates `37.7564, -122.4016` can be represented in geohash as `9q8yy9mf`.
 
@@ -5563,13 +5563,13 @@ Now, using the customer's geohash we can determine the nearest available driver 
 
 A [Quadtree](/courses/sytem-design/geohashing-and-quadtrees#quadtrees) is a tree data structure in which each internal node has exactly four children. They are often used to partition a two-dimensional space by recursively subdividing it into four quadrants or regions. Each child or leaf node stores spatial information. Quadtrees are the two-dimensional analog of [Octrees](https://en.wikipedia.org/wiki/Octree) which are used to partition three-dimensional space.
 
-![quadtree](https://nandankumar.info/system-design/images/quadtree.png)
+![quadtree](https://nandan.dev/system-design/images/quadtree.png)
 
 Quadtrees enable us to search points within a two-dimensional range efficiently, where those points are defined as latitude/longitude coordinates or as cartesian (x, y) coordinates.
 
 We can save further computation by only subdividing a node after a certain threshold.
 
-![quadtree-subdivision](https://nandankumar.info/system-design/images/quadtree-subdivision.png)
+![quadtree-subdivision](https://nandan.dev/system-design/images/quadtree-subdivision.png)
 
 [Quadtree](/courses/sytem-design/geohashing-and-quadtrees#quadtrees) seems perfect for our use case, we can update the Quadtree every time we receive a new location update from the driver. To reduce the load on the quadtree servers we can use an in-memory datastore such as [Redis](https://redis.io) to cache the latest updates. And with the application of mapping algorithms such as the [Hilbert curve](https://en.wikipedia.org/wiki/Hilbert_curve), we can perform efficient range queries to find nearby drivers for the customer.
 
@@ -5577,7 +5577,7 @@ We can save further computation by only subdividing a node after a certain thres
 
 Race conditions can easily occur when a large number of customers will be requesting rides simultaneously. To avoid this, we can wrap our ride matching logic in a [Mutex](<https://en.wikipedia.org/wiki/Lock_(computer_science)>) to avoid any race conditions. Furthermore, every action should be transactional in nature.
 
-_For more details, refer to [Transactions](https://nandankumar.info/courses/system-design/transactions) and [Distributed Transactions](https://nandankumar.info/courses/system-design/distributed-transactions)._
+_For more details, refer to [Transactions](https://nandan.dev/courses/system-design/transactions) and [Distributed Transactions](https://nandan.dev/courses/system-design/distributed-transactions)._
 
 **How to find the best drivers nearby?**
 
@@ -5597,7 +5597,7 @@ Handling payments at scale is challenging, to simplify our system we can use a t
 
 Push notifications will be an integral part of our platform. We can use a message queue or a message broker such as [Apache Kafka](https://kafka.apache.org) with the notification service to dispatch requests to [Firebase Cloud Messaging (FCM)](https://firebase.google.com/docs/cloud-messaging) or [Apple Push Notification Service (APNS)](https://developer.apple.com/documentation/usernotifications) which will handle the delivery of the push notifications to user devices.
 
-_For more details, refer to the [WhatsApp](https://nandankumar.info/courses/system-design/whatsapp#notifications) system design where we discuss push notifications in detail._
+_For more details, refer to the [WhatsApp](https://nandan.dev/courses/system-design/whatsapp#notifications) system design where we discuss push notifications in detail._
 
 ## Detailed design
 
@@ -5605,9 +5605,9 @@ It's time to discuss our design decisions in detail.
 
 ### Data Partitioning
 
-To scale out our databases we will need to partition our data. Horizontal partitioning (aka [Sharding](https://nandankumar.info/courses/system-design/sharding)) can be a good first step. We can shard our database either based on existing [partition schemes](https://nandankumar.info/courses/system-design/sharding#partitioning-criteria) or regions. If we divide the locations into regions using let's say zip codes, we can effectively store all the data in a given region on a fixed node. But this can still cause uneven data and load distribution, we can solve this using [Consistent hashing](https://nandankumar.info/courses/system-design/consistent-hashing).
+To scale out our databases we will need to partition our data. Horizontal partitioning (aka [Sharding](https://nandan.dev/courses/system-design/sharding)) can be a good first step. We can shard our database either based on existing [partition schemes](https://nandan.dev/courses/system-design/sharding#partitioning-criteria) or regions. If we divide the locations into regions using let's say zip codes, we can effectively store all the data in a given region on a fixed node. But this can still cause uneven data and load distribution, we can solve this using [Consistent hashing](https://nandan.dev/courses/system-design/consistent-hashing).
 
-_For more details, refer to [Sharding](https://nandankumar.info/courses/system-design/sharding) and [Consistent Hashing](https://nandankumar.info/courses/system-design/consistent-hashing)._
+_For more details, refer to [Sharding](https://nandan.dev/courses/system-design/sharding) and [Consistent Hashing](https://nandan.dev/courses/system-design/consistent-hashing)._
 
 ### Metrics and Analytics
 
@@ -5625,11 +5625,11 @@ In a location services-based platform, caching is important. We have to be able 
 
 Whenever there is a cache miss, our servers can hit the database directly and update the cache with the new entries.
 
-_For more details, refer to [Caching](https://nandankumar.info/courses/system-design/caching)._
+_For more details, refer to [Caching](https://nandan.dev/courses/system-design/caching)._
 
 ## Identify and resolve bottlenecks
 
-![uber-advanced-design](https://nandankumar.info/system-design/images/uber-advanced-design.png)
+![uber-advanced-design](https://nandan.dev/system-design/images/uber-advanced-design.png)
 
 Let us identify and resolve bottlenecks such as single points of failure in our design:
 
@@ -5642,10 +5642,10 @@ Let us identify and resolve bottlenecks such as single points of failure in our 
 To make our system more resilient we can do the following:
 
 - Running multiple instances of each of our services.
-- Introducing [load balancers](https://nandankumar.info/courses/system-design/load-balancing) between clients, servers, databases, and cache servers.
+- Introducing [load balancers](https://nandan.dev/courses/system-design/load-balancing) between clients, servers, databases, and cache servers.
 - Using multiple read replicas for our databases.
 - Multiple instances and replicas for our distributed cache.
-- Exactly once delivery and message ordering is challenging in a distributed system, we can use a dedicated [message broker](https://nandankumar.info/courses/system-design/message-brokers) such as [Apache Kafka](https://kafka.apache.org) or [NATS](https://nats.io) to make our notification system more robust.
+- Exactly once delivery and message ordering is challenging in a distributed system, we can use a dedicated [message broker](https://nandan.dev/courses/system-design/message-brokers) such as [Apache Kafka](https://kafka.apache.org) or [NATS](https://nats.io) to make our notification system more robust.
 
 # Next Steps
 
