@@ -1,6 +1,6 @@
 # Acer Chromebook Spin 311 Convertible Laptop
 
-<a href="https://www.amazon.in/Acer-Chromebook-Convertible-Octa-Core-Processor/dp/B098Z1PPTZ?crid=1OSOFHTU9WB9P&keywords=Acer+Chromebook+Spin+311+Convertible+Laptop&qid=1676238065&sprefix=acer+chromebook+spin+311+convertible+laptop%2Caps%2C206&sr=8-4&linkCode=li2&tag=sirius930d-21&linkId=102ecac4d952ebcabd04df10089b028d&language=en_IN&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B098Z1PPTZ&Format=_SL160_&ID=AsinImage&MarketPlace=IN&ServiceVersion=20070822&WS=1&tag=sirius930d-21&language=en_IN" ></a><img src="https://ir-in.amazon-adsystem.com/e/ir?t=sirius930d-21&language=en_IN&l=li2&o=31&a=B098Z1PPTZ" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+[![image](https://user-images.githubusercontent.com/6882879/218338964-98beed54-d798-48b3-8d6d-ff6d48d5f966.png)](https://amzn.to/3loSJgt)
 
 The Acer Chromebook Spin 311 is a versatile and affordable laptop that has been making waves in the market. This laptop is a great choice for students, travelers, and anyone who needs a laptop that's easy to use, portable, and reliable.
 
@@ -17,4 +17,5 @@ Finally, the Acer Chromebook Spin 311 has a long battery life, which is great fo
 In conclusion, the Acer Chromebook Spin 311 is a versatile, affordable, and user-friendly laptop that is ideal for students, travelers, and anyone who needs a laptop that's easy to use, portable, and reliable. With its 360-degree hinge, Chrome OS operating system, and long battery life, the Acer Chromebook Spin 311 is definitely worth considering if you're in the market for a new laptop.
 
 
+You can buy the laptop [here](https://amzn.to/3loSJgt)
 
