@@ -13,6 +13,11 @@
  - 🚀 [How to make a kickass bio for your GitHub profile using DailyDev&#39;s Devcard and metrics.](https://blog.nandan.dev/how-to-make-a-kickass-bio-for-your-github-profile-using-dailydevs-devcard-and-metrics)
  - 💫 [Understanding version control and mastering git: Resolving  Merge conflicts, cherry-picking..!!](https://blog.nandan.dev/understanding-version-control-and-mastering-git-resolving-merge-conflicts-cherry-picking)<!-- BLOGPOSTS:END -->
 
+#### [🚀 Webinars & Podcasts](webinars-n-podcasts)
+
+- [Webinar : How to multiply your salary by 3X by switching into IT Sector today by CodingInvaders](webinars-n-podcasts/codinginvaders-by-mentorspro-webinar-7-feb)
+- [Podcast : Lost your baggage? Just ‘hack’ your way back to it with Nandan Kumar with Black Hat MEA](webinars-n-podcasts/podcast-with-blackhat-mea)
+
 #### [🚀 Courses](courses)
 
 - [System Design](courses/system-design)
