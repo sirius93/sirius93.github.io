@@ -2,7 +2,7 @@
 
 As of my knowledge cutoff in 2021, the following are some of the top-selling laptops on Amazon:
 
-- Acer Chromebook Spin 311 Convertible Laptop
+- [Acer Chromebook Spin 311 Convertible Laptop](https://amzn.to/3loSJgt)
 - ASUS VivoBook 15 Thin and Light Laptop
 - HP Pavilion x360 14-inch Convertible Laptop
 - Lenovo IdeaPad 3 14-inch Laptop
