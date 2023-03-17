@@ -32,3 +32,11 @@
 #### [📚 List of Books](books)
 
 - [Book Reviews](books/book-reviews/)
+
+#### [📚 Tech](tech)
+- [Laptops](tech/laptops/)
+    - [Top bestselling laptops in 2021](tech/laptops/top-bestselling-laptops-in-2021.md)
+    - [Acer chromebook spin 311](tech/laptops/acer-chromebook-spin-311-convertible-laptop.md)
+
+- [Scams](tech/scams/)
+    - [Common UPI Scams in India](tech/scams/common-upi-scams-in-india)
