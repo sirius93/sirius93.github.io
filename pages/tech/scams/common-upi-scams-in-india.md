@@ -36,3 +36,11 @@ UPI ID spoofing is a type of scam where the scammer creates a UPI ID that is sim
 Scammers may gain access to your UPI account and make unauthorized transactions using your UPI ID and PIN. Set up transaction limits and enable UPI notifications to keep track of all transactions made using your UPI account. In case of any unauthorized transaction, contact your bank or UPI service provider immediately to block your account and prevent further fraud.
 
 In conclusion, UPI scams can happen to anyone, but by following these simple tips, you can avoid them and keep your money safe. Always be vigilant and cautious while making UPI transactions. Remember to report any suspicious activity to your bank or UPI service provider immediately. Stay safe and enjoy the benefits of UPI!
+
+Shoot me a mail at [**connect@nandan.dev**](mailto:connect@nandan.dev) If you have any queries and I will try to answer.
+
+You can also visit my website to read some of the articles at [**nandan.dev**](http://nandan.dev)
+
+Stay tuned & connect with me on my social media channels. Make sure to subscribe to my newsletter to get regular updates on my upcoming posts.
+
+[**Twitter**](https://twitter.com/_sirius93_) | [**Instagram**](https://www.instagram.com/_sirius93_) | [**Github**](https://github.com/sirius93) | [**Website**](https://nandan.dev/)
