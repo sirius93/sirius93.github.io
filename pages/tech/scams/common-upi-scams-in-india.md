@@ -1,4 +1,4 @@
-# Unified Payments Interface (UPI) Scams
+# An Insight into Unified Payments Interface (UPI) Scams
 
 Unified Payments Interface (UPI) has revolutionized the way we transfer money in India. UPI transactions are fast, convenient and secure, but they are not completely foolproof. Scammers are always looking for ways to defraud unsuspecting users, and UPI is no exception. In this blog, we will discuss some common UPI scams and how to avoid them.
 
