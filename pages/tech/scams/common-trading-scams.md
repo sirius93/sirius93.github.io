@@ -47,3 +47,11 @@ and always only take investment advice from SEBI-registered investment advisors.
 If you suspect that you have been a victim of a trading scam, report it immediately to the relevant authorities, such as the Securities and Exchange Board of India (SEBI) or the police. They can help you recover your money and prevent further fraud.
 
 Stay vigilant and stay safe.
+
+Shoot me a mail at [**connect@nandan.dev**](mailto:connect@nandan.dev) If you have any queries and I will try to answer.
+
+You can also visit my website to read some of the articles at [**nandan.dev**](http://nandan.dev)
+
+Stay tuned & connect with me on my social media channels. Make sure to subscribe to my newsletter to get regular updates on my upcoming posts.
+
+[**Twitter**](https://twitter.com/_sirius93_) | [**Instagram**](https://www.instagram.com/_sirius93_) | [**Github**](https://github.com/sirius93) | [**Website**](https://nandan.dev/)
