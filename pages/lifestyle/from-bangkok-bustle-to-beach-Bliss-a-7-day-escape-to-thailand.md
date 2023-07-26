@@ -26,7 +26,7 @@ In the afternoon, we had a delightful and unforgettable experience at Truelove a
 
 #### Mexican Delights in Bangkok
 After a day filled with exploration, we ventured to a nearby Mexican restaurant for dinner. The flavors of the burritos tantalized our taste buds, and we relished the Mexican delights in the heart of Bangkok.
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.2188325361703!2d100.49790067934569!3d13.7656729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2996ebc039a1f%3A0x70d8da5371355d68!2sSnooze%20Coffee%20House%20Restaurant!5e0!3m2!1sen!2sin!4v1690398578541!5m2!1sen!2sin" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.016413166533!2d100.53806921744383!3d13.777883700000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29ea861575665%3A0xf934582b9adc144c!2sSuankulab%20restaurant!5e0!3m2!1sen!2sin!4v1690401073872!5m2!1sen!2sin" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 #### Exploring Chinatown's City Vibes
 As the night set in, we hopped into a taxi and made our way to the bustling Chinatown. The vibrant streets lit up with colorful lights and bustling markets, immersed us in the city's lively atmosphere. We couldn't help but notice the unique charm of Bangkok - from the legal shops offering cannabis products to the omnipresent 7-Eleven stores and even spotting a few Teslas on the streets.
