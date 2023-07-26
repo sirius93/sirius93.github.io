@@ -7,7 +7,7 @@ Date: 16th - 18th July 2023
 ### Day 1: A Vibrant Welcome to Bangkok
 After an overnight flight from Bangalore, we landed in the bustling city of Bangkok, eager to kickstart our 7-day adventure in Thailand. With the early morning sun rising over the horizon, we checked into the cozy Phranakorn Nornlen Hotel, dropping our luggage and wasting no time in setting out to explore the vibrant streets.
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.185380756437!2d100.5015601749704!3d13.7676915866259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29914c8746a0b%3A0xe0f905a32ee9001f!2sPhranakorn-Nornlen%20Hotel!5e0!3m2!1sen!2sin!4v1690383725127!5m2!1sen!2sin" width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.185380756437!2d100.5015601749704!3d13.7676915866259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29914c8746a0b%3A0xe0f905a32ee9001f!2sPhranakorn-Nornlen%20Hotel!5e0!3m2!1sen!2sin!4v1690383725127!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 
 #### Discovering Wat Arun and Wat Pho
@@ -27,7 +27,7 @@ In the afternoon, we had a delightful and unforgettable experience at Truelove a
 #### Mexican Delights in Bangkok
 After a day filled with exploration, we ventured to a nearby Mexican restaurant for dinner. The flavors of the burritos tantalized our taste buds, and we relished the Mexican delights in the heart of Bangkok.
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.0164133884855!2d100.53768297497054!3d13.777883686616677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f1813931b63%3A0x547e6f4986315f48!2sWraptor%20cafe%20(%20Wraptor%202%20)!5e0!3m2!1sen!2sin!4v1690401313134!5m2!1sen!2sin" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.0164133884855!2d100.53768297497054!3d13.777883686616677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f1813931b63%3A0x547e6f4986315f48!2sWraptor%20cafe%20(%20Wraptor%202%20)!5e0!3m2!1sen!2sin!4v1690401313134!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 #### Exploring Chinatown's City Vibes
 As the night set in, we hopped into a taxi and made our way to the bustling Chinatown. The vibrant streets lit up with colorful lights and bustling markets, immersed us in the city's lively atmosphere. We couldn't help but notice the unique charm of Bangkok - from the legal shops offering cannabis products to the omnipresent 7-Eleven stores and even spotting a few Teslas on the streets.
@@ -40,7 +40,7 @@ The second day was all about taking it slow. We got up late and decided to have 
 
 #### Breakfast at Snooze Cafe: 
 We started with a late English breakfast at Snooze Coffee House and before we started indulging in some retail therapy. 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.2188327577496!2d100.49790067497034!3d13.7656728866276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2996ebc039a1f%3A0x70d8da5371355d68!2sSnooze%20Coffee%20House%20Restaurant!5e0!3m2!1sen!2sin!4v1690400613113!5m2!1sen!2sin" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.2188327577496!2d100.49790067497034!3d13.7656728866276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2996ebc039a1f%3A0x70d8da5371355d68!2sSnooze%20Coffee%20House%20Restaurant!5e0!3m2!1sen!2sin!4v1690400613113!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 #### Shopping at MBK Center
 We made our way to the famous MBK Center, a shopping paradise in the heart of Bangkok. The mall offered various goods, from trendy clothes to electronics and souvenirs. We bagged some fantastic deals on well-priced yet high-quality clothes for ourselves and our loved ones back home. 
@@ -56,7 +56,7 @@ We soon realized that it was better to leave some extra space in our luggage and
 
 #### Relinquishing Thai food at The Family Restaurant
 To wind up our last day in Bangkok, We decided to try the local Thai cousin at this highly-rated restaurant around our locality. It was indeed our best decision. Their coconut juice is a must-try. 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.310059705014!2d100.50279148407725!3d13.760166214182503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2998bb3a16e85%3A0x1cc907d1520af2c1!2sThe%20Family!5e0!3m2!1sen!2sin!4v1690400579290!5m2!1sen!2sin" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.310059705014!2d100.50279148407725!3d13.760166214182503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2998bb3a16e85%3A0x1cc907d1520af2c1!2sThe%20Family!5e0!3m2!1sen!2sin!4v1690400579290!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 Our time in Bangkok was off to a fantastic start, filled with cultural exploration, furry encounters, delicious food, and exciting shopping. As we prepared to bid farewell to this vibrant city, we looked forward to the next leg of our journey - Chiang Mai, with its serene landscapes and cultural treasures.
 
