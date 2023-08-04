@@ -1283,7 +1283,7 @@
     <link rel="icon" type="image/x-icon" href="https://nandan.dev/images/favicon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
-    <link rel="canonical" href="https://nandan.dev/">
+    <!-- <link rel="canonical" href="https://nandan.dev/"> -->
     <style amp-boilerplate="">
         body {
             -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
