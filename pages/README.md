@@ -2,16 +2,16 @@
 
 #### [📚 Recent Blog Posts](https://blog.nandan.dev)
 <!-- BLOGPOSTS:START -->
+ - 🚀 [Design Patterns: Module Design Pattern in JavaScript](https://blog.nandan.dev/design-patterns-module-design-pattern-in-javascript)
  - 🚀 [The dilemma of being a front-end developer..!!](https://blog.nandan.dev/the-dilemma-of-being-a-front-end-developer)
- - 🚀 [NLP: A Beginner&#39;s Guide to Large Language Models, Transformers, and Fine-tuning.](https://blog.nandan.dev/nlp-a-beginners-guide-to-large-language-models-transformers-and-fine-tuning)
- - 🌮 [Revolutionize Your News Consumption: The Top 10 Tech News Websites/Apps for Developers](https://blog.nandan.dev/revolutionize-your-news-consumption-the-top-10-tech-news-websitesapps-for-developers)
- - 🚀 [How to use gitignore, git hooks for better code management..!!](https://blog.nandan.dev/how-to-use-gitignore-git-hooks-for-better-code-management)
- - 💯 [Will Artificial Intelligence&lpar;AI&rpar; replace my job: An IT Engineer&#39;s perspective?](https://blog.nandan.dev/will-artificial-intelligenceai-replace-my-job-an-it-engineers-perspective)
- - 🌮 [Understanding Natural Language Processing: The Basics..!!](https://blog.nandan.dev/understanding-natural-language-processing-the-basics)
- - 💫 [ChatGPT: What, How, and Why&#39;s ..!!](https://blog.nandan.dev/chatgpt-what-how-and-whys)
- - 🔥 [System Design: Caching, Content Delivery Networks &lpar;CDN&rpar; &amp; Proxies.](https://blog.nandan.dev/system-design-caching-content-delivery-networks-cdn-proxies)
- - 🚀 [System Design: Domain Name System &lpar;DNS&rpar;, Load Balancing &amp; Clustering.](https://blog.nandan.dev/system-design-domain-name-system-dns-load-balancing-clustering)
- - 💫 [What is System Design? Types of IP Addresses, OSI models, and TCP/UDP Protocols.](https://blog.nandan.dev/what-is-system-design-ip-osi-models-and-tcp-udp-protocols)<!-- BLOGPOSTS:END -->
+ - 🌮 [NLP: A Beginner&#39;s Guide to Large Language Models, Transformers, and Fine-tuning.](https://blog.nandan.dev/nlp-a-beginners-guide-to-large-language-models-transformers-and-fine-tuning)
+ - 🚀 [Revolutionize Your News Consumption: The Top 10 Tech News Websites/Apps for Developers](https://blog.nandan.dev/revolutionize-your-news-consumption-the-top-10-tech-news-websitesapps-for-developers)
+ - 💯 [How to use gitignore, git hooks for better code management..!!](https://blog.nandan.dev/how-to-use-gitignore-git-hooks-for-better-code-management)
+ - 🌮 [Will Artificial Intelligence&lpar;AI&rpar; replace my job: An IT Engineer&#39;s perspective?](https://blog.nandan.dev/will-artificial-intelligenceai-replace-my-job-an-it-engineers-perspective)
+ - 💫 [Understanding Natural Language Processing: The Basics..!!](https://blog.nandan.dev/understanding-natural-language-processing-the-basics)
+ - 🔥 [ChatGPT: What, How, and Why&#39;s ..!!](https://blog.nandan.dev/chatgpt-what-how-and-whys)
+ - 🚀 [System Design: Caching, Content Delivery Networks &lpar;CDN&rpar; &amp; Proxies.](https://blog.nandan.dev/system-design-caching-content-delivery-networks-cdn-proxies)
+ - 💫 [System Design: Domain Name System &lpar;DNS&rpar;, Load Balancing &amp; Clustering.](https://blog.nandan.dev/system-design-domain-name-system-dns-load-balancing-clustering)<!-- BLOGPOSTS:END -->
 
 #### [🚀 Webinars & Podcasts](webinars-n-podcasts)
 
