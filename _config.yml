@@ -25,7 +25,7 @@ kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
 url: "https://nandan.dev"
-logo_url: https://nandan.dev/images/nandan-logo-img.png
+logo_url: https://nandan.dev/images/logo.webp
 plugins:
   - jekyll-sitemap
 
