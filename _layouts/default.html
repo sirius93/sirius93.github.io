@@ -25,7 +25,8 @@
       <link rel="stylesheet" href="{{ site.syntax_theme }}">
     {% endif %}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/katex.min.css" integrity="sha384-bYdxxUwYipFNohQlHt0bjN/LCpueqWz13HufFEV1SUatKs1cm4L6fFgCi1jT643X" crossorigin="anonymous">
-
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css">
     <!-- The loading of KaTeX is deferred to speed up page rendering -->
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/katex.min.js" integrity="sha384-Qsn9KnoKISj6dI8g7p1HBlNpVx0I8p1SvlwOldgi3IorMle61nQy4zEahWYtljaz" crossorigin="anonymous"></script>
 
@@ -52,6 +53,15 @@
     <header class="page-header" role="banner">
       <h1 class="project-name"></h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+      <div class="fh5co-social-icons">
+        <span><a title="Check out my blog" target="_blank" href="https://blog.nandan.dev"><i class="icon-blog"></i></a></span>
+        <span><a title="Check out my store" target="_blank" href="https://store.nandan.dev"><i class="icon-shopping-cart"></i></a></span>
+        <span><a title="Twitter" target="_blank" href="https://twitter.com/_sirius93_"><i class="icon-twitter2"></i></a></span>
+        <span><a title="Facebook" target="_blank" href="https://www.facebook.com/nandank93"><i class="icon-facebook2"></i></a></span>
+        <span><a title="Linkedin" target="_blank" href="https://www.linkedin.com/in/nandank93/"><i class="icon-linkedin2"></i></a></span>
+        <span><a title="Instagram" target="_blank" href="https://www.instagram.com/nandandotdev"><i class="icon-instagram"></i></a></span>
+        <span><a title="Youtube" target="_blank" href="https://www.youtube.com/@nandandotdev"><i class="icon-youtube"></i></a></span>
+      </div>
       {% if site.github.is_project_page %}
         {% unless site.buttons.github_hide %}
           <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
