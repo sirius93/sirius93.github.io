@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+
+    {% if site.google_analytics %}
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ site.google_analytics }}', {'anonymize_ip': {{ site.google_analytics_anonymize | default: false }}});
+      </script>
+    {% endif %}
+    <meta charset="UTF-8">
+
+{% seo %}
+    {% if site.favicon %}
+       <link rel="icon" type="image/x-icon" href="{{ site.favicon }}">
+    {% endif %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="{{ site.color.android_theme | default: site.color.gradient_left }}">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% if site.syntax_theme %}
+      <link rel="stylesheet" href="{{ site.syntax_theme }}">
+    {% endif %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/katex.min.css" integrity="sha384-bYdxxUwYipFNohQlHt0bjN/LCpueqWz13HufFEV1SUatKs1cm4L6fFgCi1jT643X" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/katex.min.js" integrity="sha384-Qsn9KnoKISj6dI8g7p1HBlNpVx0I8p1SvlwOldgi3IorMle61nQy4zEahWYtljaz" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+     {% if site.adSenseId %}
+        <script async src= "{{ 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-' | append: site.adSenseId }}" crossorigin="anonymous"></script>
+     {% endif %}
+    
+    
+    <style>
+      .katex {
+        font: normal 1.21em KaTeX_Main, Times New Roman, serif;
+        line-height: 1.2;
+        white-space: normal;
+        text-indent: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name"></h1>
+      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+      {% if site.github.is_project_page %}
+        {% unless site.buttons.github_hide %}
+          <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
+        {% endunless %}
+      {% endif %}
+      {% if site.show_downloads %}
+        {% unless site.buttons.zip_hide %}
+          <a href="{{ site.buttons.zip_url | default: site.github.zip_url }}" class="btn">{{ site.buttons.zip_title | default: "Download .zip" }}</a>
+        {% endunless %}
+        {% unless site.buttons.tar_hide %}
+          <a href="{{ site.buttons.tar_url | default: site.github.tar_url }}" class="btn">{{ site.buttons.tar_title | default: "Download .tar.gz" }}</a>
+        {% endunless %}
+      {% endif %}
+      
+    </header>
+    {% if site.show_navigation %}
+      <div id="navigation"></div>
+    {% endif %}
+    <main id="content" class="main-content" role="main">
+      
+      {{ content }}
+
+      <footer class="site-footer">
+        {% if site.github.is_project_page %}
+          <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
+        {% endif %}
+        <span class="site-footer-credits"><p>Made with &hearts; By <a href="/" target="_blank">Nandan Kumar</a><br>Twitter: <a href="https://twitter.com/nandandotdev" target="_blank">_sirius93_</a> / Instagram: <a href="https://www.instagram.com/nandandotdev/" target="_blank">nandandotdev</a></p></span>
+      </footer>
+    </main>
+
+    <script>
+      Array.from(
+        document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]')
+      ).forEach(h => {
+        h.addEventListener('click', e => {
+          window.location.hash = e.target.getAttribute('id');
+        });
+      })
+
+      var path = document.location.pathname.split("/");
+      if(path[path.length - 1] === ""){
+          path.pop();
+      }           
+      var navigationEleDom = "";
+      var navElement = document.getElementById("navigation");
+      path.forEach(function(ele,index){
+          var el = document.createElement("a"); 
+          navigationEleDom = navigationEleDom+ele+"/"
+          el.setAttribute("href",navigationEleDom);
+          el.innerHTML = ele || "Home";
+          navElement.appendChild(el);
+          if(path.length != index+1){
+             var newSpan = document.createElement("span");
+              newSpan.innerHTML = " → "
+              navElement.appendChild(newSpan); 
+          }
+      })
+    </script>
+  </body>
+</html>
