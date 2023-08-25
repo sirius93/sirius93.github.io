@@ -1,5 +1,5 @@
 
-# From Bangkok Bustle to Beach Bliss: A 7-Day Escape to Thailand
+# From Bangkok Bustle to Beach Bliss: A 7-Day Escape to Thailand | Part 1 | Bangkok
 
 ## Part 1: Exploring the Bustling Streets of Bangkok
 Date: 16th - 18th July 2023
