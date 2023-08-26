@@ -14,11 +14,12 @@ Domestic gates typically open around 2 hours before departure, so it's wise to t
 #### Chiang Mai: A Tranquil Retreat Awaits
 
 Our anticipation soared as we landed in Chiang Mai. Our accommodation was booked at the exquisite Khum Phaya Resort, nestled around 17 kilometers away from the airport. We found that the resort was a serene oasis, providing a perfect contrast to the city's bustle.
+
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3776.957095937297!2d99.02311607504487!3d18.80006528234854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da2542e5a0a105%3A0x7ba02eddd42f105!2sKhum%20Phaya%20Resort%20%26%20Spa%2C%20Centara%20Boutique%20Collection!5e0!3m2!1sen!2sin!4v1693084826979!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 The resort's location, amidst an area that seemed more like an office zone, turned out to be a surprisingly well-suited choice. The property was impeccably maintained, offering impeccable service. While the cuisine was a tad on the pricey side, this was a common theme throughout Thailand, and it didn't hinder our enjoyment.
 
-<iframe width="315" height="560"
+<iframe width="100%" height="560"
 src="https://www.youtube.com/embed/7y1cOK-OXeU"
 title="YouTube video player" frameborder="0"
 allow="accelerometer; autoplay; clipboard-write; encrypted-media;
@@ -30,7 +31,14 @@ allowfullscreen></iframe>
 
 Upon arrival, we were pleasantly surprised with an upgrade to a Pool Access room. We decided to make the most of this luxury by spending the day enjoying the pool, indulging in delectable hotel fare, and unwinding.
 
-By Evening, we went to nearby convention center
+By Evening, we went to the resort's convention center where we enjoyed performances by local folk artists, about the folk tale of Hanuman and more.
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1555.3342676419988!2d99.02444613332177!3d18.800011902469013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da2535c8883f4f%3A0xdac40ac96b75b8fb!2sKhum%20Khantoke!5e0!3m2!1sen!2sin!4v1693085891298!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+Some images that I was able to capture from the live show, I will be adding videos about it soon.
+
+![Convention center show](https://github.com/sirius93/sirius93.github.io/assets/6882879/3059fb24-5d4e-4a04-a1a0-904ef9a1afcf)
+
 
 ### Day 4 in Thailand: Exploring Chiang Mai's Temples
 
