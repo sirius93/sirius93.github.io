@@ -1,7 +1,7 @@
+
+![Banner Image](https://github.com/sirius93/sirius93.github.io/assets/6882879/d97002ae-69f3-4b78-9d7f-c8b7ae9469c2)
+
 # Hotel Booking Scams, Scammers target Desperate, Exhausted Travelers, something Lookout for during your next travel..!!
-
-![banner image](https://github.com/sirius93/sirius93.github.io/assets/6882879/696d0119-fbb2-4aa3-ba8e-299e95034673)
-
 
 2023 has been the year of travel for me and my better half. We have been on the road or in transit from hotel to hotel almost every month of the year. 
 
@@ -63,7 +63,7 @@ Another thing I found that this scam is very widespread and on doing a reverse D
 
 DO NOT CLICK THE BELOW LINKS
 
-courtyardmarriott.in
+[courtyardmarriott.in](courtyardmarriott.in)
 
 https://connaughtcastle.in/
 
@@ -79,11 +79,11 @@ While I am publishing this, my wife is on her trip to the US and will be travell
 
 Thanks for reading.
 
-Feel free to comment on how you like my blog or shoot me a email at connect@nandan.dev If you have any queries and I will try to answer.
+Shoot me a mail at [**connect@nandan.dev**](mailto:connect@nandan.dev) If you have any queries and I will try to answer.
 
-You can also visit my website to read some of the articles at nandan.dev
+You can also visit my website to read some of the articles at [**nandan.dev**](http://nandan.dev)
 
 Stay tuned & connect with me on my social media channels. Make sure to subscribe to my newsletter to get regular updates on my upcoming posts.
 
-Twitter | Instagram | Github | Website
+[**Twitter**](https://twitter.com/_sirius93_) | [**Instagram**](https://www.instagram.com/_sirius93_) | [**Github**](https://github.com/sirius93) | [**Website**](https://nandan.dev/)
 
