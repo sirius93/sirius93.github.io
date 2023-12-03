@@ -39,4 +39,4 @@ let node = new Node(5);
 myList.appendNode(node);
 myList.appendNode(new Node(11));
 myList.appendNode(new Node(7));
-myList.printList();
+myList.printList(); 
