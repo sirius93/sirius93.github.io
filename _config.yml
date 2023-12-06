@@ -13,7 +13,7 @@ color:
 buttons:
   zip_url: https://nandan.dev
   zip_title: Home
-  zip_hide: false
+  zip_hide: true
   tar_hide: true
   github_hide: true
 google_analytics: G-4ZLTZWK8F2
