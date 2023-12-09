@@ -23,6 +23,22 @@
 - [System Design](courses/system-design)
     - [SQL Database](courses/system-design/sql-databases)  
     - [Acid and Base Consistency Models](courses/system-design/acid-and-base-consistency-models)
+- [front-end](courses/front-end)
+    - [Javascript](courses/front-end/JavaScript)
+        - [Javascript Advance](courses/front-end/JavaScript/JavaScript%20Advanced)
+        - [Javascript Basics](courses/front-end/JavaScript/JavaScript%20Basics)
+        - [Polyfills](courses/front-end/JavaScript/Polyfills)
+    - [React](courses/front-end/React)
+        - [React Interview](courses/front-end/React/ReactInterview)
+- [Git](courses/git)
+
+#### [🚀 LifeStyle](lifestyle)
+
+- [From Bangkok bustle to beach bliss : Part 1](lifestyle/from-bangkok-bustle-to-beach-Bliss-a-7-day-escape-to-thailand.md)
+- [From Bangkok bustle to beach bliss : Part 2](lifestyle/from-bangkok-bustle-to-beach-Bliss-a-7-day-escape-to-thailand-part-2.md)
+- [Hajmola Lemon Tea Recipe](lifestyle/hajomola-lemon-tea-recipe.md)
+- [HIIT for Beginners](lifestyle/high-intensity-interval-training-as-a-beginner.md)
+- [My Seven Day Workout Plan](lifestyle/my-seven-day-workout-plan-with-2-days-rest.md)
 
 
 #### [🚀 Affliates](affliates)
@@ -39,4 +55,6 @@
     - [Acer chromebook spin 311](tech/laptops/acer-chromebook-spin-311-convertible-laptop.md)
 
 - [Scams](tech/scams/)
-    - [Common UPI Scams in India](tech/scams/common-upi-scams-in-india)
+    - [Common UPI Scams in India](tech/scams/common-upi-scams-in-india.md)
+    - [Common Trading Scams](tech/scams/common-trading-scams.md)
+    - [Hotel Booking Scams ](tech/scams/hotel-booking-scams-target-desperate-travelers.md)
