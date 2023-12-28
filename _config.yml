@@ -28,6 +28,15 @@ kramdown:
 url: "https://nandan.dev"
 logo_url: https://nandan.dev/images/logo-img.png
 feed:
+  collections:
+    pages:
+      path: "/pages/rss.xml"
+      categories:
+        - courses
+        - lifestyle
+        - affliates
+        - books
+        - tech
   path: rss.xml
   
 plugins:
