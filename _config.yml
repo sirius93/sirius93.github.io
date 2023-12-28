@@ -28,4 +28,5 @@ url: "https://nandan.dev"
 logo_url: https://nandan.dev/images/logo-img.png
 plugins:
   - jekyll-sitemap
+  - jekyll-feed
 
