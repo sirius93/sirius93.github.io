@@ -37,6 +37,11 @@ feed:
         - affliates
         - books
         - tech
+    pages/courses:
+      path: "pages/courses/rss.xml"
+        - git
+        - front-end
+        - system-design
   path: rss.xml
   
 plugins:
