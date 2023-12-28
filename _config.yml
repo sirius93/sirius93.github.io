@@ -31,12 +31,6 @@ feed:
   collections:
     pages:
       path: "/pages/rss.xml"
-      categories:
-        - courses
-        - lifestyle
-        - affliates
-        - books
-        - tech
   path: rss.xml
   
 plugins:
