@@ -1,5 +1,6 @@
 title: Nandan Kumar - Software Engineer, Tech Speaker, Mentor, Featured on BBC, Saudi Gazette, Times Of India
 description: Nandan Kumar &#10187; Software Engineer &#10187;  Tech Speaker &#10187; Mentor
+author: Nandan Kumar
 show_downloads: true
 show_navigation: true
 remote_theme: sirius93/cayman-theme-custom
@@ -26,6 +27,9 @@ kramdown:
   syntax_highlighter: rouge
 url: "https://nandan.dev"
 logo_url: https://nandan.dev/images/logo-img.png
+feed:
+  path: rss.xml
+  
 plugins:
   - jekyll-sitemap
   - jekyll-feed
