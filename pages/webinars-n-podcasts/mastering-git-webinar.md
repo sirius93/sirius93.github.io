@@ -19,6 +19,10 @@ Hence, I strongly believe this one-hour video will be really helpful for you to 
 
 In addition to the video, Please find the list of commands that will come in handy for your everyday use [here](https://nandan.dev/pages/courses/git/git-commands-for-everyday)
 
+### Presentation Deck:
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS2X3ZXi7i-6aqmvJS_L5h4q77ixLqAXMCajrpCUxPtQr3jBwNwe3sr-OZiB4PkC92Ucn28csQuqiGr/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
 Hope you all get to learn from this session. Please feel free to share your thoughts in the comment section of the video.
 
 Shoot me an email at [connect@nandan.dev](mailto:connect@nandan.dev) If you have any queries and I will try to answer.
