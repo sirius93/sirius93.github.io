@@ -1,4 +1,6 @@
-# Webinar - Mastering Git: Best Practices and Techniques
+# Webinar: Mastering Git - Best Practices and Techniques
+
+| Event Date | 13/01/2024 |
 
 ![Git Webinar Banner](https://github.com/sirius93/sirius93.github.io/assets/6882879/b6427edf-7a85-49be-a461-22c2339016ca)
 
