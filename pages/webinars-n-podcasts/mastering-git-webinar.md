@@ -20,3 +20,11 @@ Hence, I strongly believe this one-hour video will be really helpful for you to 
 In addition to the video, Please find the list of commands that will come in handy for your everyday use [here](https://nandan.dev/pages/courses/git/git-commands-for-everyday)
 
 Hope you all get to learn from this session. Please feel free to share your thoughts in the comment section of the video.
+
+Shoot me an email at [connect@nandan.dev](mailto:connect@nandan.dev) If you have any queries and I will try to answer.
+
+You can also visit my website to read some of the articles at  [**nandan.dev**](http://nandan.dev)
+
+Stay tuned & connect with me on my social media channels. Make sure to subscribe to my newsletter to get regular updates on my upcoming posts.
+
+[**Twitter**](https://twitter.com/_sirius93_) | [**Instagram**](https://www.instagram.com/_sirius93_) | [**Github**](https://github.com/sirius93) | [**Website**](https://nandan.dev/)
