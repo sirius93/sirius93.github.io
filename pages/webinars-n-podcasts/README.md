@@ -4,3 +4,4 @@
 - [Podcast : Lost your baggage? Just ‘hack’ your way back to it with Nandan Kumar with Black Hat MEA](https://nandan.dev/pages/webinars-n-podcasts/podcast-with-blackhat-mea)
 - [Interview with famous instagram page Bihar se hai on How i got my luggage back](https://nandan.dev/pages/webinars-n-podcasts/interview-with-bihar-se-hai)
 - [Webinar : Mastering Git -  Best Practices and Techniques](https://nandan.dev/pages/webinars-n-podcasts/mastering-git-webinar)
+- [Podcast: Career Journey Podcast with Vinod Sharma](https://nandan.dev/pages/webinars-n-podcasts/podcast-with-vinod-sharma)
