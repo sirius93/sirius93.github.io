@@ -97,7 +97,7 @@
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{\href{https://nandan.dev}{\Large Nandan Kumar}} & Email : \href{mailto:connect@nandan.dev}{connect@nandan.dev}\\
-  \href{https://nandan.dev}{https://nandan.dev} & Mobile : \href{tel:+91-9304926357}{+91-9304926357} \\
+  \href{https://nandan.dev}{https://nandan.dev} & Mobile : \href{tel:+91-7676075016}{+91-7676075016} \\
 \end{tabular*}
 
 
