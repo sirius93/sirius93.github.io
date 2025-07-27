@@ -189,6 +189,194 @@
 	}
 
 
+	var loadBlogPosts = function() {
+		// RSS feed URL
+		const rssUrl = 'https://blog.nandan.dev/rss.xml';
+		
+		// Function to parse XML and extract blog posts
+		function parseRSS(xmlText) {
+			const parser = new DOMParser();
+			const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
+			const items = xmlDoc.querySelectorAll('item');
+			
+			const posts = [];
+			for (let i = 0; i < Math.min(5, items.length); i++) {
+				const item = items[i];
+				const title = item.querySelector('title')?.textContent || '';
+				const link = item.querySelector('link')?.textContent || '';
+				const description = item.querySelector('description')?.textContent || '';
+				const pubDate = item.querySelector('pubDate')?.textContent || '';
+				
+				// Extract image from description if available
+				let imageUrl = '';
+				const imgMatch = description.match(/<img[^>]+src="([^"]+)"/);
+				if (imgMatch) {
+					imageUrl = imgMatch[1];
+				} else {
+					// Default image if no image found
+					imageUrl = 'images/system-design.png';
+				}
+				
+				// Format date
+				let formattedDate = '';
+				if (pubDate) {
+					const date = new Date(pubDate);
+					formattedDate = date.toLocaleDateString('en-US', { 
+						year: 'numeric', 
+						month: 'short', 
+						day: 'numeric' 
+					});
+				}
+				
+				posts.push({
+					title: title,
+					link: link,
+					description: description.replace(/<[^>]*>/g, '').substring(0, 150) + '...',
+					date: formattedDate,
+					image: imageUrl
+				});
+			}
+			
+			return posts;
+		}
+		
+		// Function to create blog post HTML
+		function createBlogPostHTML(post) {
+			return `
+				<div class="col-md-6">
+					<div class="fh5co-blog">
+						<a target="_blank" href="${post.link}" class="blog-bg" style="background-image: url(${post.image});"></a>
+						<div class="blog-text">
+							<span class="posted_on">${post.date}</span>
+							<h3><a target="_blank" href="${post.link}">${post.title}</a></h3>
+							<p>${post.description}</p>
+							<ul class="stuff">
+								<li><a target="_blank" href="${post.link}">Read More<i class="icon-arrow-right22"></i></a></li>
+							</ul>
+						</div> 
+					</div>
+				</div>
+			`;
+		}
+		
+		// Function to display blog posts
+		function displayBlogPosts(posts) {
+			const blogContainer = document.querySelector('#blog-posts-container');
+			if (blogContainer && posts.length > 0) {
+				// Clear existing content
+				blogContainer.innerHTML = '';
+				
+				// Add new blog posts
+				posts.forEach(post => {
+					blogContainer.innerHTML += createBlogPostHTML(post);
+				});
+			}
+		}
+		
+		// Function to show error message
+		function showError() {
+			const blogContainer = document.querySelector('#blog-posts-container');
+			if (blogContainer) {
+				blogContainer.innerHTML = `
+					<div class="col-md-12 text-center">
+						<p>Unable to load blog posts. Please visit <a href="https://blog.nandan.dev" target="_blank">my blog</a> to see the latest posts.</p>
+					</div>
+				`;
+			}
+		}
+		
+		// Static fallback data in case RSS fails
+		const fallbackPosts = [
+			{
+				title: "How I \"Hacked\" an Airline Website to get back my luggage",
+				link: "https://blog.nandan.dev/how-i-hacked-an-airline-website-to-get-back-my-luggage-a-first-person-insight-to-the-story",
+				description: "Around 3 months back, I tweeted a thread to a famous airline in India, pointing out some flaws in their data security...",
+				date: "Aug. 23rd 2022",
+				image: "images/how-I-hacked.png"
+			},
+			{
+				title: "System Design Series",
+				link: "https://blog.nandan.dev/series/system-design",
+				description: "Hey There, I have started learning system design and In this series, I will share my learning about system design with you. One topic at a time. Stay Tuned & Keep Learning..!! OSI,TCP/IP,Load balancers etc.",
+				date: "Oct. 12rd 2022",
+				image: "images/system-design.png"
+			}
+		];
+		
+		// Try multiple approaches to fetch RSS
+		async function tryFetchRSS() {
+			// Approach 1: Try loading from local JSON file (created by GitHub Actions)
+			try {
+				const response = await fetch('blog-posts.json');
+				if (response.ok) {
+					const posts = await response.json();
+					if (posts.length > 0) {
+						displayBlogPosts(posts);
+						return;
+					}
+				}
+			} catch (error) {
+				console.log('Local JSON fetch failed, trying direct RSS...');
+			}
+			
+			// Approach 2: Direct fetch (may fail due to CORS)
+			try {
+				const response = await fetch(rssUrl);
+				if (response.ok) {
+					const xmlText = await response.text();
+					const posts = parseRSS(xmlText);
+					if (posts.length > 0) {
+						displayBlogPosts(posts);
+						return;
+					}
+				}
+			} catch (error) {
+				console.log('Direct fetch failed, trying CORS proxy...');
+			}
+			
+			// Approach 3: CORS proxy
+			try {
+				const corsProxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(rssUrl)}`;
+				const response = await fetch(corsProxyUrl);
+				if (response.ok) {
+					const data = await response.json();
+					if (data.contents) {
+						const posts = parseRSS(data.contents);
+						if (posts.length > 0) {
+							displayBlogPosts(posts);
+							return;
+						}
+					}
+				}
+			} catch (error) {
+				console.log('CORS proxy failed, trying alternative proxy...');
+			}
+			
+			// Approach 4: Alternative CORS proxy
+			try {
+				const altProxyUrl = `https://cors-anywhere.herokuapp.com/${rssUrl}`;
+				const response = await fetch(altProxyUrl);
+				if (response.ok) {
+					const xmlText = await response.text();
+					const posts = parseRSS(xmlText);
+					if (posts.length > 0) {
+						displayBlogPosts(posts);
+						return;
+					}
+				}
+			} catch (error) {
+				console.log('Alternative proxy failed, using fallback...');
+			}
+			
+			// Approach 5: Fallback to static data
+			console.log('All RSS fetch attempts failed, using fallback data');
+			displayBlogPosts(fallbackPosts);
+		}
+		
+		// Start the fetch process
+		tryFetchRSS();
+	};
+
 	$(function(){
 		contentWayPoint();
 		goToTop();
@@ -198,6 +386,7 @@
 		// pieChart();
 		skillsWayPoint();
 		handleSmallScreens();
+		loadBlogPosts(); // Load blog posts from RSS feed
 	});
 
 
