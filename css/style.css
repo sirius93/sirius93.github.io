@@ -886,23 +886,7 @@ h1, h2, h3, h4, h5, h6, figure {
   float: right;
 }
 .fh5co-blog .blog-text .stuff li:last-child a {
-	color: #000;
-}
-
-.loading-blogs {
-	padding: 40px 0;
-}
-
-.loading-blogs p {
-	font-size: 18px;
-	color: rgba(0, 0, 0, 0.6);
-}
-
-/* Responsive adjustments for blog posts */
-@media screen and (max-width: 768px) {
-	#blog-posts-container .col-md-6 {
-		margin-bottom: 30px;
-	}
+  color: #000;
 }
 .fh5co-blog .blog-text .stuff li:last-child i {
   padding-right: 0;
