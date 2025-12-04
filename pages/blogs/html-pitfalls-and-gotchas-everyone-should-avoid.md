@@ -1,7 +1,8 @@
 ---
-title: "HTML Pitfalls and Gotchas Every Developer Should Avoid"
+title: "HTML Pitfalls and Gotchas Everyone Should Avoid"
 canonical-url: https://blog.nandan.dev/html-pitfalls-and-gotchas-every-developer-should-avoid
 ---
+# HTML Pitfalls and Gotchas Everyone Should Avoid
 
 <mark>HTML is easy, said every developer ever.</mark>
 
