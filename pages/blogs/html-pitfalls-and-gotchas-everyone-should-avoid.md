@@ -1,6 +1,6 @@
 ---
 title: "HTML Pitfalls and Gotchas Everyone Should Avoid"
-canonical-url: https://blog.nandan.dev/html-pitfalls-and-gotchas-every-developer-should-avoid
+canonical_url: https://blog.nandan.dev/html-pitfalls-and-gotchas-every-developer-should-avoid
 ---
 # HTML Pitfalls and Gotchas Everyone Should Avoid
 
