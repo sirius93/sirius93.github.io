@@ -1,15 +1,6 @@
 ---
 title: "HTML Pitfalls and Gotchas Every Developer Should Avoid"
-seoTitle: "HTML Mistakes Developers Must Avoid"
-seoDescription: "Discover the critical HTML mistakes causing layout bugs, broken characters, and failed social previews. Master essential meta tags, nesting rules, and best "
-datePublished: Fri Sep 05 2025 04:23:19 GMT+0000 (Coordinated Universal Time)
-cuid: cmf6bxwdj000s02ji3awnhju8
-slug: html-pitfalls-and-gotchas-every-developer-should-avoid
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1757046158565/25b1173b-f99c-4e7e-b343-558b1b387698.png
-ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1757046189528/3b8a0871-bfaa-4c10-8292-670a8d74a45b.png
-tags: html5, meta, meta-tags, gotchas
 canonical-url: https://blog.nandan.dev/html-pitfalls-and-gotchas-every-developer-should-avoid
-layout: post
 ---
 
 <mark>HTML is easy, said every developer ever.</mark>
