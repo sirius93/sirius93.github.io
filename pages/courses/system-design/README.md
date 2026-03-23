@@ -175,7 +175,82 @@ While this model is not directly implemented in the TCP/IP networks that are mos
 
 The seven abstraction layers of the OSI model can be defined as follows, from top to bottom:
 
-![osi-model](https://nandan.dev/system-design/images/osi-model.png) 
+<!---  ![osi-model](https://nandan.dev/system-design/images/osi-model.png) --->
+
+
+```
+
++---------------------+
+|                     |
+| 7.Application Layer |
+|                     |
+|                     |
++---------------------+
+
+
+
+
++---------------------+
+|                     |
+| 6.Presentation Layer|
+|                     |
+|                     |
++---------------------+
+
+
+
++----------------------+
+|                      |
+| 5. Session Layer     |
+|                      |
+|                      |
++----------------------+
+
+
+
+
++----------------------+
+|                      |
+| 4. Transport Layer   |
+|                      |
+|                      |
++----------------------+
+
+
+
+
+
++----------------------+
+|                      |
+|  3. Network Layer    |
+|                      |
+|                      |
++----------------------+
+
+
+
+
+
++-----------------------+
+|                       |
+|                       |
+|  2. Data link layer   |
+|                       |
+|                       |
++-----------------------+
+
+
+
+
+
++------------------------+
+|                        |
+|                        |
+|    1. Physical Layer   |
+|                        |
++------------------------+
+
+```
 
 ### Application
 
