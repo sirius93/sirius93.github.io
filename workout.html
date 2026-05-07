@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>30-Min Dumbbell Workout</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg:      #080c10;
+    --surface: #0e1318;
+    --card:    #131920;
+    --border:  #1e2832;
+    --cyan:    #00d4ff;
+    --orange:  #ff6020;
+    --lime:    #7fff00;
+    --white:   #edf2f7;
+    --muted:   #64748b;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--white);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  /* noise grain */
+  body::before {
+    content: '';
+    position: fixed; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none; z-index: 0;
+  }
+
+  /* HERO */
+  .hero {
+    position: relative;
+    min-height: 320px;
+    display: flex; flex-direction: column; justify-content: flex-end;
+    padding: 0 40px 40px;
+    overflow: hidden;
+  }
+  .hero-bg {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 65% 0%,  rgba(0,212,255,.18) 0%, transparent 70%),
+      radial-gradient(ellipse 55% 50% at 10% 100%, rgba(255,96,32,.12)  0%, transparent 70%),
+      var(--bg);
+  }
+  .hero-grid {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(0,212,255,.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,212,255,.04) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+  .scan {
+    position: absolute; top: 0; left: 0; right: 0; height: 2px;
+    background: var(--cyan); opacity: .5;
+    animation: scan 4s ease-in-out infinite;
+  }
+  @keyframes scan { 0%,100%{top:0;opacity:.5} 50%{top:100%;opacity:.1} }
+
+  .hero-content { position: relative; z-index: 2; }
+  .hero-tag {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(0,212,255,.1); border: 1px solid rgba(0,212,255,.3);
+    border-radius: 999px; padding: 4px 14px;
+    font-family: 'Space Mono', monospace; font-size: 11px;
+    color: var(--cyan); letter-spacing: .08em; margin-bottom: 14px;
+  }
+  .hero-tag::before { content:'●'; animation: blink 1.4s step-end infinite; }
+  @keyframes blink { 50%{opacity:0} }
+  h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(52px, 10vw, 90px);
+    letter-spacing: .03em; line-height: .92;
+  }
+  h1 span { color: var(--cyan); }
+  .hero-sub {
+    margin-top: 14px; font-family: 'Space Mono', monospace;
+    font-size: 12px; color: var(--muted);
+  }
+
+  /* STATS STRIP */
+  .stats { display: flex; gap: 1px; background: var(--border); }
+  .stat { flex: 1; padding: 16px 20px; background: var(--surface); text-align: center; }
+  .stat-val { display: block; font-family: 'Bebas Neue', sans-serif; font-size: 30px; }
+  .stat-label { font-size: 10px; color: var(--muted); letter-spacing: .1em; text-transform: uppercase; }
+  .c .stat-val { color: var(--cyan); }
+  .o .stat-val { color: var(--orange); }
+  .l .stat-val { color: var(--lime); }
+
+  /* LAYOUT */
+  .main { max-width: 1080px; margin: 0 auto; padding: 48px 24px 80px; }
+
+  .sec-head { display: flex; align-items: center; gap: 14px; margin-bottom: 24px; }
+  .pill {
+    font-family: 'Bebas Neue', sans-serif; font-size: 12px;
+    letter-spacing: .14em; padding: 4px 13px; border-radius: 999px;
+  }
+  .pill-c { background: rgba(0,212,255,.12); color: var(--cyan);   border: 1px solid rgba(0,212,255,.28); }
+  .pill-o { background: rgba(255,96,32,.12);  color: var(--orange); border: 1px solid rgba(255,96,32,.28); }
+  .pill-l { background: rgba(127,255,0,.12);  color: var(--lime);   border: 1px solid rgba(127,255,0,.28); }
+  .sec-title { font-family: 'Bebas Neue', sans-serif; font-size: 26px; letter-spacing: .04em; }
+  .divider { flex: 1; height: 1px; background: var(--border); }
+  .sec-dur { font-family: 'Space Mono', monospace; font-size: 11px; color: var(--muted); }
+
+  section { margin-bottom: 52px; }
+
+  /* WARMUP */
+  .wm-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px,1fr));
+    gap: 10px;
+  }
+  .wm-card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 10px; padding: 18px 14px;
+    transition: transform .2s, border-color .2s;
+  }
+  .wm-card:hover { transform: translateY(-3px); border-color: rgba(0,212,255,.4); }
+  .wm-n { font-family:'Space Mono',monospace; font-size:10px; color:var(--cyan); opacity:.55; margin-bottom:8px; }
+  .wm-name { font-weight:600; font-size:13px; margin-bottom:8px; }
+  .wm-dur {
+    font-family:'Space Mono',monospace; font-size:11px;
+    color:var(--cyan); background:rgba(0,212,255,.1);
+    border-radius:4px; padding:2px 7px; display:inline-block;
+  }
+
+  /* FORMAT BAR */
+  .fmt-bar {
+    display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 10px; padding: 13px 18px; margin-bottom: 20px;
+  }
+  .fmt-item { display: flex; align-items: center; gap: 6px; font-family:'Space Mono',monospace; font-size:11px; }
+  .dot { width:7px; height:7px; border-radius:50%; }
+  .sep { color: var(--border); font-size:16px; }
+
+  /* EXERCISE CARDS */
+  .ex-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px,1fr));
+    gap: 16px;
+  }
+  .ex-card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 14px; overflow: hidden;
+    transition: transform .25s, box-shadow .25s;
+  }
+  .ex-card:hover { transform: translateY(-4px); box-shadow: 0 18px 38px rgba(0,0,0,.45); }
+
+  /* VIDEO THUMBNAIL — opens YouTube in new tab */
+  .vid-thumb {
+    position: relative; display: block;
+    width: 100%; aspect-ratio: 16/9;
+    overflow: hidden; background: #000; text-decoration: none;
+  }
+  .vid-thumb img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+    transition: transform .35s, filter .35s;
+    filter: brightness(.85);
+  }
+  .vid-thumb:hover img { transform: scale(1.04); filter: brightness(1); }
+  .play {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    width: 54px; height: 54px; border-radius: 50%;
+    background: rgba(255,255,255,.93);
+    display: flex; align-items: center; justify-content: center;
+    transition: transform .2s, background .2s; pointer-events: none;
+  }
+  .vid-thumb:hover .play { transform: translate(-50%,-50%) scale(1.13); background:#fff; }
+  .play svg { width:22px; height:22px; fill:#111; margin-left:4px; }
+  .yt-badge {
+    position: absolute; bottom: 8px; right: 8px;
+    background: rgba(0,0,0,.75); border-radius: 4px;
+    padding: 3px 8px; pointer-events: none;
+    font-family:'Space Mono',monospace; font-size:10px; color:#fff;
+    display: flex; align-items: center; gap: 5px;
+  }
+  .yt-badge svg { width:13px; height:13px; fill:#ff0000; }
+
+  /* CARD BODY */
+  .ex-body { padding: 16px 18px 18px; }
+  .ex-meta { display:flex; align-items:center; gap:8px; margin-bottom:8px; }
+  .ex-num { font-family:'Space Mono',monospace; font-size:10px; padding:2px 7px; border-radius:4px; font-weight:700; }
+  .num-o { background:rgba(255,96,32,.2); color:var(--orange); }
+  .num-l { background:rgba(127,255,0,.2);  color:var(--lime); }
+  .ex-name { font-family:'Bebas Neue',sans-serif; font-size:21px; letter-spacing:.04em; }
+  .ex-wt   { font-family:'Space Mono',monospace; font-size:11px; color:var(--cyan); margin-bottom:6px; }
+  .ex-mu   { font-size:12px; color:var(--muted); margin-bottom:10px; }
+  .ex-tip  { font-size:12.5px; color:rgba(237,242,247,.72); border-left:2px solid var(--border); padding-left:10px; line-height:1.5; }
+
+  /* CORE GRID */
+  .core-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px,1fr));
+    gap: 12px;
+  }
+  .core-card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 12px; overflow: hidden;
+    transition: transform .2s, border-color .2s;
+  }
+  .core-card:hover { transform: translateY(-3px); border-color: rgba(127,255,0,.35); }
+  .core-body { padding: 13px 15px 15px; }
+  .core-name { font-weight:600; font-size:13.5px; margin-bottom:4px; }
+  .core-dur {
+    font-family:'Space Mono',monospace; font-size:11px;
+    color:var(--lime); background:rgba(127,255,0,.1);
+    border-radius:4px; padding:2px 7px; display:inline-block; margin-bottom:7px;
+  }
+  .core-tip { font-size:12px; color:var(--muted); }
+  .no-vid { aspect-ratio:16/9; display:flex; align-items:center; justify-content:center; background:rgba(127,255,0,.04); font-size:36px; }
+
+  /* TIPS */
+  .tips-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px,1fr)); gap: 12px; }
+  .tip-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; display:flex; gap:14px; }
+  .tip-icon { width:42px; height:42px; border-radius:10px; flex-shrink:0; display:flex; align-items:center; justify-content:center; font-size:20px; }
+  .ti-c { background:rgba(0,212,255,.1); }
+  .ti-o { background:rgba(255,96,32,.1); }
+  .ti-l { background:rgba(127,255,0,.1); }
+  .ti-w { background:rgba(255,255,255,.06); }
+  .tip-head { font-weight:600; font-size:13.5px; margin-bottom:3px; }
+  .tip-body { font-size:12.5px; color:var(--muted); line-height:1.5; }
+
+  footer {
+    text-align:center; padding:22px;
+    border-top:1px solid var(--border);
+    font-family:'Space Mono',monospace; font-size:11px; color:var(--muted);
+  }
+
+  /* fade-in scroll */
+  .fade { opacity:0; transform:translateY(22px); transition: opacity .5s ease, transform .5s ease; }
+  .fade.in { opacity:1; transform:none; }
+
+  @media(max-width:600px){
+    .hero{ padding:0 18px 28px; min-height:260px; }
+    .stats{ flex-wrap:wrap; }
+    .stat{ min-width:50%; }
+    .main{ padding:28px 14px 60px; }
+    .ex-grid{ grid-template-columns:1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="scan"></div>
+  <div class="hero-content">
+    <div class="hero-tag">LIVE SESSION · 80 KG · NO INJURIES</div>
+    <h1>30-MIN<br><span>DUMBBELL</span><br>WORKOUT</h1>
+    <p class="hero-sub">// FULL BODY · STRENGTH + CARDIO · 4–5× WEEK</p>
+  </div>
+</header>
+
+<div class="stats">
+  <div class="stat c"><span class="stat-val">5</span><span class="stat-label">Min Warm-Up</span></div>
+  <div class="stat o"><span class="stat-val">20</span><span class="stat-label">Min Strength</span></div>
+  <div class="stat l"><span class="stat-val">5</span><span class="stat-label">Min Core</span></div>
+  <div class="stat" style="background:var(--surface)"><span class="stat-val" style="color:var(--white)">6</span><span class="stat-label">Exercises</span></div>
+</div>
+
+<main class="main">
+
+  <!-- 01 WARM-UP -->
+  <section class="fade">
+    <div class="sec-head">
+      <span class="pill pill-c">01</span>
+      <span class="sec-title">Warm-Up</span>
+      <span class="divider"></span>
+      <span class="sec-dur">// 5 MIN · 1 ROUND · NO REST</span>
+    </div>
+    <div class="wm-grid">
+      <div class="wm-card"><div class="wm-n">01/05</div><div class="wm-name">Arm Circles + Shoulder Rolls</div><span class="wm-dur">1 min</span></div>
+      <div class="wm-card"><div class="wm-n">02/05</div><div class="wm-name">Bodyweight Squats (no jump)</div><span class="wm-dur">1 min</span></div>
+      <div class="wm-card"><div class="wm-n">03/05</div><div class="wm-name">Light DB Shoulder Taps (2–3 kg)</div><span class="wm-dur">1 min</span></div>
+      <div class="wm-card"><div class="wm-n">04/05</div><div class="wm-name">Cat-Cow Stretch</div><span class="wm-dur">1 min</span></div>
+      <div class="wm-card"><div class="wm-n">05/05</div><div class="wm-name">Torso Twist with Light DB</div><span class="wm-dur">1 min</span></div>
+    </div>
+  </section>
+
+  <!-- 02 STRENGTH CIRCUIT -->
+  <section class="fade">
+    <div class="sec-head">
+      <span class="pill pill-o">02</span>
+      <span class="sec-title">Strength Circuit</span>
+      <span class="divider"></span>
+      <span class="sec-dur">// 20 MIN · 4 ROUNDS</span>
+    </div>
+    <div class="fmt-bar">
+      <div class="fmt-item"><div class="dot" style="background:var(--orange)"></div>40s work</div>
+      <span class="sep">/</span>
+      <div class="fmt-item"><div class="dot" style="background:var(--muted)"></div>20s rest</div>
+      <span class="sep">/</span>
+      <div class="fmt-item"><div class="dot" style="background:var(--cyan)"></div>4 rounds</div>
+      <span class="sep">/</span>
+      <div class="fmt-item"><div class="dot" style="background:var(--lime)"></div>45–60s between rounds</div>
+    </div>
+    <div class="ex-grid">
+
+      <div class="ex-card">
+        <a class="vid-thumb" href="https://www.youtube.com/watch?v=Xjo_fY9Hl9w" target="_blank" rel="noopener">
+          <img src="https://img.youtube.com/vi/Xjo_fY9Hl9w/hqdefault.jpg" alt="Goblet Squat Tutorial" loading="lazy">
+          <div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+          <div class="yt-badge"><svg viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0C.488 3.45.029 5.804 0 12c.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0C23.512 20.55 23.971 18.196 24 12c-.029-6.185-.484-8.549-4.385-8.816zM9 16V8l8 4-8 4z"/></svg> Watch on YouTube</div>
+        </a>
+        <div class="ex-body">
+          <div class="ex-meta"><span class="ex-num num-o">01</span><span class="ex-name">Goblet Squat</span></div>
+          <div class="ex-wt">⚖ 1 DB · 12–20 kg</div>
+          <div class="ex-mu">🎯 Quads · Glutes · Core</div>
+          <div class="ex-tip">Hold DB at chest, squat deep with chest tall. Drive knees out over toes on the way up.</div>
+        </div>
+      </div>
+
+      <div class="ex-card">
+        <a class="vid-thumb" href="https://www.youtube.com/watch?v=aa57T45iFSE" target="_blank" rel="noopener">
+          <img src="https://img.youtube.com/vi/aa57T45iFSE/hqdefault.jpg" alt="Romanian Deadlift Tutorial" loading="lazy">
+          <div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+          <div class="yt-badge"><svg viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0C.488 3.45.029 5.804 0 12c.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0C23.512 20.55 23.971 18.196 24 12c-.029-6.185-.484-8.549-4.385-8.816zM9 16V8l8 4-8 4z"/></svg> Watch on YouTube</div>
+        </a>
+        <div class="ex-body">
+          <div class="ex-meta"><span class="ex-num num-o">02</span><span class="ex-name">Romanian Deadlift</span></div>
+          <div class="ex-wt">⚖ 2 DB · 10–15 kg each</div>
+          <div class="ex-mu">🎯 Hamstrings · Glutes · Lower Back</div>
+          <div class="ex-tip">Hinge at hips, slight knee bend. Feel the hamstring stretch at the bottom before driving hips forward.</div>
+        </div>
+      </div>
+
+      <div class="ex-card">
+        <a class="vid-thumb" href="https://www.youtube.com/watch?v=pKZMNVbfUzQ" target="_blank" rel="noopener">
+          <img src="https://img.youtube.com/vi/pKZMNVbfUzQ/hqdefault.jpg" alt="DB Bench Press Tutorial" loading="lazy">
+          <div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+          <div class="yt-badge"><svg viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0C.488 3.45.029 5.804 0 12c.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0C23.512 20.55 23.971 18.196 24 12c-.029-6.185-.484-8.549-4.385-8.816zM9 16V8l8 4-8 4z"/></svg> Watch on YouTube</div>
+        </a>
+        <div class="ex-body">
+          <div class="ex-meta"><span class="ex-num num-o">03</span><span class="ex-name">DB Bench Press</span></div>
+          <div class="ex-wt">⚖ 2 DB · 12–18 kg each</div>
+          <div class="ex-mu">🎯 Chest · Triceps · Front Delts</div>
+          <div class="ex-tip">Elbows at 45°, not flared. Lower slowly for chest stretch. Press up and lightly touch DBs at the top.</div>
+        </div>
+      </div>
+
+      <div class="ex-card">
+        <a class="vid-thumb" href="https://www.youtube.com/watch?v=6gvmcqr226U" target="_blank" rel="noopener">
+          <img src="https://img.youtube.com/vi/6gvmcqr226U/hqdefault.jpg" alt="Bent Over Row Tutorial" loading="lazy">
+          <div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+          <div class="yt-badge"><svg viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0C.488 3.45.029 5.804 0 12c.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0C23.512 20.55 23.971 18.196 24 12c-.029-6.185-.484-8.549-4.385-8.816zM9 16V8l8 4-8 4z"/></svg> Watch on YouTube</div>
+        </a>
+        <div class="ex-body">
+          <div class="ex-meta"><span class="ex-num num-o">04</span><span class="ex-name">Bent-Over Row</span></div>
+          <div class="ex-wt">⚖ 2 DB · 10–15 kg each</div>
+          <div class="ex-mu">🎯 Back · Rear Delts · Biceps</div>
+          <div class="ex-tip">Hinge 45°, back flat. Pull DBs to lower ribs. Squeeze shoulder blades at the top and control the descent.</div>
+        </div>
+      </div>
+
+      <div class="ex-card">
+        <a class="vid-thumb" href="https://www.youtube.com/watch?v=qEwKCR5JCog" target="_blank" rel="noopener">
+          <img src="https://img.youtube.com/vi/qEwKCR5JCog/hqdefault.jpg" alt="Shoulder Press Tutorial" loading="lazy">
+          <div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+          <div class="yt-badge"><svg viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0C.488 3.45.029 5.804 0 12c.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0C23.512 20.55 23.971 18.196 24 12c-.029-6.185-.484-8.549-4.385-8.816zM9 16V8l8 4-8 4z"/></svg> Watch on YouTube</div>
+        </a>
+        <div class="ex-body">
+          <div class="ex-meta"><span class="ex-num num-o">05</span><span class="ex-name">Shoulder Press</span></div>
+          <div class="ex-wt">⚖ 2 DB · 6–10 kg each</div>
+          <div class="ex-mu">🎯 Shoulders · Traps · Triceps</div>
+          <div class="ex-tip">Start at ear height, elbows 90°. Press straight overhead without arching the lower back. Brace core throughout.</div>
+        </div>
+      </div>
+
+      <div class="ex-card">
+        <a class="vid-thumb" href="https://www.youtube.com/watch?v=lLAw6fUccKA" target="_blank" rel="noopener">
+          <img src="https://img.youtube.com/vi/lLAw6fUccKA/hqdefault.jpg" alt="Farmers Carry Tutorial" loading="lazy">
+          <div class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+          <div class="yt-badge"><svg viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0C.488 3.45.029 5.804 0 12c.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0C23.512 20.55 23.971 18.196 24 12c-.029-6.185-.484-8.549-4.385-8.816zM9 16V8l8 4-8 4z"/></svg> Watch on YouTube</div>
+        </a>
+        <div class="ex-body">
+          <div class="ex-meta"><span class="ex-num num-l">06</span><span class="ex-name">Farmer's Carry</span></div>
+          <div class="ex-wt">⚖ 2 DB · 20–24 kg total · walk 40s</div>
+          <div class="ex-mu">🎯 Full Body · Grip · Core · Cardio</div>
+          <div class="ex-tip">Walk briskly, chest tall, shoulders packed down. HR climbs without any jumping — your low-impact cardio hit.</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 03 CORE FINISHER -->
+  <section class="fade">
+    <div class="sec-head">
+      <span class="pill pill-l">03</span>
+      <span class="sec-title">Core Finisher</span>
+      <span class="divider"></span>
+      <span class="sec-dur">// 5 MIN · 1 ROUND · NO BREAKS</span>
+    </div>
+    <div class="core-grid">
+
+      <div class="core-card">
+        <a class="vid-thumb" href="https://www.youtube.com/watch?v=p_dPOhhgovg" target="_blank" rel="noopener">
+          <img src="https://img.youtube.com/vi/p_dPOhhgovg/hqdefault.jpg" alt="Russian Twist Tutorial" loading="lazy">
+          <div class="play"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#111;margin-left:3px"><path d="M8 5v14l11-7z"/></svg></div>
+          <div class="yt-badge"><svg viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0C.488 3.45.029 5.804 0 12c.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0C23.512 20.55 23.971 18.196 24 12c-.029-6.185-.484-8.549-4.385-8.816zM9 16V8l8 4-8 4z"/></svg> YouTube</div>
+        </a>
+        <div class="core-body">
+          <div class="core-name">DB Russian Twists</div>
+          <div class="core-dur">2–3 kg · 45s</div>
+          <div class="core-tip">Lean back 45°, feet lifted. Rotate DB side to side targeting obliques.</div>
+        </div>
+      </div>
+
+      <div class="core-card">
+        <a class="vid-thumb" href="https://www.youtube.com/watch?v=pSHjTRCQxIw" target="_blank" rel="noopener">
+          <img src="https://img.youtube.com/vi/pSHjTRCQxIw/hqdefault.jpg" alt="Plank Tutorial" loading="lazy">
+          <div class="play"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#111;margin-left:3px"><path d="M8 5v14l11-7z"/></svg></div>
+          <div class="yt-badge"><svg viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0C.488 3.45.029 5.804 0 12c.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0C23.512 20.55 23.971 18.196 24 12c-.029-6.185-.484-8.549-4.385-8.816zM9 16V8l8 4-8 4z"/></svg> YouTube</div>
+        </a>
+        <div class="core-body">
+          <div class="core-name">Plank</div>
+          <div class="core-dur">20–30s</div>
+          <div class="core-tip">Elbows under shoulders. Squeeze glutes + core. Hips level — no sagging or piking.</div>
+        </div>
+      </div>
+
+      <div class="core-card">
+        <a class="vid-thumb" href="https://www.youtube.com/watch?v=wqZnFIVeQ1o" target="_blank" rel="noopener">
+          <img src="https://img.youtube.com/vi/wqZnFIVeQ1o/hqdefault.jpg" alt="Side Plank Tutorial" loading="lazy">
+          <div class="play"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#111;margin-left:3px"><path d="M8 5v14l11-7z"/></svg></div>
+          <div class="yt-badge"><svg viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0C.488 3.45.029 5.804 0 12c.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0C23.512 20.55 23.971 18.196 24 12c-.029-6.185-.484-8.549-4.385-8.816zM9 16V8l8 4-8 4z"/></svg> YouTube</div>
+        </a>
+        <div class="core-body">
+          <div class="core-name">Side Plank</div>
+          <div class="core-dur">15–20s each side</div>
+          <div class="core-tip">Stack or stagger feet. Drive hips up. Targets lateral core and obliques.</div>
+        </div>
+      </div>
+
+      <div class="core-card">
+        <div class="no-vid">🧘</div>
+        <div class="core-body">
+          <div class="core-name">Deep Breaths + Neck Stretch</div>
+          <div class="core-dur">1 min</div>
+          <div class="core-tip">Inhale 4s · hold 4s · exhale 6s. Drop ear to shoulder each side for neck release.</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 04 TIPS -->
+  <section class="fade">
+    <div class="sec-head">
+      <span class="pill pill-c">04</span>
+      <span class="sec-title">Weekly Blueprint</span>
+      <span class="divider"></span>
+    </div>
+    <div class="tips-grid">
+      <div class="tip-card"><div class="tip-icon ti-c">📆</div><div><div class="tip-head">Train 4–5× per week</div><div class="tip-body">Off-days: 20–30 min walk with the baby. Active recovery beats full rest.</div></div></div>
+      <div class="tip-card"><div class="tip-icon ti-o">😴</div><div><div class="tip-head">Tired dad days</div><div class="tip-body">Drop weight 30–40%, keep timing. Showing up matters more than intensity.</div></div></div>
+      <div class="tip-card"><div class="tip-icon ti-l">📈</div><div><div class="tip-head">Progressive overload</div><div class="tip-body">Add 1–2 kg once you finish all 40s intervals with clean form and controlled breathing.</div></div></div>
+      <div class="tip-card"><div class="tip-icon ti-w">💧</div><div><div class="tip-head">Hydrate + protein</div><div class="tip-body">~160g protein/day. At least 500ml water during the session, sip between rounds.</div></div></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  bailoutt.com &nbsp;·&nbsp; 30-Min Dumbbell Plan &nbsp;·&nbsp; Click any thumbnail to open tutorial on YouTube
+</footer>
+
+<script>
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); obs.unobserve(e.target); } });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.fade').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
