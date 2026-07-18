@@ -1,5 +1,6 @@
 ---
 title: "Common Scams"
+permalink: "/pages/tech/scams/"
 ---
 
 ## Common Scams

@@ -1,5 +1,6 @@
 ---
 title: "JavaScript"
+permalink: "/pages/courses/front-end/JavaScript/"
 ---
 
 # JavaScript

@@ -27,6 +27,16 @@ kramdown:
   syntax_highlighter: rouge
 url: "https://nandan.dev"
 logo_url: https://nandan.dev/images/logo-img.png
+logo: https://nandan.dev/images/nandan.jpg
+twitter:
+  username: _sirius93_
+  card: summary_large_image
+social:
+  name: Nandan Kumar
+  links:
+    - https://twitter.com/_sirius93_
+    - https://www.linkedin.com/in/nandank93/
+    - https://github.com/sirius93
 feed:
   collections:
     pages:

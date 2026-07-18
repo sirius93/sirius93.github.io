@@ -1,5 +1,6 @@
 ---
 title: "Ultimate Frontend Interview Preparation Guide"
+permalink: "/pages/courses/front-end/"
 ---
 
 # Ultimate Frontend Interview Preparation Guide

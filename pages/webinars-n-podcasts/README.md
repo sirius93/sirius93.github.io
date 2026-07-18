@@ -1,5 +1,6 @@
 ---
 title: "Webinars & Podcasts"
+permalink: "/pages/webinars-n-podcasts/"
 ---
 
 # Webinars & Podcasts

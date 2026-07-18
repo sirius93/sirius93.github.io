@@ -1,5 +1,6 @@
 ---
 title: "React"
+permalink: "/pages/courses/front-end/React/"
 ---
 
 # React

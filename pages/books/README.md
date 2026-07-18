@@ -1,5 +1,6 @@
 ---
 title: "Book Club (India Edition)"
+permalink: "/pages/books/"
 ---
 
 # Book Club (India Edition)

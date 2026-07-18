@@ -1,5 +1,6 @@
 ---
 title: "JavaScript Advanced"
+permalink: "/pages/courses/front-end/JavaScript/JavaScript Advanced/"
 ---
 
 # JavaScript Advanced

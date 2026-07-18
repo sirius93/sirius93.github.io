@@ -1,5 +1,6 @@
 ---
 title: "System Design Course"
+permalink: "/pages/courses/system-design/"
 ---
 
 # System Design Course
