@@ -1,3 +1,7 @@
+---
+title: "Polyfills"
+---
+
 # Polyfills
 
 Polyfills in JavaScript are code snippets or scripts that provide modern functionalities to older browsers or environments that lack support for those features.

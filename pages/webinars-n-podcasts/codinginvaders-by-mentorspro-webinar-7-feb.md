@@ -1,3 +1,7 @@
+---
+title: "How to multiply your salary by 3X by switching into IT Sector today"
+---
+
 # How to multiply your salary by 3X by switching into IT Sector today
 [![How to multiply your salary by 3X by switching into IT Sector today](https://user-images.githubusercontent.com/6882879/218333178-df153785-2a81-4703-ae5d-aa108979ac0a.jpeg)](https://www.youtube.com/watch?v=TTiNN9ksmtk)
 

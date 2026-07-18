@@ -1,3 +1,7 @@
+---
+title: "Resume"
+---
+
 # Resume
 
 - [Resume LatexTemplate](latex-template-for-resume)

@@ -1,3 +1,7 @@
+---
+title: "Leetcode 1 : Two sum problem"
+---
+
 # Leetcode 1 : Two sum problem
 
 My solution to the leetcode two sum problem using javascript.

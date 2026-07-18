@@ -1,3 +1,7 @@
+---
+title: "An Insight into Common Trading Scams"
+---
+
 # An Insight into Common Trading Scams
 
 Are you fascinated by traders showing off those big large screens and screenshots of their accounts that show Lacs and crores profit ...!!

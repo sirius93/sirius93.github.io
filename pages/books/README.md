@@ -1,3 +1,7 @@
+---
+title: "Book Club (India Edition)"
+---
+
 # Book Club (India Edition)
 
 #### Read latest book reviews [here](book-reviews)

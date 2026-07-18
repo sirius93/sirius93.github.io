@@ -1,3 +1,7 @@
+---
+title: "React"
+---
+
 # React
 
 In React, we will be covering the following topics:

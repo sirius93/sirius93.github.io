@@ -1,3 +1,7 @@
+---
+title: "JavaScript"
+---
+
 # JavaScript
 
 The content on JavaScript is divided into two parts:

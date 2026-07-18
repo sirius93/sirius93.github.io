@@ -1,5 +1,5 @@
-title: Nandan Kumar - Software Engineer, Tech Speaker, Mentor, Featured on BBC, Saudi Gazette, Times Of India
-description: Nandan Kumar &#10187; Software Engineer &#10187;  Tech Speaker &#10187; Mentor
+title: Nandan Kumar — Software Architect, Speaker & Security Researcher
+description: Nandan Kumar is a Bangalore-based software architect, startup co-founder, and tech speaker focused on system design, security, and web development.
 author: Nandan Kumar
 show_downloads: true
 show_navigation: true
@@ -37,4 +37,10 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
 

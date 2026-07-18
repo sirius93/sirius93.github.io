@@ -1,3 +1,7 @@
+---
+title: "How to Make Refreshing Lemon Tea for Two: A Step-by-Step Guide"
+---
+
 # How to Make Refreshing Lemon Tea for Two: A Step-by-Step Guide
 
 Looking for a quick and easy way to make a refreshing beverage to share with a loved one or friend? Look no further than this delicious recipe for lemon tea for two! With just a few simple ingredients and a little bit of time, you can create a delicious and satisfying drink that's perfect for any occasion.

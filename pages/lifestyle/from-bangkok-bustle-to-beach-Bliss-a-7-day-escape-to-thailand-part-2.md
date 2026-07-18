@@ -1,3 +1,7 @@
+---
+title: "From Bangkok Bustle to Beach Bliss: A 7-Day Escape to Thailand | Part 2 | Chiang Mai"
+---
+
 # From Bangkok Bustle to Beach Bliss: A 7-Day Escape to Thailand | Part 2 | Chiang Mai
 
 _If you missed Part 1 of our journey, catch up here: [From Bangkok Bustle to Beach Bliss: Part 1](from-bangkok-bustle-to-beach-Bliss-a-7-day-escape-to-thailand.md)_

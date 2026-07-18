@@ -1,3 +1,7 @@
+---
+title: "I created a beginner friendly seven day workout plan for you, so you don't have to"
+---
+
 # I created a beginner friendly seven day workout plan for you, so you don't have to
 
 Are you a male in your late twenties (Just like me) looking for a workout plan that accommodates your desk job and allows for adequate rest to prevent injury? 

@@ -1,3 +1,7 @@
+---
+title: "The Git Course: Roadmap from novice to pro"
+---
+
 # The Git Course: Roadmap from novice to pro
 
 ![git banner](https://nandan.dev/images/git.png)

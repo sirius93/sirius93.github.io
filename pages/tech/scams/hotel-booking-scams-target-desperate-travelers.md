@@ -1,3 +1,7 @@
+---
+title: "Hotel Booking Scams, Scammers target Desperate, Exhausted Travelers, something Lookout for during your next travel..!!"
+---
+
 # Hotel Booking Scams, Scammers target Desperate, Exhausted Travelers, something Lookout for during your next travel..!!
 
 ![Banner Image](https://github.com/sirius93/sirius93.github.io/assets/6882879/d97002ae-69f3-4b78-9d7f-c8b7ae9469c2)

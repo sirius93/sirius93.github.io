@@ -1,3 +1,7 @@
+---
+title: "JavaScript - Basics"
+---
+
 # JavaScript - Basics
 
 ## Hoisting

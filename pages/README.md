@@ -1,3 +1,7 @@
+---
+title: "Pages"
+---
+
 # Pages
 
 #### [📚 Recent Blog Posts](https://blog.nandan.dev)

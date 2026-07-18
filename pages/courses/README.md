@@ -1,3 +1,7 @@
+---
+title: "Courses"
+---
+
 # Courses
 
 - [System Design](https://nandan.dev/pages/courses/system-design)

@@ -1,3 +1,7 @@
+---
+title: "Top Bestselling laptops in 2021"
+---
+
 # Top Bestselling laptops in 2021 
 
 As of my knowledge cutoff in 2021, the following are some of the top-selling laptops on Amazon:

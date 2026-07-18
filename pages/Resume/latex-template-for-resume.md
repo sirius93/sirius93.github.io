@@ -1,3 +1,7 @@
+---
+title: "Latex template for resume"
+---
+
 # Latex template for resume
 
 ```

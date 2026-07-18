@@ -1,3 +1,7 @@
+---
+title: "React"
+---
+
 # React
 
 React is a JavaScript library for building user interfaces. It was developed by Facebook and released as an open-source project. React is primarily used for building single-page applications (SPAs) and mobile applications, although it can also be used for creating specific components within larger web applications.

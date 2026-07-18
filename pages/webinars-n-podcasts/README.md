@@ -1,3 +1,7 @@
+---
+title: "Webinars & Podcasts"
+---
+
 # Webinars & Podcasts
 
 - [Webinar : How to multiply your salary by 3X by switching into IT Sector today by CodingInvaders](https://nandan.dev/pages/webinars-n-podcasts/codinginvaders-by-mentorspro-webinar-7-feb)
