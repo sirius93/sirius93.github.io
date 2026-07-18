@@ -1,5 +1,6 @@
 ---
 title: "Affliates"
+permalink: "/pages/affliates/"
 ---
 
 # Affliates

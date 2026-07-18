@@ -1,5 +1,6 @@
 ---
 title: "The Git Course: Roadmap from novice to pro"
+permalink: "/pages/courses/git/"
 ---
 
 # The Git Course: Roadmap from novice to pro

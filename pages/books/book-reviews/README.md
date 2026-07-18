@@ -1,5 +1,6 @@
 ---
 title: "Book Reviews"
+permalink: "/pages/books/book-reviews/"
 ---
 
 # Book Reviews

@@ -1,5 +1,6 @@
 ---
 title: "Courses"
+permalink: "/pages/courses/"
 ---
 
 # Courses

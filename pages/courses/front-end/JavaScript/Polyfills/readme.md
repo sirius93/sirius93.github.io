@@ -1,5 +1,6 @@
 ---
 title: "Polyfills"
+permalink: "/pages/courses/front-end/JavaScript/Polyfills/"
 ---
 
 # Polyfills

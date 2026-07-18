@@ -1,5 +1,6 @@
 ---
 title: "Blogs"
+permalink: "/pages/blogs/"
 ---
 
 # Pages

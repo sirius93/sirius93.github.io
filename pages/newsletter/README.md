@@ -1,5 +1,6 @@
 ---
 title: "Newsletter"
+permalink: "/pages/newsletter/"
 ---
 
 # Newsletter

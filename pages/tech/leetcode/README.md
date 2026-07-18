@@ -1,5 +1,6 @@
 ---
 title: "Leetcode problems and their solutions using javascript"
+permalink: "/pages/tech/leetcode/"
 ---
 
 # Leetcode problems and their solutions using javascript

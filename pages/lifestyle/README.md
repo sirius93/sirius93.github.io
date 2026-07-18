@@ -1,5 +1,6 @@
 ---
 title: "Lifestyle"
+permalink: "/pages/lifestyle/"
 ---
 
 # Lifestyle

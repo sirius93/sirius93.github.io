@@ -1,5 +1,6 @@
 ---
 title: "React Interview Questions"
+permalink: "/pages/courses/front-end/React/ReactInterview/"
 ---
 
 # React
