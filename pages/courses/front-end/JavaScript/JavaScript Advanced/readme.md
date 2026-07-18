@@ -1,3 +1,7 @@
+---
+title: "JavaScript Advanced"
+---
+
 # JavaScript Advanced
 
 ## Mutability vs Immutability

@@ -1,3 +1,7 @@
+---
+title: "Webinar: Mastering Git - Best Practices and Techniques"
+---
+
 # Webinar: Mastering Git - Best Practices and Techniques
 
 | Event Date | 13/01/2024 |

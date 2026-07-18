@@ -1,3 +1,7 @@
+---
+title: "Podcast : Lost your baggage? Just ‘hack’ your way back to it with Nandan Kumar"
+---
+
 # Podcast : Lost your baggage? Just ‘hack’ your way back to it with Nandan Kumar
 
 [![Lost your baggage? Just ‘hack’ your way back to it with Nandan Kumar](https://nandan.dev/images/athack.jpg)](https://www.buzzsprout.com/1977755/10525957-lost-your-baggage-just-hack-your-way-back-to-it-with-nandan-kumar)

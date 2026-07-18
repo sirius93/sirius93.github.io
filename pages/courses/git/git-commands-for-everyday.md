@@ -1,3 +1,7 @@
+---
+title: "Commonly used git commands for everyday use"
+---
+
 # Commonly used git commands for everyday use
 
 ```

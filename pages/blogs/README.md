@@ -1,3 +1,7 @@
+---
+title: "Blogs"
+---
+
 # Pages
 
 #### [📚 Recent Blog Posts](https://blog.nandan.dev)

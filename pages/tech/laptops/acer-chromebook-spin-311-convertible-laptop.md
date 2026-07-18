@@ -1,3 +1,7 @@
+---
+title: "Acer Chromebook Spin 311 Convertible Laptop"
+---
+
 # Acer Chromebook Spin 311 Convertible Laptop
 
 [![image](https://user-images.githubusercontent.com/6882879/218338964-98beed54-d798-48b3-8d6d-ff6d48d5f966.png)](https://amzn.to/3loSJgt)

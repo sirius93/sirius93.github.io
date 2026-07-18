@@ -1,3 +1,7 @@
+---
+title: "From Bangkok Bustle to Beach Bliss: A 7-Day Escape to Thailand | Part 1 | Bangkok"
+---
+
 
 # From Bangkok Bustle to Beach Bliss: A 7-Day Escape to Thailand | Part 1 | Bangkok
 

@@ -1,3 +1,7 @@
+---
+title: "High Intensity Interval Training for Beginner"
+---
+
 # High Intensity Interval Training for Beginner
 
 ### High-Intensity Exercises

@@ -20,9 +20,40 @@
   /* Mobile nav */
   var burger = document.querySelector(".nav-burger");
   var navLinks = document.querySelector(".nav-links");
+
+  function setMenu(open) {
+    if (!burger || !navLinks) return;
+    navLinks.classList.toggle("open", open);
+    burger.classList.toggle("open", open);
+    burger.setAttribute("aria-expanded", open ? "true" : "false");
+    document.documentElement.classList.toggle("nav-open", open);
+  }
+
   if (burger && navLinks) {
     burger.addEventListener("click", function () {
-      navLinks.classList.toggle("open");
+      setMenu(!navLinks.classList.contains("open"));
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") setMenu(false);
+    });
+
+    document.addEventListener("click", function (e) {
+      if (!navLinks.classList.contains("open")) return;
+      if (navLinks.contains(e.target) || burger.contains(e.target)) return;
+      setMenu(false);
+    });
+
+    navLinks.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        if (window.innerWidth > 900) return;
+        if (link.closest(".nav-item") && link.parentElement.tagName === "LI" && link.nextElementSibling) return;
+        setMenu(false);
+      });
+    });
+
+    window.addEventListener("resize", function () {
+      if (window.innerWidth > 900) setMenu(false);
     });
   }
 

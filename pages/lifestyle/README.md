@@ -1,3 +1,7 @@
+---
+title: "Lifestyle"
+---
+
 # Lifestyle
 
 - [7 days workout plan](./my-seven-day-workout-plan-with-2-days-rest.md)
