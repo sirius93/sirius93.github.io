@@ -1,5 +1,6 @@
 ---
 title: "From Bangkok Bustle to Beach Bliss: A 7-Day Escape to Thailand | Part 2 | Chiang Mai"
+description: "Part 2 of a 7-day Thailand trip: exploring Chiang Mai's temples, cafes, and cultural sights."
 ---
 
 # From Bangkok Bustle to Beach Bliss: A 7-Day Escape to Thailand | Part 2 | Chiang Mai
@@ -54,11 +55,11 @@ Our day began with a visit to Chom Cafe for breakfast before we set out for our 
 
 We kick-started our temple tour with a visit to Wat Phra That Doi Kham, a hilltop temple that offered spectacular views. 
 
-![image](https://github.com/sirius93/sirius93.github.io/assets/6882879/da2983f9-430d-4d41-bc87-f616e3386141)
+![Wat Phra That Doi Kham, a hilltop temple in Chiang Mai](https://github.com/sirius93/sirius93.github.io/assets/6882879/da2983f9-430d-4d41-bc87-f616e3386141)
 
 A view from inside the temple.
 
-![image](https://github.com/sirius93/sirius93.github.io/assets/6882879/b204810a-b633-45f4-b1af-2a0820fbc663)
+![View from inside Wat Phra That Doi Kham temple](https://github.com/sirius93/sirius93.github.io/assets/6882879/b204810a-b633-45f4-b1af-2a0820fbc663)
 
 
 Moving on, we explored more temples around Chiang Mai city. Some of the temples we covered were _Wat Chiang Man, Wat PhanTao, Wat Chedi Luang, Wat Rajamontean_ and many other remarkable temples, immersing us in their architectural grandeur and spiritual ambiance.

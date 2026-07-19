@@ -1,5 +1,6 @@
 ---
 title: "Polyfills"
+description: "How to write common JavaScript polyfills, starting with Promise, to understand how built-in methods work under the hood."
 permalink: "/pages/courses/front-end/JavaScript/Polyfills/"
 ---
 

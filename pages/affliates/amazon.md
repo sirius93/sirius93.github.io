@@ -1,5 +1,6 @@
 ---
 title: "Amazon affliate links"
+description: "Amazon affiliate links for laptops and other products recommended by Nandan Kumar."
 ---
 
 # Amazon affliate links

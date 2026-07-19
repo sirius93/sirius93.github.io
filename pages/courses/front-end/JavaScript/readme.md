@@ -1,5 +1,6 @@
 ---
 title: "JavaScript"
+description: "A structured JavaScript interview-prep guide covering basics, advanced concepts, and common polyfills."
 permalink: "/pages/courses/front-end/JavaScript/"
 ---
 

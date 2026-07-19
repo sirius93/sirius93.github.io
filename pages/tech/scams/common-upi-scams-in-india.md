@@ -1,5 +1,6 @@
 ---
 title: "An Insight into Unified Payments Interface (UPI) Scams"
+description: "Common UPI scams in India, from fake apps to vishing and SIM swapping, and how to avoid them."
 ---
 
 # An Insight into Unified Payments Interface (UPI) Scams

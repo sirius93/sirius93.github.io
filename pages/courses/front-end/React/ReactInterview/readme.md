@@ -1,5 +1,6 @@
 ---
 title: "React Interview Questions"
+description: "Common React interview questions and answers covering hooks, JSX, the virtual DOM, and Redux."
 permalink: "/pages/courses/front-end/React/ReactInterview/"
 ---
 

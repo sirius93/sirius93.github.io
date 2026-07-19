@@ -1,5 +1,6 @@
 ---
 title: "Webinars & Podcasts"
+description: "Webinars, podcasts, and interviews featuring Nandan Kumar on tech careers, Git, and data privacy."
 permalink: "/pages/webinars-n-podcasts/"
 ---
 

@@ -1,9 +1,12 @@
 ---
 title: "React"
+description: "Core React concepts for interviews: JSX, hooks, lifecycle, Redux, Context API, and reconciliation."
 permalink: "/pages/courses/front-end/React/"
 ---
 
 # React
+
+Looking for interview-style questions and answers? See [React Interview Questions](./ReactInterview/).
 
 In React, we will be covering the following topics:
 

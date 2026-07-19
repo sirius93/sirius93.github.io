@@ -1,5 +1,6 @@
 ---
 title: "Latex template for resume"
+description: "A LaTeX resume template Nandan Kumar uses and shares, ready to copy and customize for your own resume."
 ---
 
 # Latex template for resume

@@ -1,5 +1,6 @@
 ---
 title: "The Git Course: Roadmap from novice to pro"
+description: "A roadmap for mastering Git, from the basics of version control to branching, stashing, and resolving merge conflicts."
 permalink: "/pages/courses/git/"
 ---
 
@@ -12,6 +13,8 @@ Dear Techies,
 Are you seeking to deepen your understanding of Git, the cornerstone of modern version control systems? Or You are a Tech Lead, or CTO looking for a go-to tutorial for your team on how to use git. Or you are just another software engineer, a fresher, open-source Enthusiast.
 
 Look no further than "The Git Pro Series" - a comprehensive guide curated to empower you with essential Git knowledge and techniques.
+
+In a hurry? Jump straight to my [cheat sheet of commonly used Git commands for everyday use](./git-commands-for-everyday.md).
 
 🚀 Dive into the world of version control with the following blogs in the series:
 

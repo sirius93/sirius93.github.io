@@ -1,5 +1,6 @@
 ---
 title: "Webinar: Mastering Git - Best Practices and Techniques"
+description: "A recorded webinar on mastering Git: best practices and techniques for everyday version control."
 ---
 
 # Webinar: Mastering Git - Best Practices and Techniques

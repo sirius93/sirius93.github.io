@@ -1,10 +1,11 @@
 ---
 title: "Acer Chromebook Spin 311 Convertible Laptop"
+description: "A review of the Acer Chromebook Spin 311 convertible laptop: display, battery life, and everyday performance."
 ---
 
 # Acer Chromebook Spin 311 Convertible Laptop
 
-[![image](https://user-images.githubusercontent.com/6882879/218338964-98beed54-d798-48b3-8d6d-ff6d48d5f966.png)](https://amzn.to/3loSJgt)
+[![Acer Chromebook Spin 311 convertible laptop](https://user-images.githubusercontent.com/6882879/218338964-98beed54-d798-48b3-8d6d-ff6d48d5f966.png)](https://amzn.to/3loSJgt)
 
 The Acer Chromebook Spin 311 is a versatile and affordable laptop that has been making waves in the market. This laptop is a great choice for students, travelers, and anyone who needs a laptop that's easy to use, portable, and reliable.
 

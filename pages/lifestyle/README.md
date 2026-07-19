@@ -1,5 +1,6 @@
 ---
 title: "Lifestyle"
+description: "Nandan Kumar's lifestyle posts: workout plans, recipes, and travel stories."
 permalink: "/pages/lifestyle/"
 ---
 

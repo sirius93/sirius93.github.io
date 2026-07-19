@@ -1,5 +1,6 @@
 ---
 title: "Commonly used git commands for everyday use"
+description: "A cheat sheet of the Git commands used most often for everyday development work."
 ---
 
 # Commonly used git commands for everyday use

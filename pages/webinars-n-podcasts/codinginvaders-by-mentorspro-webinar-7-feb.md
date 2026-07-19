@@ -1,5 +1,6 @@
 ---
 title: "How to multiply your salary by 3X by switching into IT Sector today"
+description: "A webinar on how to multiply your salary by switching into the IT sector, covering CVs, interviews, and in-demand roles."
 ---
 
 # How to multiply your salary by 3X by switching into IT Sector today

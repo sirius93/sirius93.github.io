@@ -1,5 +1,6 @@
 ---
 title: "An Insight into Common Trading Scams"
+description: "An overview of common trading scams: pump and dump, binary options, forex, pyramid schemes, and fake guaranteed tips."
 ---
 
 # An Insight into Common Trading Scams

@@ -1,5 +1,6 @@
 ---
 title: "Ultimate Frontend Interview Preparation Guide"
+description: "Nandan Kumar's front-end interview preparation guide, covering JavaScript, React, CSS, and core web fundamentals."
 permalink: "/pages/courses/front-end/"
 ---
 
