@@ -1,5 +1,6 @@
 ---
 title: "Book Club (India Edition)"
+description: "A running list of books read and recommended during Nandan Kumar's India-edition book club sessions, plus book reviews."
 permalink: "/pages/books/"
 ---
 

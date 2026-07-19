@@ -1,5 +1,6 @@
 ---
 title: "From Bangkok Bustle to Beach Bliss: A 7-Day Escape to Thailand | Part 1 | Bangkok"
+description: "Part 1 of a 7-day Thailand escape: exploring Bangkok's temples, streets, and hidden gems."
 ---
 
 
@@ -36,7 +37,7 @@ After a day filled with exploration, we ventured to a nearby Mexican restaurant 
 #### Exploring Chinatown's City Vibes
 As the night set in, we hopped into a taxi and made our way to the bustling Chinatown. The vibrant streets lit up with colorful lights and bustling markets, immersed us in the city's lively atmosphere. We couldn't help but notice the unique charm of Bangkok - from the legal shops offering cannabis products to the omnipresent 7-Eleven stores and even spotting a few Teslas on the streets.
 
-![image](https://github.com/sirius93/sirius93.github.io/assets/6882879/34d9c532-665b-4101-bf75-5c37562f8c8a)
+![Chinatown Bangkok streets lit up at night](https://github.com/sirius93/sirius93.github.io/assets/6882879/34d9c532-665b-4101-bf75-5c37562f8c8a)
 
 
 ### Day 2: Late Breakfast and Retail Therapy at MBK Center

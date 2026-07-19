@@ -1,5 +1,6 @@
 ---
 title: "Top Bestselling laptops in 2021"
+description: "A list of the top bestselling laptops on Amazon in 2021."
 ---
 
 # Top Bestselling laptops in 2021 

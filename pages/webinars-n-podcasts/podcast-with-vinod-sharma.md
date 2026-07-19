@@ -1,5 +1,6 @@
 ---
 title: "Podcast with Vinod Sharma"
+description: "A podcast with Vinod Sharma about Nandan Kumar's career journey, content creation, and balancing work and life."
 ---
 
 

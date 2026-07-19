@@ -1,5 +1,6 @@
 ---
 title: "I created a beginner friendly seven day workout plan for you, so you don't have to"
+description: "A beginner-friendly 7-day full-body workout plan with two rest days, built for people with desk jobs."
 ---
 
 # I created a beginner friendly seven day workout plan for you, so you don't have to

@@ -1,5 +1,6 @@
 ---
 title: "Hotel Booking Scams, Scammers target Desperate, Exhausted Travelers, something Lookout for during your next travel..!!"
+description: "A first-person account of a near-miss hotel booking scam, and what to watch out for on your next trip."
 ---
 
 # Hotel Booking Scams, Scammers target Desperate, Exhausted Travelers, something Lookout for during your next travel..!!
@@ -65,15 +66,12 @@ On looking at the 1-star rated reviews of the hotel, I found out that the listin
 
 Another thing I found that this scam is very widespread and on doing a reverse DNS look up I found out that they have claimed more such domains to scam people. Some of them I am listing below. 
 
-DO NOT CLICK THE BELOW LINKS
+DO NOT CLICK THE BELOW LINKS — these are listed as plain text on purpose, not as clickable links
 
-[courtyardmarriott.in](courtyardmarriott.in)
-
-https://connaughtcastle.in/
-
-https://hindustaninternational.in/
-
-http://thecrownhotel.in/
+- `courtyardmarriott.in`
+- `connaughtcastle.in`
+- `hindustaninternational.in`
+- `thecrownhotel.in`
 
 Obviously, they keep changing their domain names and their target hotels. 
 

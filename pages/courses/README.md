@@ -1,5 +1,6 @@
 ---
 title: "Courses"
+description: "Free courses by Nandan Kumar covering system design, front-end interview prep, and everyday Git commands."
 permalink: "/pages/courses/"
 ---
 

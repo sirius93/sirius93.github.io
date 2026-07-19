@@ -1,5 +1,6 @@
 ---
 title: "Pages"
+description: "Index of Nandan Kumar's pages: blog posts, webinars & podcasts, courses, lifestyle, book reviews, and tech guides."
 permalink: "/pages/"
 ---
 

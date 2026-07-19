@@ -1,5 +1,6 @@
 ---
 title: "The Git Course: Roadmap from novice to pro"
+description: "A roadmap for mastering Git, from the basics of version control to branching, stashing, and resolving merge conflicts."
 permalink: "/pages/courses/git/"
 ---
 

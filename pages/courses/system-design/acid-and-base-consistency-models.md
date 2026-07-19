@@ -1,5 +1,6 @@
 ---
 title: 'ACID and BASE consistency models'
+description: 'An explanation of the ACID and BASE consistency models used by relational and distributed databases.'
 date: '2022-09-22'
 draft: false
 summary: 'In this tutorial, we will discuss ACID and BASE consistency models'
@@ -9,6 +10,8 @@ images:
   ]
 authors: ['default']
 ---
+
+# ACID and BASE Consistency Models
 
 Let's discuss the ACID and BASE consistency models.
 

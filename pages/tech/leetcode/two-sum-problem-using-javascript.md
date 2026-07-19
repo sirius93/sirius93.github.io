@@ -1,5 +1,6 @@
 ---
 title: "Leetcode 1 : Two sum problem"
+description: "A JavaScript solution to LeetCode's Two Sum problem, explained step by step."
 ---
 
 # Leetcode 1 : Two sum problem

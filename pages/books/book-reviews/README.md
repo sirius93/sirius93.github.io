@@ -1,5 +1,6 @@
 ---
 title: "Book Reviews"
+description: "Book reviews by Nandan Kumar and guest reviewers, starting with Fire & Blood by George R.R. Martin."
 permalink: "/pages/books/book-reviews/"
 ---
 

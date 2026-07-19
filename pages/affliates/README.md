@@ -1,5 +1,6 @@
 ---
 title: "Affliates"
+description: "Nandan Kumar's affiliate links and recommended products."
 permalink: "/pages/affliates/"
 ---
 

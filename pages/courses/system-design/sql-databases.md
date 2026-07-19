@@ -1,5 +1,6 @@
 ---
 title: 'SQL databases'
+description: 'An overview of SQL databases: materialized views, the N+1 query problem, and how relational databases stay consistent.'
 date: '2022-10-19'
 draft: false
 summary: 'In this tutorial, we will discuss SQL databases'

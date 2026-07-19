@@ -1,5 +1,6 @@
 ---
 title: "Podcast : Lost your baggage? Just ‘hack’ your way back to it with Nandan Kumar"
+description: "A podcast with hacker Bryan Seely about how Nandan Kumar 'hacked' his way back to his lost luggage."
 ---
 
 # Podcast : Lost your baggage? Just ‘hack’ your way back to it with Nandan Kumar

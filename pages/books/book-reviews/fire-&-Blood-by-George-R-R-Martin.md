@@ -1,5 +1,6 @@
 ---
 title: "Fire & Blood by George R.R. Martin"
+description: "A reader's review of Fire & Blood by George R.R. Martin, the prequel to A Song of Ice and Fire."
 ---
 
 # Fire & Blood by George R.R. Martin

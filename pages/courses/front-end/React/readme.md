@@ -1,5 +1,6 @@
 ---
 title: "React"
+description: "Core React concepts for interviews: JSX, hooks, lifecycle, Redux, Context API, and reconciliation."
 permalink: "/pages/courses/front-end/React/"
 ---
 

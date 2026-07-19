@@ -1,5 +1,6 @@
 ---
 title: "Laptops"
+description: "Laptop recommendations and reviews, including the Acer Chromebook Spin 311 and other bestsellers."
 permalink: "/pages/tech/laptops/"
 ---
 

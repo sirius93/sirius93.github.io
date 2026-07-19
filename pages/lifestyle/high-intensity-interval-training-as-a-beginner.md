@@ -1,5 +1,6 @@
 ---
 title: "High Intensity Interval Training for Beginner"
+description: "A beginner-friendly list of high-intensity interval training exercises and active rest moves."
 ---
 
 # High Intensity Interval Training for Beginner

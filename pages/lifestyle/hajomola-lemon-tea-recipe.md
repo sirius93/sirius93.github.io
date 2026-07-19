@@ -1,5 +1,6 @@
 ---
 title: "How to Make Refreshing Lemon Tea for Two: A Step-by-Step Guide"
+description: "A simple step-by-step recipe for making refreshing lemon tea for two, with a Hajmola twist."
 ---
 
 # How to Make Refreshing Lemon Tea for Two: A Step-by-Step Guide
