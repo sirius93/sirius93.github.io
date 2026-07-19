@@ -28,3 +28,5 @@ Personal site and portfolio covering software engineering, system design, startu
 - [Lifestyle posts](https://nandan.dev/pages/lifestyle/): Travel, fitness, recipes
 - [Webinars & podcasts](https://nandan.dev/pages/webinars-n-podcasts/): Talks and interviews
 - [Book reviews](https://nandan.dev/pages/books/): Book club picks and reviews
+
+For a complete listing of every page on this site with a description each, see [llms-full.txt](https://nandan.dev/llms-full.txt).

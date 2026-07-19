@@ -1,0 +1,86 @@
+# Nandan Kumar — Full Site Index
+
+> Software engineer based in Bangalore, India with 10+ years of experience, building startup products and consulting for early-stage teams on product and engineering. Also known for publicly identifying a data privacy vulnerability on an airline's website in 2022, a story covered by BBC, The Hindu, and outlets worldwide.
+
+This is the full index of every page on nandan.dev, with a one-line description each. See /llms.txt for a shorter, curated version.
+
+## Main
+
+- [Home](https://nandan.dev/): Bio, current work, experience, and contact info
+- [Resume (PDF)](https://nandan.dev/pages/Resume/Nandan.pdf): Downloadable PDF resume
+- [Blog](https://blog.nandan.dev/): Full blog, hosted separately from this index
+
+## Projects
+
+- [Bailoutt](https://bailoutt.com/): AI wingman product
+- [Kitaaben](https://kitaaben.com/): Book-related product
+- [ASCII Canvas Editor](https://nandan.dev/ascii-canvas-editor/): Browser-based ASCII art tool
+
+## Courses
+
+- [Courses](https://nandan.dev/pages/courses/): Free courses by Nandan Kumar covering system design, front-end interview prep, and everyday Git commands.
+- [System Design Course](https://nandan.dev/pages/courses/system-design/): A free system design course covering IP, OSI, DNS, load balancing, caching, databases, and real-world architecture.
+- [ACID and BASE consistency models](https://nandan.dev/pages/courses/system-design/acid-and-base-consistency-models.html): An explanation of the ACID and BASE consistency models used by relational and distributed databases.
+- [SQL databases](https://nandan.dev/pages/courses/system-design/sql-databases.html): An overview of SQL databases: materialized views, the N+1 query problem, and how relational databases stay consistent.
+- [Ultimate Frontend Interview Preparation Guide](https://nandan.dev/pages/courses/front-end/): Nandan Kumar’s front-end interview preparation guide, covering JavaScript, React, CSS, and core web fundamentals.
+- [JavaScript](https://nandan.dev/pages/courses/front-end/JavaScript/): A structured JavaScript interview-prep guide covering basics, advanced concepts, and common polyfills.
+- [JavaScript - Basics](https://nandan.dev/pages/courses/front-end/JavaScript/JavaScript%20Basics/): JavaScript fundamentals for interview prep: hoisting, scope, data types, event handling, and DOM manipulation.
+- [JavaScript Advanced](https://nandan.dev/pages/courses/front-end/JavaScript/JavaScript%20Advanced/): Advanced JavaScript interview topics: closures, promises, async/await, prototypes, classes, proxies, and memory leaks.
+- [Polyfills](https://nandan.dev/pages/courses/front-end/JavaScript/Polyfills/): How to write common JavaScript polyfills, starting with Promise, to understand how built-in methods work under the hood.
+- [React](https://nandan.dev/pages/courses/front-end/React/): Core React concepts for interviews: JSX, hooks, lifecycle, Redux, Context API, and reconciliation.
+- [React Interview Questions](https://nandan.dev/pages/courses/front-end/React/ReactInterview/): Common React interview questions and answers covering hooks, JSX, the virtual DOM, and Redux.
+- [The Git Course: Roadmap from novice to pro](https://nandan.dev/pages/courses/git/): A roadmap for mastering Git, from the basics of version control to branching, stashing, and resolving merge conflicts.
+- [Commonly used git commands for everyday use](https://nandan.dev/pages/courses/git/git-commands-for-everyday.html): A cheat sheet of the Git commands used most often for everyday development work.
+
+## Blog (local copies)
+
+- [Blogs](https://nandan.dev/pages/blogs/): A local index of select blog posts by Nandan Kumar, including HTML pitfalls every developer should avoid.
+- [HTML Pitfalls and Gotchas Everyone Should Avoid](https://nandan.dev/pages/blogs/html-pitfalls-and-gotchas-everyone-should-avoid.html): Common HTML mistakes that quietly break layouts, hurt SEO, or make your site look unprofessional, and how to fix each one.
+
+## Webinars & Podcasts
+
+- [Webinars & Podcasts](https://nandan.dev/pages/webinars-n-podcasts/): Webinars, podcasts, and interviews featuring Nandan Kumar on tech careers, Git, and data privacy.
+- [How to multiply your salary by 3X by switching into IT Sector today](https://nandan.dev/pages/webinars-n-podcasts/codinginvaders-by-mentorspro-webinar-7-feb.html): A webinar on how to multiply your salary by switching into the IT sector, covering CVs, interviews, and in-demand roles.
+- [My interview about how I “Hacked” an airline website to retrieve my luggage with Bihar se hai](https://nandan.dev/pages/webinars-n-podcasts/interview-with-bihar-se-hai.html): Nandan Kumar’s interview with Bihar se hai about hacking an airline website to retrieve his lost luggage.
+- [Webinar: Mastering Git - Best Practices and Techniques](https://nandan.dev/pages/webinars-n-podcasts/mastering-git-webinar.html): A recorded webinar on mastering Git: best practices and techniques for everyday version control.
+- [Podcast : Lost your baggage? Just ‘hack’ your way back to it with Nandan Kumar](https://nandan.dev/pages/webinars-n-podcasts/podcast-with-blackhat-mea.html): A podcast with hacker Bryan Seely about how Nandan Kumar ‘hacked’ his way back to his lost luggage.
+- [Podcast with Vinod Sharma](https://nandan.dev/pages/webinars-n-podcasts/podcast-with-vinod-sharma.html): A podcast with Vinod Sharma about Nandan Kumar’s career journey, content creation, and balancing work and life.
+
+## Tech guides
+
+- [Tech](https://nandan.dev/pages/tech/): Tech guides and write-ups by Nandan Kumar: laptop recommendations, common scams to avoid, and Leetcode solutions.
+- [Laptops](https://nandan.dev/pages/tech/laptops/): Laptop recommendations and reviews, including the Acer Chromebook Spin 311 and other bestsellers.
+- [Acer Chromebook Spin 311 Convertible Laptop](https://nandan.dev/pages/tech/laptops/acer-chromebook-spin-311-convertible-laptop.html): A review of the Acer Chromebook Spin 311 convertible laptop: display, battery life, and everyday performance.
+- [Top Bestselling laptops in 2021](https://nandan.dev/pages/tech/laptops/top-bestselling-laptops-in-2021.html): A list of the top bestselling laptops on Amazon in 2021.
+- [Common Scams](https://nandan.dev/pages/tech/scams/): Common scams to watch out for, from UPI fraud to fake hotel bookings and trading schemes.
+- [An Insight into Unified Payments Interface (UPI) Scams](https://nandan.dev/pages/tech/scams/common-upi-scams-in-india.html): Common UPI scams in India, from fake apps to vishing and SIM swapping, and how to avoid them.
+- [An Insight into Common Trading Scams](https://nandan.dev/pages/tech/scams/common-trading-scams.html): An overview of common trading scams: pump and dump, binary options, forex, pyramid schemes, and fake guaranteed tips.
+- [Hotel Booking Scams, Scammers target Desperate, Exhausted Travelers, something Lookout for during your next travel..!!](https://nandan.dev/pages/tech/scams/hotel-booking-scams-target-desperate-travelers.html): A first-person account of a near-miss hotel booking scam, and what to watch out for on your next trip.
+- [Leetcode problems and their solutions using javascript](https://nandan.dev/pages/tech/leetcode/): LeetCode problems solved and explained in JavaScript.
+- [Leetcode 1 : Two sum problem](https://nandan.dev/pages/tech/leetcode/two-sum-problem-using-javascript.html): A JavaScript solution to LeetCode’s Two Sum problem, explained step by step.
+
+## Lifestyle
+
+- [Lifestyle](https://nandan.dev/pages/lifestyle/): Nandan Kumar’s lifestyle posts: workout plans, recipes, and travel stories.
+- [From Bangkok Bustle to Beach Bliss: A 7-Day Escape to Thailand Part 1 Bangkok](https://nandan.dev/pages/lifestyle/from-bangkok-bustle-to-beach-Bliss-a-7-day-escape-to-thailand.html): Part 1 of a 7-day Thailand escape: exploring Bangkok’s temples, streets, and hidden gems.
+- [From Bangkok Bustle to Beach Bliss: A 7-Day Escape to Thailand Part 2 Chiang Mai](https://nandan.dev/pages/lifestyle/from-bangkok-bustle-to-beach-Bliss-a-7-day-escape-to-thailand-part-2.html): Part 2 of a 7-day Thailand trip: exploring Chiang Mai’s temples, cafes, and cultural sights.
+- [How to Make Refreshing Lemon Tea for Two: A Step-by-Step Guide](https://nandan.dev/pages/lifestyle/hajomola-lemon-tea-recipe.html): A simple step-by-step recipe for making refreshing lemon tea for two, with a Hajmola twist.
+- [High Intensity Interval Training for Beginner](https://nandan.dev/pages/lifestyle/high-intensity-interval-training-as-a-beginner.html): A beginner-friendly list of high-intensity interval training exercises and active rest moves.
+- [I created a beginner friendly seven day workout plan for you, so you don’t have to](https://nandan.dev/pages/lifestyle/my-seven-day-workout-plan-with-2-days-rest.html): A beginner-friendly 7-day full-body workout plan with two rest days, built for people with desk jobs.
+
+## Books
+
+- [Book Club (India Edition)](https://nandan.dev/pages/books/): A running list of books read and recommended during Nandan Kumar’s India-edition book club sessions, plus book reviews.
+- [Book Reviews](https://nandan.dev/pages/books/book-reviews/): Book reviews by Nandan Kumar and guest reviewers, starting with Fire & Blood by George R.R. Martin.
+- [Fire & Blood by George R.R. Martin](https://nandan.dev/pages/books/book-reviews/fire-&-Blood-by-George-R-R-Martin.html): A reader’s review of Fire & Blood by George R.R. Martin, the prequel to A Song of Ice and Fire.
+
+## Resume
+
+- [Resume](https://nandan.dev/pages/Resume/): Download Nandan Kumar’s resume as a PDF, or view the LaTeX source and template used to build it.
+- [Latex template for resume](https://nandan.dev/pages/Resume/latex-template-for-resume.html): A LaTeX resume template Nandan Kumar uses and shares, ready to copy and customize for your own resume.
+
+## Other
+
+- [Affliates](https://nandan.dev/pages/affliates/): Nandan Kumar’s affiliate links and recommended products.
+- [Amazon affliate links](https://nandan.dev/pages/affliates/amazon.html): Amazon affiliate links for laptops and other products recommended by Nandan Kumar.
+- [Newsletter](https://nandan.dev/pages/newsletter/): Subscribe to Nandan Kumar’s free newsletter for updates on the latest tech trends.
