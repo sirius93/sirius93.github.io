@@ -282,6 +282,9 @@ html.nav-open { overflow: hidden; }
 .hero .role a { color: var(--accent); font-weight: 600; text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--accent) 40%, transparent); text-underline-offset: 3px; }
 .hero .role a:hover { text-decoration-color: var(--accent); }
 .hero .lede { max-width: 540px; font-size: 1.02rem; }
+.hero .opportunity { max-width: 540px; font-size: 0.92rem; color: var(--text-muted); font-style: italic; margin: 0; }
+.hero .opportunity a { color: var(--accent); font-weight: 600; text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--accent) 40%, transparent); text-underline-offset: 3px; }
+.hero .opportunity a:hover { text-decoration-color: var(--accent); }
 .hero-cta { display: flex; flex-wrap: wrap; gap: 12px; margin: 26px 0; }
 .social-row { display: flex; gap: 10px; list-style: none; padding: 0; margin: 0; }
 .social-row a {
@@ -296,6 +299,7 @@ html.nav-open { overflow: hidden; }
   .hero .container { flex-direction: column-reverse; text-align: center; }
   .hero-avatar img { width: 180px; height: 180px; }
   .hero .lede { margin: 0 auto 16px; }
+  .hero .opportunity { margin: 0 auto; }
   .hero-cta, .social-row { justify-content: center; }
 }
 
