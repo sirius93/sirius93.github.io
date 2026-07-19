@@ -1,0 +1,30 @@
+# Nandan Kumar
+
+> Software engineer based in Bangalore, India with 10+ years of experience, building startup products and consulting for early-stage teams on product and engineering. Also known for publicly identifying a data privacy vulnerability on an airline's website in 2022, a story covered by BBC, The Hindu, and outlets worldwide.
+
+Personal site and portfolio covering software engineering, system design, startup consulting, and personal projects (Bailoutt, Kitaaben). Also publishes free courses on system design, front-end interview prep, and Git.
+
+## Main
+
+- [Home](https://nandan.dev/): Bio, current work, experience, and contact info
+- [Resume](https://nandan.dev/pages/Resume/Nandan.pdf): PDF resume
+- [Blog](https://blog.nandan.dev/): Articles on web development, security, and system design
+
+## Courses
+
+- [System Design Course](https://nandan.dev/pages/courses/system-design/): Free course covering IP, OSI, DNS, load balancing, caching, databases, and real-world architecture
+- [Front-end Interview Prep](https://nandan.dev/pages/courses/front-end/): JavaScript and React interview preparation
+- [Git Course](https://nandan.dev/pages/courses/git/): Roadmap and command cheat sheet for everyday Git use
+
+## Projects
+
+- [Bailoutt](https://bailoutt.com/): AI wingman product
+- [Kitaaben](https://kitaaben.com/): Book-related product
+- [ASCII Canvas Editor](https://nandan.dev/ascii-canvas-editor/): Browser-based ASCII art tool
+
+## Optional
+
+- [Tech guides](https://nandan.dev/pages/tech/): Laptop reviews, scam awareness, LeetCode solutions
+- [Lifestyle posts](https://nandan.dev/pages/lifestyle/): Travel, fitness, recipes
+- [Webinars & podcasts](https://nandan.dev/pages/webinars-n-podcasts/): Talks and interviews
+- [Book reviews](https://nandan.dev/pages/books/): Book club picks and reviews
