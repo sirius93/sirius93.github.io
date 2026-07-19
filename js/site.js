@@ -1,6 +1,21 @@
 (function () {
   "use strict";
 
+  /* Announcement bar — dismiss for the current session only, reappears on next visit */
+  var announceBar = document.getElementById("announceBar");
+  if (announceBar) {
+    if (sessionStorage.getItem("announceDismissed")) {
+      announceBar.classList.add("hidden");
+    }
+    var announceClose = announceBar.querySelector(".announce-close");
+    if (announceClose) {
+      announceClose.addEventListener("click", function () {
+        announceBar.classList.add("hidden");
+        sessionStorage.setItem("announceDismissed", "1");
+      });
+    }
+  }
+
   /* Theme toggle — persisted, defaults to OS preference */
   var root = document.documentElement;
   var stored = localStorage.getItem("theme");

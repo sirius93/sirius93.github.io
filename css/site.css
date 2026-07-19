@@ -133,6 +133,62 @@ section.bg-alt { background: var(--bg-alt); }
 .btn-ghost { background: transparent; color: var(--text); border-color: var(--border); }
 .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
 
+/* ---------- Announcement bar ---------- */
+.announce-bar {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+.announce-bar .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 10px 44px 10px 24px;
+  position: relative;
+  min-height: 40px;
+}
+.announce-bar p {
+  margin: 0;
+  color: var(--accent-ink);
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+.announce-bar a {
+  color: var(--accent-ink);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--accent-ink) 50%, transparent);
+  text-underline-offset: 2px;
+  white-space: nowrap;
+}
+.announce-bar a:hover { text-decoration-color: var(--accent-ink); }
+.announce-close {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 26px;
+  height: 26px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: var(--accent-ink);
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0.75;
+  border-radius: 999px;
+}
+.announce-close:hover { opacity: 1; background: color-mix(in srgb, var(--accent-ink) 15%, transparent); }
+.announce-bar.hidden { display: none; }
+@media (max-width: 640px) {
+  .announce-bar p { font-size: 13px; }
+  .announce-bar .container { padding: 10px 40px 10px 16px; text-align: center; }
+}
+
 /* ---------- Nav ---------- */
 .site-nav {
   position: sticky;
