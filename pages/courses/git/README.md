@@ -13,6 +13,8 @@ Are you seeking to deepen your understanding of Git, the cornerstone of modern v
 
 Look no further than "The Git Pro Series" - a comprehensive guide curated to empower you with essential Git knowledge and techniques.
 
+In a hurry? Jump straight to my [cheat sheet of commonly used Git commands for everyday use](./git-commands-for-everyday.md).
+
 🚀 Dive into the world of version control with the following blogs in the series:
 
 - [Understanding Version Control and Mastering Git: The Basics](https://blog.nandan.dev/understanding-version-control-and-mastering-git-the-basics)

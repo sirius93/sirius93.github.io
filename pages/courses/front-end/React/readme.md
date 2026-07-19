@@ -5,6 +5,8 @@ permalink: "/pages/courses/front-end/React/"
 
 # React
 
+Looking for interview-style questions and answers? See [React Interview Questions](./ReactInterview/).
+
 In React, we will be covering the following topics:
 
 1.[Why React?](https://github.com/ishwarrimal/frontend-interview-preps/tree/main/React/ReactInterview#why-react)

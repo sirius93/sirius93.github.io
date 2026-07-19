@@ -18,12 +18,17 @@ permalink: "/pages/"
  - 🚀 [NLP: A Beginner&#39;s Guide to Large Language Models, Transformers, and Fine-tuning.](https://blog.nandan.dev/nlp-a-beginners-guide-to-large-language-models-transformers-and-fine-tuning)
  - 💫 [Revolutionize Your News Consumption: The Top 10 Tech News Websites/Apps for Developers](https://blog.nandan.dev/revolutionize-your-news-consumption-the-top-10-tech-news-websitesapps-for-developers)<!-- BLOGPOSTS:END -->
 
+#### [📝 Blogs](blogs)
+
+- [HTML Pitfalls and Gotchas Everyone Should Avoid](blogs/html-pitfalls-and-gotchas-everyone-should-avoid.md)
+
 #### [🚀 Webinars & Podcasts](webinars-n-podcasts)
 
 - [Webinar : How to multiply your salary by 3X by switching into IT Sector today by CodingInvaders](webinars-n-podcasts/codinginvaders-by-mentorspro-webinar-7-feb)
 - [Podcast : Lost your baggage? Just ‘hack’ your way back to it with Nandan Kumar with Black Hat MEA](webinars-n-podcasts/podcast-with-blackhat-mea)
 - [Interview with famous instagram page Bihar se hai on How i got my luggage back](https://nandan.dev/pages/webinars-n-podcasts/interview-with-bihar-se-hai)
 - [Webinar : Mastering Git -  Best Practices and Techniques](https://nandan.dev/pages/webinars-n-podcasts/mastering-git-webinar)
+- [Podcast: Career Journey Podcast with Vinod Sharma](https://nandan.dev/pages/webinars-n-podcasts/podcast-with-vinod-sharma)
   
 #### [🚀 Courses](courses)
 
@@ -38,7 +43,7 @@ permalink: "/pages/"
     - [React](courses/front-end/React)
         - [React Interview](courses/front-end/React/ReactInterview)
 - [Git](courses/git)
-   - [Common git commands](course/git/git-commands-for-everyday)
+   - [Common git commands](courses/git/git-commands-for-everyday)
 
 #### [🚀 LifeStyle](lifestyle)
 
@@ -66,3 +71,13 @@ permalink: "/pages/"
     - [Common UPI Scams in India](tech/scams/common-upi-scams-in-india.md)
     - [Common Trading Scams](tech/scams/common-trading-scams.md)
     - [Hotel Booking Scams ](tech/scams/hotel-booking-scams-target-desperate-travelers.md)
+
+- [Leetcode](tech/leetcode/)
+    - [Two Sum Problem](tech/leetcode/two-sum-problem-using-javascript.md)
+
+#### [📄 Resume](Resume)
+
+- [Resume (PDF)](Resume/Nandan.pdf)
+- [Resume LaTeX Template](Resume/latex-template-for-resume.md)
+
+#### [📬 Newsletter](newsletter)
