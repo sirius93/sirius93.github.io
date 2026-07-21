@@ -7,6 +7,7 @@ permalink: "/pages/books/"
 # Book Club (India Edition)
 
 #### Read latest book reviews [here](book-reviews)
+#### Read the [Kitaaben Blog](blog) for book reviews, reading habits, and reflections from the Kitaaben newsletter
 #### List of a few books to read, Sourced from people & conversations during clubhouse sessions.
 
 | Book        |    |       |  |
