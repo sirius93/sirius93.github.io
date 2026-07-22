@@ -2,6 +2,7 @@
 title: "Instagram front-end system design: RADIO framework walkthrough (2026)"
 description: "Let me start by putting one thing forward: System design is not about writing a memorised answer on paper."
 canonical_url: https://blog.nandan.dev/how-to-design-instagram-front-end-system-design
+sitemap: false
 date: "2025-08-01"
 ---
 

@@ -2,6 +2,7 @@
 title: "How I Moved My Google AI Studio App to GitHub CI"
 description: "Kitaaben started life in Google AI Studio."
 canonical_url: https://blog.nandan.dev/moving-google-ai-studio-app-to-github-ci
+sitemap: false
 date: "2026-07-12"
 ---
 

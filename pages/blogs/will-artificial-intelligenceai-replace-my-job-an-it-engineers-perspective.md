@@ -2,6 +2,7 @@
 title: "Will Artificial Intelligence (AI) Replace My Job: An IT Engineer's Perspective?"
 description: "An IT engineer's take on whether AI is coming for software jobs."
 canonical_url: https://blog.nandan.dev/will-artificial-intelligenceai-replace-my-job-an-it-engineers-perspective
+sitemap: false
 date: "2023-02-26"
 ---
 

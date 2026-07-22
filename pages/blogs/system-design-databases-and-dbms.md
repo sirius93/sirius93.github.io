@@ -2,6 +2,7 @@
 title: "System Design: Databases and DBMS"
 description: "A database is a structured collection of information or data that is typically stored electronically in a computer system."
 canonical_url: https://blog.nandan.dev/system-design-databases-and-dbms
+sitemap: false
 date: "2024-05-01"
 ---
 

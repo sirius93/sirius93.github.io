@@ -2,6 +2,7 @@
 title: "HTML Pitfalls and Gotchas Everyone Should Avoid"
 description: "Common HTML mistakes that quietly break layouts, hurt SEO, or make your site look unprofessional, and how to fix each one."
 canonical_url: https://blog.nandan.dev/html-pitfalls-and-gotchas-every-developer-should-avoid
+sitemap: false
 ---
 # HTML Pitfalls and Gotchas Everyone Should Avoid
 

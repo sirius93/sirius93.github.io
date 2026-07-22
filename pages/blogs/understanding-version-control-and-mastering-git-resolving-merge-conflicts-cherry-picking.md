@@ -2,6 +2,7 @@
 title: "Understanding Merge conflicts and cherry-picking | The git pro series"
 description: "Understanding version control and mastering git: Resolving  Merge conflicts, cherry-picking by Nandan Kumar"
 canonical_url: https://blog.nandan.dev/understanding-version-control-and-mastering-git-resolving-merge-conflicts-cherry-picking
+sitemap: false
 date: "2022-07-11"
 ---
 

@@ -2,6 +2,7 @@
 title: "How to Convert Nested Objects to Flat Objects in JavaScript."
 description: "I am sure you have been asked this question in one of the interviews."
 canonical_url: https://blog.nandan.dev/how-to-convert-nested-objects-to-flat-objects-in-javascript
+sitemap: false
 date: "2026-03-04"
 ---
 

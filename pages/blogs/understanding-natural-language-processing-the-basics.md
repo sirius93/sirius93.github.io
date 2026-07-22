@@ -2,6 +2,7 @@
 title: "Understanding Natural Language Processing: The Basics..!!"
 description: "The basics of Natural Language Processing, kicking off a blog series on NLP."
 canonical_url: https://blog.nandan.dev/understanding-natural-language-processing-the-basics
+sitemap: false
 date: "2023-01-27"
 ---
 

@@ -2,6 +2,7 @@
 title: "How to become a Front-End Developer"
 description: "A veteran's approach to becoming a front-end developer."
 canonical_url: https://blog.nandan.dev/how-to-become-a-front-end-developer-part-1
+sitemap: false
 date: "2022-05-21"
 ---
 

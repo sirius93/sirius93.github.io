@@ -2,6 +2,7 @@
 title: "System Design: Availablity, Scalability, and Types Of Storage."
 description: "Availability refers to the duration for which a system performs its intended function within a given timeframe."
 canonical_url: https://blog.nandan.dev/system-design-availablity-scalability-and-types-of-storage
+sitemap: false
 date: "2023-12-13"
 ---
 

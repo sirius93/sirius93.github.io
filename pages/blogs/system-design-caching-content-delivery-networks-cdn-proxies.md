@@ -2,6 +2,7 @@
 title: "System Design: Caching, Content Delivery Networks (CDN) & Proxies"
 description: "System Design: Caching, Content Delivery Networks (CDN) & Proxies. - System Design blogs by Nandan Kumar"
 canonical_url: https://blog.nandan.dev/system-design-caching-content-delivery-networks-cdn-proxies
+sitemap: false
 date: "2023-01-06"
 ---
 

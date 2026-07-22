@@ -2,6 +2,7 @@
 title: "I Got Tired of Goodreads. So I Built Kitaaben.com"
 description: "I read a lot. Not as much as I'd like to, but enough that I needed a place to keep track of it all."
 canonical_url: https://blog.nandan.dev/i-got-tired-of-goodreads-so-i-built-kitaaben-com
+sitemap: false
 date: "2026-06-24"
 ---
 

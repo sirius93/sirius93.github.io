@@ -2,6 +2,7 @@
 title: "Yet another blog on Call, Apply & Bind..!!"
 description: "Bla Bla Bla.. Okay, Hear me out..!!"
 canonical_url: https://blog.nandan.dev/yet-another-blog-on-call-apply-bind
+sitemap: false
 date: "2024-11-22"
 ---
 

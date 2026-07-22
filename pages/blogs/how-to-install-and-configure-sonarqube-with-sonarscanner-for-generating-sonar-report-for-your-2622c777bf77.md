@@ -2,6 +2,7 @@
 title: "How to Install and configure SonarQube with SonarScanner"
 description: "How to install and configure SonarQube with SonarScanner to generate a sonar report for your project."
 canonical_url: https://blog.nandan.dev/how-to-install-and-configure-sonarqube-with-sonarscanner-for-generating-sonar-report-for-your-2622c777bf77
+sitemap: false
 date: "2018-10-02"
 ---
 

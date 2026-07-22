@@ -2,6 +2,7 @@
 title: "Understanding version control and mastering git - Branches and more."
 description: "Understanding version control and mastering git - Branches and more...!! - Nandan Kumar"
 canonical_url: https://blog.nandan.dev/understanding-version-control-and-mastering-git-branches-and-more
+sitemap: false
 date: "2022-06-10"
 ---
 

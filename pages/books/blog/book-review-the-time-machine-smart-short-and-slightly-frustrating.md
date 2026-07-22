@@ -2,6 +2,7 @@
 title: "Book Review: The Time Machine - Smart, Short, and Slightly Frustrating"
 description: "PS - Contains Spoilers..!!"
 canonical_url: https://beehiiv.kitaaben.com/p/book-review-the-time-machine-smart-short-and-slightly-frustrating
+sitemap: false
 date: "2025-05-13"
 ---
 

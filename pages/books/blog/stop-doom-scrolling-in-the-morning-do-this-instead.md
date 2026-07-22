@@ -2,6 +2,7 @@
 title: "Stop Doom Scrolling in the Morning. Do This Instead"
 description: "Read 10 Pages, Everyday - Right after you wake up"
 canonical_url: https://beehiiv.kitaaben.com/p/stop-doom-scrolling-in-the-morning-do-this-instead
+sitemap: false
 date: "2026-07-03"
 ---
 

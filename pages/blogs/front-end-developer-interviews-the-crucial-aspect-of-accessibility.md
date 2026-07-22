@@ -2,6 +2,7 @@
 title: "Front-End Developer Interviews: The Crucial Aspect of Accessibility"
 description: "Let me start with this: Accessibility is not a buzzword; it’s a crucial feature that every web application should have."
 canonical_url: https://blog.nandan.dev/front-end-developer-interviews-the-crucial-aspect-of-accessibility
+sitemap: false
 date: "2025-08-09"
 ---
 
