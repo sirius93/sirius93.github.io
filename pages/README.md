@@ -21,7 +21,7 @@ permalink: "/pages/"
 
 #### [📝 Blogs](blogs)
 
-- [Browse all 20 blog posts](blogs/)
+- [Browse all 38 blog posts](blogs/)
 
 #### [🚀 Webinars & Podcasts](webinars-n-podcasts)
 
