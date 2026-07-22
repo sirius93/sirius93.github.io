@@ -2,6 +2,7 @@
 title: "Fire & Blood: An Exploration of Targaryen History"
 description: "Dragons, dynasty, and epic conflicts: A deep dive into Westeros' most controversial royal family"
 canonical_url: https://beehiiv.kitaaben.com/p/fire-blood-an-exploration-of-targaryen-history
+sitemap: false
 date: "2025-04-14"
 author: "Mrinal Chandra"
 ---

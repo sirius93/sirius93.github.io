@@ -2,6 +2,7 @@
 title: "Book Review: Amongst the Believers by Kochery C. Shibu"
 description: "Dive into a complex political thriller exploring power, corruption, and ideological conflicts through an intricate narrative of multiple perspectives and real-world tensions."
 canonical_url: https://beehiiv.kitaaben.com/p/book-review-amongst-the-believers-by-kochery-c-shibu
+sitemap: false
 date: "2025-05-05"
 author: "Aditi Bharadwaj"
 ---
