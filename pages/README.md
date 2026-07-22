@@ -62,6 +62,7 @@ permalink: "/pages/"
 #### [📚 List of Books](books)
 
 - [Book Reviews](books/book-reviews/)
+- [Kitaaben Blog](books/blog/)
 
 #### [📚 Tech](tech)
 - [Laptops](tech/laptops/)
