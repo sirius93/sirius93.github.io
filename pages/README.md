@@ -21,7 +21,7 @@ permalink: "/pages/"
 
 #### [📝 Blogs](blogs)
 
-- [HTML Pitfalls and Gotchas Everyone Should Avoid](blogs/html-pitfalls-and-gotchas-everyone-should-avoid.md)
+- [Browse all 20 blog posts](blogs/)
 
 #### [🚀 Webinars & Podcasts](webinars-n-podcasts)
 
