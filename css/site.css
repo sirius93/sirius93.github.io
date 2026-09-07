@@ -376,6 +376,24 @@ html.nav-open { overflow: hidden; }
   .hero-cta, .social-row { justify-content: center; }
 }
 
+/* ---------- Book promo ---------- */
+.book-promo { padding: 64px 0; }
+.book-promo-grid { display: flex; align-items: center; gap: 56px; }
+.book-promo-grid img {
+  flex: 0 0 220px;
+  width: 220px; height: auto;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.book-promo-copy { flex: 1.2; }
+.book-promo-copy h2 { margin: 8px 0 4px; }
+@media (max-width: 760px) {
+  .book-promo-grid { flex-direction: column; text-align: center; }
+  .book-promo-grid img { width: 180px; }
+  .book-promo-copy .lede { margin: 0 auto 16px; }
+  .book-promo-copy .hero-cta { justify-content: center; }
+}
+
 /* ---------- About ---------- */
 .about-grid { display: grid; grid-template-columns: 260px 1fr; gap: 48px; }
 .about-card {
