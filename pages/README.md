@@ -48,11 +48,11 @@ permalink: "/pages/"
 
 #### [🚀 LifeStyle](lifestyle)
 
-- [From Bangkok bustle to beach bliss : Part 1](lifestyle/from-bangkok-bustle-to-beach-Bliss-a-7-day-escape-to-thailand.md)
-- [From Bangkok bustle to beach bliss : Part 2](lifestyle/from-bangkok-bustle-to-beach-Bliss-a-7-day-escape-to-thailand-part-2.md)
-- [Hajmola Lemon Tea Recipe](lifestyle/hajomola-lemon-tea-recipe.md)
-- [HIIT for Beginners](lifestyle/high-intensity-interval-training-as-a-beginner.md)
-- [My Seven Day Workout Plan](lifestyle/my-seven-day-workout-plan-with-2-days-rest.md)
+- [From Bangkok bustle to beach bliss : Part 1](lifestyle/from-bangkok-bustle-to-beach-Bliss-a-7-day-escape-to-thailand)
+- [From Bangkok bustle to beach bliss : Part 2](lifestyle/from-bangkok-bustle-to-beach-Bliss-a-7-day-escape-to-thailand-part-2)
+- [Hajmola Lemon Tea Recipe](lifestyle/hajomola-lemon-tea-recipe)
+- [HIIT for Beginners](lifestyle/high-intensity-interval-training-as-a-beginner)
+- [My Seven Day Workout Plan](lifestyle/my-seven-day-workout-plan-with-2-days-rest)
 
 
 #### [🚀 Affliates](affliates)
@@ -66,20 +66,20 @@ permalink: "/pages/"
 
 #### [📚 Tech](tech)
 - [Laptops](tech/laptops/)
-    - [Top bestselling laptops in 2021](tech/laptops/top-bestselling-laptops-in-2021.md)
-    - [Acer chromebook spin 311](tech/laptops/acer-chromebook-spin-311-convertible-laptop.md)
+    - [Top bestselling laptops in 2021](tech/laptops/top-bestselling-laptops-in-2021)
+    - [Acer chromebook spin 311](tech/laptops/acer-chromebook-spin-311-convertible-laptop)
 
 - [Scams](tech/scams/)
-    - [Common UPI Scams in India](tech/scams/common-upi-scams-in-india.md)
-    - [Common Trading Scams](tech/scams/common-trading-scams.md)
-    - [Hotel Booking Scams ](tech/scams/hotel-booking-scams-target-desperate-travelers.md)
+    - [Common UPI Scams in India](tech/scams/common-upi-scams-in-india)
+    - [Common Trading Scams](tech/scams/common-trading-scams)
+    - [Hotel Booking Scams ](tech/scams/hotel-booking-scams-target-desperate-travelers)
 
 - [Leetcode](tech/leetcode/)
-    - [Two Sum Problem](tech/leetcode/two-sum-problem-using-javascript.md)
+    - [Two Sum Problem](tech/leetcode/two-sum-problem-using-javascript)
 
 #### [📄 Resume](Resume)
 
 - [Resume (PDF)](Resume/Nandan.pdf)
-- [Resume LaTeX Template](Resume/latex-template-for-resume.md)
+- [Resume LaTeX Template](Resume/latex-template-for-resume)
 
 #### [📬 Newsletter](newsletter)
