@@ -45,3 +45,4 @@ User-agent: Meta-ExternalAgent
 Allow: /
 
 Sitemap: https://nandan.dev/sitemap.xml
+Sitemap: https://nandan.dev/sitemap-projects.xml
