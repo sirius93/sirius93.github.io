@@ -31,6 +31,7 @@
 
     <link rel="stylesheet" href="https://nandan.dev/css/icomoon.css">
     <link rel="stylesheet" href="https://nandan.dev/css/site.css">
+    <link rel="stylesheet" id="app-rails-css" href="/css/app-rails.css" media="screen and (min-width: 1200px) and (min-height: 600px)">
 
     {% if site.syntax_theme %}
       <link rel="stylesheet" href="{{ site.syntax_theme }}">
@@ -194,6 +195,8 @@
 <a href="#content" class="to-top" aria-label="Back to top"><i class="icon-arrow-up22"></i></a>
 
 <script src="https://nandan.dev/js/site.js" defer></script>
+<script type="application/json" id="app-rails-data">{{ site.data.app_rails | jsonify }}</script>
+<script src="/js/app-rails.js" defer></script>
 <script>
   Array.from(
     document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]')

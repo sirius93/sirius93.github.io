@@ -1,0 +1,40 @@
+# Apps shown in the side rails on Jekyll pages (js/app-rails.js).
+# To add one: add an entry here and a matching banner in _banners/banners.html,
+# then run _banners/build.sh <id>. The banner is images/rail/<id>.webp.
+# Keywords are matched as whole lowercase words against the page's URL, title and headings.
+
+- id: bailoutt
+  name: BailOutt
+  url: https://bailoutt.com
+  pitch: Escape any awkward situation with real phone calls from real numbers.
+  keywords: [lifestyle, anxiety, awkward, meeting, meetings, date, dating, introvert, bailoutt]
+
+- id: kitaaben
+  name: Kitaaben
+  url: https://kitaaben.com
+  pitch: Track your reading and write richer book reviews with AI.
+  keywords: [book, books, reading, reader, readers, goodreads, review, reviews, novel, author, library, kitaaben]
+
+- id: wobuddy
+  name: WO Buddy
+  url: https://wobuddy.app
+  pitch: A twelve-week training plan built around your goal, schedule and equipment.
+  keywords: [lifestyle, workout, workouts, fitness, gym, health, training, exercise, habit, habits, diet, running, wobuddy]
+
+- id: dock
+  name: Dock
+  url: https://nandan.dev/dock/
+  pitch: A Chrome extension that sends every Google Workspace link to the right window and account.
+  keywords: [chrome, edge, extension, extensions, browser, tabs, gmail, workspace, productivity, pwa, tools, developer, developers, laptop, laptops, git, github]
+
+- id: cope
+  name: COPE
+  url: https://nandan.dev/cope/
+  pitch: Turn one idea into platform-ready posts, blogs, carousels and images.
+  keywords: [content, blog, blogs, blogging, creator, creators, linkedin, twitter, newsletter, writing, chatgpt, ai, prompts, hashnode, gumroad, podcast, podcasts, webinar, webinars]
+
+- id: cloud
+  name: Cloud Cost Compute
+  url: https://nandan.dev/cloud-cost-compute/
+  pitch: Drag cloud services onto a canvas and see the estimated cost.
+  keywords: [cloud, aws, azure, gcp, system, scalability, availability, storage, database, databases, sql, nosql, caching, cdn, dns, proxies, server, servers, serverless, deploy, deployment, devops, docker, kubernetes, balancing]

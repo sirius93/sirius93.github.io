@@ -1,0 +1,194 @@
+<!doctype html>
+<!-- Source for images/rail/*.webp. Each banner is 160x600; build.sh screenshots one per #id. -->
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,900&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Barlow+Condensed:wght@300;400;500&family=Space+Mono:wght@400;700&display=block" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 160px; height: 600px; overflow: hidden; background: #000; }
+  .b { display: none; position: relative; width: 160px; height: 600px; overflow: hidden; padding: 16px 14px 14px; flex-direction: column; font-family: Inter, sans-serif; }
+  .b:target { display: flex; }
+  .grow { flex: 1; }
+  .mono { font-family: "Space Mono", monospace; }
+  .cta { display: block; text-align: center; font-weight: 700; font-size: 12px; padding: 10px 4px; border-radius: 8px; }
+  .by { text-align: center; font: 400 10px "Space Mono", monospace; margin-top: 9px; opacity: .6; }
+
+  /* BailOutt */
+  #bailoutt { background: radial-gradient(circle at 50% 62%, #123016 0, #0a0a0a 58%); color: #fff; }
+  #bailoutt .logo { display: flex; align-items: center; gap: 6px; font-weight: 800; font-size: 13px; letter-spacing: -.2px; }
+  #bailoutt .logo i { width: 20px; height: 20px; border-radius: 6px; background: #4ade4a; display: grid; place-items: center; }
+  #bailoutt .tag { margin-top: 14px; align-self: flex-start; font: 700 9.5px "Space Mono", monospace; color: #4ade4a; border: 1px solid #2c5a2f; background: #10260f; border-radius: 4px; padding: 3px 6px; }
+  #bailoutt h2 { margin-top: 24px; font-size: 25px; line-height: 1; font-weight: 800; letter-spacing: -1px; }
+  #bailoutt h2 em { font-weight: 900; color: #4ade4a; font-size: 23.5px; }
+  #bailoutt .call { margin-top: 28px; border: 1px solid #2c3a2d; background: #141614; border-radius: 12px; padding: 13px 11px; text-align: center; }
+  #bailoutt .call small { display: block; font: 700 9px "Space Mono", monospace; color: #4ade4a; letter-spacing: .5px; }
+  #bailoutt .call b { display: block; margin: 6px 0 14px; font-size: 16px; }
+  #bailoutt .btns { display: flex; justify-content: center; gap: 22px; }
+  #bailoutt .btns i { width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; }
+  #bailoutt .no { background: #e5484d; }
+  #bailoutt .no svg { transform: rotate(135deg); }
+  #bailoutt .yes { background: #4ade4a; box-shadow: 0 0 0 6px rgba(74, 222, 74, .18), 0 0 0 12px rgba(74, 222, 74, .08); }
+  #bailoutt p { margin-top: 30px; font-size: 13px; line-height: 1.35; color: #c9c9c9; }
+  #bailoutt .cta { background: #fff; color: #0a0a0a; }
+
+  /* Kitaaben */
+  #kitaaben { background: #f7f3ec; color: #322f38; }
+  #kitaaben .logo { font: 500 21px Newsreader, serif; letter-spacing: -.3px; }
+  #kitaaben h2 { margin-top: 20px; font: 400 27px/1.08 Newsreader, serif; letter-spacing: -.5px; }
+  #kitaaben h2 em { color: #c36a39; font-style: normal; }
+  #kitaaben .shelf { margin-top: 28px; display: flex; flex-direction: column; align-items: center; }
+  #kitaaben .bk { height: 26px; border-radius: 3px; box-shadow: inset 7px 0 0 rgba(0, 0, 0, .13), 0 1px 1px rgba(50, 47, 56, .25); }
+  #kitaaben .bk::after { content: ""; display: block; width: 44%; height: 2px; margin: 12px auto 0; background: rgba(255, 255, 255, .55); }
+  #kitaaben .prog { margin-top: 18px; background: #fff; border: 1px solid #e7dfd3; border-radius: 9px; padding: 9px 10px; }
+  #kitaaben .prog small { display: flex; justify-content: space-between; font-size: 11px; color: #6e6972; }
+  #kitaaben .bar { margin-top: 7px; height: 5px; border-radius: 3px; background: #eee6da; }
+  #kitaaben .bar i { display: block; width: 62%; height: 100%; border-radius: 3px; background: #c36a39; }
+  #kitaaben .sub { margin-top: 16px; font-size: 13px; line-height: 1.35; color: #5d5862; }
+  #kitaaben .cta { background: #322f38; color: #f7f3ec; }
+
+  /* WO Buddy */
+  #wobuddy { background: #17191c; color: #f1f1ef; font-family: "Barlow Condensed", sans-serif; }
+  #wobuddy .logo { font: 500 16px "Barlow Condensed", sans-serif; letter-spacing: 1.6px; }
+  #wobuddy h2 { margin-top: 24px; font-weight: 300; font-size: 37px; line-height: 1; }
+  #wobuddy h2 em { font-style: normal; color: #e8694a; }
+  #wobuddy .plan { margin-top: 28px; border: 1px solid #33363b; border-radius: 10px; background: #1e2024; }
+  #wobuddy .plan small { display: block; padding: 9px 10px 7px; font: 400 10px "Space Mono", monospace; color: #e8694a; }
+  #wobuddy .row { display: flex; justify-content: space-between; padding: 8px 10px; border-top: 1px solid #2b2e33; font-size: 15px; line-height: 1.1; }
+  #wobuddy .row span { color: #a3a5a6; white-space: nowrap; }
+  #wobuddy .free { margin-top: 18px; font-size: 16px; line-height: 1.2; color: #c6c7c8; }
+  #wobuddy .cta { background: #e8694a; color: #17191c; font: 500 16px "Barlow Condensed", sans-serif; letter-spacing: .4px; }
+
+  /* Dock */
+  #dock { background: linear-gradient(180deg, #f7fafb, #e9f3f2); color: #123a39; }
+  #dock .logo { font: 700 13px "Space Mono", monospace; letter-spacing: 1.5px; }
+  #dock h2 { margin-top: 20px; font-size: 25px; line-height: 1.08; font-weight: 800; letter-spacing: -.9px; }
+  #dock .tabs { position: relative; height: 104px; margin-top: 22px; }
+  #dock .tab { position: absolute; background: #fff; border: 1px solid #d5dedd; border-radius: 5px; padding: 4px 7px; white-space: nowrap; font-size: 11px; font-weight: 500; color: #516664; box-shadow: 0 2px 4px rgba(18,58,57,.1); }
+  #dock .arrow { text-align: center; font-size: 20px; line-height: 1; color: #6b8a88; margin: 6px 0; }
+  #dock .win { background: #fff; border-radius: 9px; border: 1px solid #d5dedd; box-shadow: 0 6px 14px rgba(18,58,57,.13); overflow: hidden; }
+  #dock .win u { display: block; height: 15px; background: #e6eaea; }
+  #dock .win div { display: flex; align-items: center; gap: 6px; padding: 9px 8px; font-size: 12px; font-weight: 600; }
+  #dock .win i { width: 8px; height: 8px; flex: none; border-radius: 50%; background: #1a73e8; }
+  #dock .win b { margin-left: auto; color: #fff; background: #17803d; width: 15px; height: 15px; flex: none; border-radius: 50%; font: 700 10px/15px Inter; text-align: center; }
+  #dock .note { margin-top: 15px; font-size: 13px; line-height: 1.35; color: #3b5a58; }
+  #dock .cta { background: #123a39; color: #f7fafb; }
+
+  /* COPE */
+  #cope { background: #f1efe6; color: #1c1c1a; }
+  #cope .rule { width: 26px; height: 3px; background: #184d3b; }
+  #cope h2 { margin-top: 14px; font-size: 44px; line-height: 1; font-weight: 800; letter-spacing: -1px; }
+  #cope h3 { margin-top: 10px; font-size: 20px; line-height: 1.12; font-weight: 500; color: #184d3b; letter-spacing: -.4px; }
+  #cope .mascot { position: absolute; left: -29px; top: 182px; width: 218px; height: 218px; border-radius: 50%; overflow: hidden; background: #184d3b; }
+  #cope .mascot img { position: absolute; width: 205px; left: 8px; top: -1px; }
+  #cope .local { position: absolute; left: 14px; right: 14px; top: 424px; font: 400 11px/1.55 "Space Mono", monospace; color: #55574e; letter-spacing: .4px; }
+  #cope .cta { background: #c5f05a; color: #184d3b; border-radius: 18px; font-size: 11.5px; line-height: 1.25; }
+
+  /* Cloud Cost Compute */
+  #cloud { background: linear-gradient(180deg, #0b1b30, #10294a); color: #eef5ff; }
+  #cloud .logo { display: flex; align-items: center; gap: 6px; font-weight: 700; font-size: 11.5px; line-height: 1.15; }
+  #cloud h2 { margin-top: 20px; font-size: 25px; line-height: 1.08; font-weight: 700; letter-spacing: -.8px; }
+  #cloud h2 em { color: #6cc4ff; font-style: normal; }
+  #cloud .canvas { position: relative; height: 158px; margin-top: 20px; border: 1px solid #2a4a73; border-radius: 10px; background: radial-gradient(#2f5280 1px, transparent 1.2px) 0 0/12px 12px; }
+  #cloud .canvas svg { position: absolute; inset: 0; }
+  #cloud .node { position: absolute; padding: 5px 7px; border-radius: 6px; background: #17365e; border: 1px solid #5aa9e6; font-size: 11px; font-weight: 600; white-space: nowrap; }
+  #cloud .est { margin-top: 12px; padding: 10px; border-radius: 10px; background: #eef5ff; color: #0b1b30; }
+  #cloud .est small { display: block; font-size: 11px; color: #47597a; }
+  #cloud .est b { font-size: 23px; letter-spacing: -.8px; font-weight: 800; }
+  #cloud .est b span { font-size: 12px; font-weight: 500; letter-spacing: 0; }
+  #cloud .sub { margin-top: 14px; font-size: 13px; line-height: 1.35; color: #bcd0ea; }
+  #cloud .cta { background: #6cc4ff; color: #0b1b30; }
+</style>
+
+<section class="b" id="bailoutt">
+  <div class="logo"><i><svg width="12" height="12" viewBox="0 0 24 24" fill="#0a0a0a"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></i>BAILOUTT</div>
+  <div class="tag">YOUR AI WINGMAN</div>
+  <h2>ESCAPE<br>ANY<br><em><i>AWKWARD</i></em><br>SITUATION</h2>
+  <div class="call">
+    <small>INCOMING CALL</small><b>Boss (Work)</b>
+    <div class="btns">
+      <i class="no"><svg width="17" height="17" viewBox="0 0 24 24" fill="#fff"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></i>
+      <i class="yes"><svg width="17" height="17" viewBox="0 0 24 24" fill="#0a0a0a"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></i>
+    </div>
+  </div>
+  <p>Real phone calls from real numbers, right when you need out.</p>
+  <div class="grow"></div>
+  <span class="cta">TRY FOR FREE</span>
+  <div class="by">by nandan.dev</div>
+</section>
+
+<section class="b" id="kitaaben">
+  <div class="logo">Kitaaben</div>
+  <h2>Reading shouldn't come with an <em>algorithm.</em></h2>
+  <div class="shelf">
+    <div class="bk" style="width:92px;background:#6b7f6b"></div>
+    <div class="bk" style="width:118px;background:#c36a39;margin-left:10px"></div>
+    <div class="bk" style="width:104px;background:#322f38;margin-right:12px"></div>
+    <div class="bk" style="width:126px;background:#b08d57"></div>
+  </div>
+  <div class="prog"><small><span>Progress</span><span>62%</span></small><div class="bar"><i></i></div></div>
+  <p class="sub">Track pages, catalog summaries, and write richer reviews with AI.</p>
+  <div class="grow"></div>
+  <span class="cta">Track your reading</span>
+  <div class="by">by nandan.dev</div>
+</section>
+
+<section class="b" id="wobuddy">
+  <div class="logo">WO BUDDY</div>
+  <h2>YOUR TRAINING. BUILT AROUND <em>YOU.</em></h2>
+  <div class="plan">
+    <small>WEEK 1 · DAY 1</small>
+    <div class="row">Push-up<span>3 × 8–12</span></div>
+    <div class="row">Squat<span>3 × 10–15</span></div>
+    <div class="row">Plank<span>3 × 30 sec</span></div>
+  </div>
+  <p class="free">Twelve weeks, every set and rep ready to go.</p>
+  <div class="grow"></div>
+  <span class="cta">BUILD MY PLAN</span>
+  <div class="by">by nandan.dev</div>
+</section>
+
+<section class="b" id="dock">
+  <div class="logo">DOCK</div>
+  <h2>Stop hunting for the right tab.</h2>
+  <div class="tabs">
+    <span class="tab" style="left:0;top:4px;transform:rotate(-5deg)">Gmail</span>
+    <span class="tab" style="left:50px;top:0;transform:rotate(4deg)">Google Meet</span>
+    <span class="tab" style="left:12px;top:34px;transform:rotate(3deg)">Calendar</span>
+    <span class="tab" style="left:74px;top:40px;transform:rotate(-4deg)">Gmail</span>
+    <span class="tab" style="left:0;top:70px;transform:rotate(-3deg)">Google Meet</span>
+    <span class="tab" style="left:82px;top:76px;transform:rotate(5deg)">Docs</span>
+  </div>
+  <div class="arrow">↓</div>
+  <div class="win"><u></u><div><i></i>Google Meet<b>✓</b></div></div>
+  <p class="note">One window. The right account. No stray tabs.</p>
+  <div class="grow"></div>
+  <span class="cta">Get Dock</span>
+  <div class="by">by nandan.dev</div>
+</section>
+
+<section class="b" id="cope">
+  <div class="rule"></div>
+  <h2>COPE</h2>
+  <h3>Create once. Post everywhere.</h3>
+  <div class="mascot"><img src="cope-corgi.png" alt=""></div>
+  <div class="local">Open source.<br>Local first.</div>
+  <div class="grow"></div>
+  <span class="cta">ONE IDEA →<br>EVERY FORMAT</span>
+  <div class="by">by nandan.dev</div>
+</section>
+
+<section class="b" id="cloud">
+  <div class="logo"><svg width="24" height="17" viewBox="0 0 24 17" fill="#6cc4ff"><path d="M19.300 7A7 7 0 0 0 5.800 5.600 5.500 5.500 0 0 0 6 17h13a5 5 0 0 0 .3-10z"/></svg><span>Cloud Cost<br>Compute</span></div>
+  <h2>Know the <em>cloud bill</em> before you build.</h2>
+  <div class="canvas">
+    <svg width="130" height="156"><path d="M60 34 C 60 54, 34 50, 34 74 M60 34 C 60 54, 94 50, 94 74 M34 96 C 34 112, 60 106, 60 122 M94 96 C 94 112, 60 106, 60 122" fill="none" stroke="#5aa9e6" stroke-width="1.3" stroke-dasharray="3 3"/></svg>
+    <span class="node" style="left:27px;top:10px">Load Balancer</span>
+    <span class="node" style="left:6px;top:72px">Compute</span>
+    <span class="node" style="left:73px;top:72px">Logs</span>
+    <span class="node" style="left:33px;top:122px">Database</span>
+  </div>
+  <div class="est"><small>Estimated cost</small><b>$1,284<span> /mo</span></b></div>
+  <p class="sub">Drag services onto a canvas. AWS, Azure, Google Cloud.</p>
+  <div class="grow"></div>
+  <span class="cta">Price your stack</span>
+  <div class="by">by nandan.dev</div>
+</section>
