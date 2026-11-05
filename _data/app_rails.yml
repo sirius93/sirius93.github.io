@@ -34,7 +34,7 @@
   keywords: [content, blog, blogs, blogging, creator, creators, linkedin, twitter, newsletter, writing, chatgpt, ai, prompts, hashnode, gumroad, podcast, podcasts, webinar, webinars]
 
 - id: cloud
-  name: Cloud Cost Compute
-  url: https://nandan.dev/cloud-cost-compute/
+  name: Cloud Cost Estimator
+  url: https://nandan.dev/cloud-cost-estimator/
   pitch: Drag cloud services onto a canvas and see the estimated cost.
   keywords: [cloud, aws, azure, gcp, system, scalability, availability, storage, database, databases, sql, nosql, caching, cdn, dns, proxies, server, servers, serverless, deploy, deployment, devops, docker, kubernetes, balancing]
