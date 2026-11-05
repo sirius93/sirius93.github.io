@@ -21,6 +21,7 @@ Personal site and portfolio covering software engineering, system design, startu
 - [Bailoutt](https://bailoutt.com/): AI wingman product
 - [Kitaaben](https://kitaaben.com/): Book-related product
 - [ASCII Canvas Editor](https://nandan.dev/ascii-canvas-editor/): Browser-based ASCII art tool
+- [Cloud Cost Estimator](https://nandan.dev/cloud-cost-estimator/): Free calculator that estimates and compares cloud architecture costs on AWS, Azure and Google Cloud, by drag-and-drop or Terraform import
 
 ## Optional
 
